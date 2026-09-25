@@ -11,13 +11,6 @@
       "limit": "Survey report. AI use in any business function, not a generative-AI-only measure; wording changed in November 2025."
     },
     {
-      "id": "government",
-      "title": "UK Government Digital Service · Copilot experiment",
-      "date": "2025-06-02",
-      "url": "https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html",
-      "limit": "Government evaluation. Time savings are self-reported; this does not establish a measured improvement in service quality."
-    },
-    {
       "id": "rp2025",
       "title": "RealPage · AI Workforce announcement",
       "date": "2025-08-12",
@@ -159,14 +152,13 @@
       "id": "adoption-evidence",
       "group": "adoption",
       "kicker": "02 · What the measurements mean",
-      "title": "Adoption is real. Measures differ.",
-      "body": "<p>U.S. Census data show <strong>17–20%</strong> of businesses reporting AI use from December 2025 to May 2026. This covers AI broadly, across business functions.</p><p>A UK government Copilot trial reported <strong>26 minutes saved per day</strong>. Those savings were self-reported.</p><p class=\"takeaway\">Usage, perceived time savings, work quality, and public benefit are separate outcomes.</p>",
-      "visual": "<p class=\"eyebrow\">Two different questions</p><div class=\"metric\"><strong>17–20<span>%</span></strong><span>Businesses reporting AI use<br>Census · Dec 2025–May 2026</span></div><div class=\"metric\"><strong>26<span> min</span></strong><span>Daily time savings, self-reported<br>UK Copilot trial · 2025 report</span></div><p class=\"visual-caption\">Different populations, tools, and measures. These figures are not directly comparable.</p>",
+      "title": "Private-sector adoption is uneven.",
+      "body": "<p>U.S. Census data show <strong>17–20%</strong> of businesses reporting AI use from December 2025 to May 2026. This covers AI broadly, across business functions.</p><p>Among firms with <strong>250 or more employees</strong>, 37% reported using AI. Adoption varies by company size and sector.</p><p class=\"takeaway\">Using AI, integrating it into workflows, and demonstrating better outcomes are separate milestones.</p>",
+      "visual": "<p class=\"eyebrow\">Business adoption · Census, May 2026 report</p><div class=\"metric\"><strong>17–20<span>%</span></strong><span>Businesses reporting AI use<br>Across the Dec 2025–May 2026 period</span></div><div class=\"metric\"><strong>37<span>%</span></strong><span>Firms with 250 or more employees<br>Reporting AI use</span></div><p class=\"visual-caption\">AI in any business function. These figures include more than generative AI and do not measure deployment quality.</p>",
       "refs": [
-        "census",
-        "government"
+        "census"
       ],
-      "notes": "Keep the public-sector example as a brief comparison unless the speaker confirms government adoption is a main topic. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI penetration rate."
+      "notes": "Scope confirmed by the speaker: private-sector adoption. Distinguish individual use, company integration, and demonstrated outcomes. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI-only adoption rate. The overall range spans the reporting period; the large-firm figure is the report’s size-group example."
     },
     {
       "id": "realpage",

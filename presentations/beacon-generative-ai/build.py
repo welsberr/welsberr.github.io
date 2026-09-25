@@ -15,9 +15,9 @@ parts = [f'''<!doctype html>
 <title>{e(content['title'])} | Wesley R. Elsberry</title>
 <meta name="description" content="A BEACON discussion of generative AI adoption, evidence, governed memory, and accountable public work.">
 <link rel="canonical" href="{url}"><meta property="og:type" content="website">
-<meta property="og:title" content="{e(content['title'])}"><meta property="og:description" content="From industry adoption to accountable public work. Wesley R. Elsberry · BEACON.">
+<meta property="og:title" content="{e(content['title'])}"><meta property="og:description" content="From private-sector adoption to accountable public work. Wesley R. Elsberry · BEACON.">
 <meta property="og:url" content="{url}"><meta property="og:image" content="{url}social-card.png"><meta property="og:image:alt" content="Generative AI, with receipts. Wesley R. Elsberry · BEACON.">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(content['title'])}"><meta name="twitter:description" content="From industry adoption to accountable public work."><meta name="twitter:image" content="{url}social-card.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e(content['title'])}"><meta name="twitter:description" content="From private-sector adoption to accountable public work."><meta name="twitter:image" content="{url}social-card.png">
 <link rel="stylesheet" href="style.css"><script defer src="presentation.js"></script></head><body>
 <a class="skip" href="#story">Skip to presentation</a>
 <header><a href="../">WRE / Presentations</a><span>BEACON · Michigan State University</span><a href="#sources">Sources</a></header>
@@ -26,7 +26,7 @@ parts = [f'''<!doctype html>
 <section class="hero" id="opening" data-stop>
 <p class="eyebrow">Wesley R. Elsberry · Large-group discussion</p>
 <h1>Generative AI,<br>with <em>receipts.</em></h1>
-<p class="lede">From industry adoption to accountable public work.</p>
+<p class="lede">From private-sector adoption to accountable public work.</p>
 <p class="intro">What changes when a system can produce plausible answers faster than we can check them?</p>
 <a class="start" href="#delegation">Begin the story <span aria-hidden="true">↓</span></a>
 <div class="hero-footer"><span>01 / Adoption &amp; accountability</span><span>02 / Building a responsible workbench</span></div>
@@ -59,13 +59,13 @@ for s in content['scenes']:
 parts.append('''<option value="sources">Sources</option></select><button id="next" aria-label="Next section">→</button><button id="notes" aria-pressed="false">Notes</button><button id="fullscreen">Full screen</button><button id="print">Print</button></nav><div class="sr-only" id="section-status" aria-live="polite"></div>
 <footer class="site-footer">Wesley R. Elsberry · BEACON discussion · <a href="../">All presentations</a><span>Use ← / → to move between sections; N toggles notes. Normal scrolling always works.</span></footer></body></html>''')
 (ROOT/'index.html').write_text('\n'.join(parts)+'\n')
-notes=['# Generative AI, with receipts.','', 'Wesley R. Elsberry · Michigan State University BEACON large group','', '**Status:** speaker review draft. Default timing: 30-minute core plus discussion.','', '## Speaker input still needed','', '- Confirm commercial/private-sector scope versus government comparison.','- Supply personal RealPage assessment and focal public statement.','- Confirm meeting date and available time.','- Confirm date and anecdote of first CiteGeist use; repository history begins 19 March 2026.','', '## Suggested pacing','', '- Opening and adoption: 7 minutes.','- Values and workbench: 11 minutes.','- Applications: 8 minutes.','- Limits and discussion setup: 4 minutes.','- For a shorter talk, keep sections 1, 3–4, 6–8, 10, 12, and 18.','']
+notes=['# Generative AI, with receipts.','', 'Wesley R. Elsberry · Michigan State University BEACON large group','', '**Status:** speaker review draft. Default timing: 30-minute core plus discussion.','', '## Speaker input still needed','', '- Supply personal RealPage assessment and focal public statement.','- Confirm meeting date and available time.','- Confirm date and anecdote of first CiteGeist use; repository history begins 19 March 2026.','', '## Suggested pacing','', '- Opening and adoption: 7 minutes.','- Values and workbench: 11 minutes.','- Applications: 8 minutes.','- Limits and discussion setup: 4 minutes.','- For a shorter talk, keep sections 1, 3–4, 6–8, 10, 12, and 18.','']
 for s in content['scenes']:
  notes += ['## '+s['kicker']+' — '+s['title'],'',s['notes'],'','Sources: '+', '.join(sources[k]['url'] for k in s['refs']), '']
 (ROOT/'speaker-notes.md').write_text('\n'.join(line.rstrip() for line in notes).rstrip()+'\n')
 print(f'Rendered {len(content["scenes"])} scenes and {len(sources)} source records.')
 
-notes_html = ['<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Speaker notes | Generative AI, with receipts.</title><link rel="stylesheet" href="style.css"></head><body><header><a href="./">Return to presentation</a><span>Speaker notes</span></header><main class="sources"><h1>Speaker notes</h1><p>Speaker review draft. Plan: adoption 7 minutes; workbench 11; applications 8; discussion setup 4.</p><p>Awaiting personal RealPage assessment, scope clarification, meeting date and duration, and first CiteGeist-use date.</p>']
+notes_html = ['<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Speaker notes | Generative AI, with receipts.</title><link rel="stylesheet" href="style.css"></head><body><header><a href="./">Return to presentation</a><span>Speaker notes</span></header><main class="sources"><h1>Speaker notes</h1><p>Speaker review draft. Plan: adoption 7 minutes; workbench 11; applications 8; discussion setup 4.</p><p>Awaiting personal RealPage assessment, meeting date and duration, and first CiteGeist-use date.</p>']
 for scene in content['scenes']:
     notes_html.append(f'<article class="source-record"><h2>{e(scene["kicker"])} — {e(scene["title"])}</h2><p>{e(scene["notes"])}</p><a href="./#{scene["id"]}">Open this section</a></article>')
 notes_html.append('</main></body></html>')

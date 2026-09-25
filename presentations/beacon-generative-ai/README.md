@@ -16,9 +16,9 @@ The gate demonstration is a teaching simulation. Its release decisions are local
 
 ## Editorial status
 
-Speaker review draft, checked 25 September 2026. Awaiting the speaker’s own RealPage assessment and focal announcement, public/private-sector scope clarification, meeting date and duration, and the first personal CiteGeist-use date. The current timeline uses the earliest repository commit, explicitly labeled as such. The planned speaking time is approximately 30 minutes plus discussion.
+Speaker review draft, checked 25 September 2026. Awaiting the speaker’s own RealPage assessment and focal announcement, meeting date and duration, and the first personal CiteGeist-use date. The current timeline uses the earliest repository commit, explicitly labeled as such. The planned speaking time is approximately 30 minutes plus discussion.
 
-The first part currently contains commercial adoption and a short government comparison. RealPage claims are attributed company statements; discussion questions are not represented as findings about private company operations or as personal testimony. No alleged wrongdoing or internal company information is included.
+The first part covers private-sector adoption, as clarified by the speaker. RealPage claims are attributed company statements; discussion questions are not represented as findings about private company operations or as personal testimony. No alleged wrongdoing or internal company information is included.
 
 The source ledger is in `content.json` and the rendered appendix. Pinned repository references document the inspected versions. `evidence/bibliography-build.json` contains only aggregate, nonprivate counts and the source manifest checksum. Counts refer to placements across topic bibliographies, not unique papers or verified scientific claims. `evidence/repository-snapshots.json` records inspected commit identifiers. Private memory records and local operational paths are excluded.
 
@@ -26,4 +26,4 @@ The social card was generated with AI for this presentation. It is original deco
 
 ## Validation
 
-Validated with local Chromium: 18 scenes, 20 source records, unique IDs and valid internal anchors; all 16 release-gate input combinations; section navigation, diagram changes, notes toggle, and keyboard next; widths 320, 390, 760, 768, 1024, and 1440 pixels without horizontal overflow; print controls hidden; no-JavaScript text availability; no JavaScript errors. Representative desktop and mobile screenshots were visually reviewed. This verifies the presentation, not the underlying research tools or their scientific claims.
+Validated with local Chromium: 18 scenes, 19 source records, unique IDs and valid internal anchors; all 16 release-gate input combinations; section navigation, diagram changes, notes toggle, and keyboard next; widths 320, 390, 760, 768, 1024, and 1440 pixels without horizontal overflow; print controls hidden; no-JavaScript text availability; no JavaScript errors. Representative desktop and mobile screenshots were visually reviewed. This verifies the presentation, not the underlying research tools or their scientific claims.

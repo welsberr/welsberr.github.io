@@ -6,7 +6,6 @@ Wesley R. Elsberry · Michigan State University BEACON large group
 
 ## Speaker input still needed
 
-- Confirm commercial/private-sector scope versus government comparison.
 - Supply personal RealPage assessment and focal public statement.
 - Confirm meeting date and available time.
 - Confirm date and anecdote of first CiteGeist use; repository history begins 19 March 2026.
@@ -25,11 +24,11 @@ Ask the room for one task they already delegate. Distinguish a model from the ap
 
 Sources:
 
-## 02 · What the measurements mean — Adoption is real. Measures differ.
+## 02 · What the measurements mean — Private-sector adoption is uneven.
 
-Keep the public-sector example as a brief comparison unless the speaker confirms government adoption is a main topic. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI penetration rate.
+Scope confirmed by the speaker: private-sector adoption. Distinguish individual use, company integration, and demonstrated outcomes. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI-only adoption rate. The overall range spans the reporting period; the large-firm figure is the report’s size-group example.
 
-Sources: https://www.census.gov/library/stories/2026/05/ai-use-businesses.html, https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html
+Sources: https://www.census.gov/library/stories/2026/05/ai-use-businesses.html
 
 ## 03 · RealPage: the public account — From specialized agents to a platform.
 
