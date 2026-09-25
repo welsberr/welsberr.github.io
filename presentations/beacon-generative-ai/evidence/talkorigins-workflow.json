@@ -1,0 +1,63 @@
+{
+  "checked_on": "2026-09-25",
+  "evidence_type": "Maintainer implementation inspection and public artifact check",
+  "scope": "TalkOrigins modernization workflow, bibliography maintenance, translation queue, and local model integration",
+  "observations": [
+    {
+      "area": "English content",
+      "observed": "Modernization preserves attributed legacy bodies and separates generated study additions; scoped updates avoid rebuilding unrelated output.",
+      "basis": "TalkOrigins Modern README and scoped update workflow"
+    },
+    {
+      "area": "Bibliography",
+      "observed": "CiteGeist topic data is rendered as HTML and BibTeX; new pages enter four-language translation work orders; bibliography index changes can use fragment deltas.",
+      "basis": "Maintainer bibliography render/queue helpers and CiteGeist worked example"
+    },
+    {
+      "area": "Translation",
+      "observed": "Terminology compendium, grouped chunking, node probes, per-unit leases, run manifests, retry and stale-lease recovery.",
+      "basis": "Translation runner and resilient queue documentation"
+    },
+    {
+      "area": "Provider selection",
+      "observed": "Local translation is the configured default; a capped alternate-provider path covers selected routes and prior errors or warnings.",
+      "basis": "Hybrid provider policy and runner"
+    },
+    {
+      "area": "Local models",
+      "observed": "Inspected worker configuration selects Qwen3.5-9B for Spanish, French, German, and Portuguese; local hosting uses llama.cpp-based services.",
+      "basis": "Worker configuration and local endpoint launch documentation"
+    },
+    {
+      "area": "GenieHive boundary",
+      "observed": "GenieHive provides registration and routing; model runtimes own inference and process lifecycle. The queue also supports directly addressed compatible endpoints.",
+      "basis": "Public GenieHive README and translation guide; TalkOrigins worker configuration"
+    }
+  ],
+  "public_translation_snapshot": {
+    "url": "https://talkoriginsarchive.github.io/translation-status/",
+    "published_at": "2026-07-08T16:01:13.589515+00:00",
+    "pages_per_language": 2872,
+    "languages": [
+      "es",
+      "fr",
+      "de",
+      "pt"
+    ],
+    "remaining_per_language": 0,
+    "interpretation": "Recorded generation coverage, not expert-review status or a current inventory of all Archive content."
+  },
+  "public_references": [
+    "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md",
+    "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/docs/translation_support.md",
+    "https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/docs/GENIEHIVE_TRANSLATION.md",
+    "https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/examples/talkorigins/README.md",
+    "https://talkoriginsarchive.github.io/translation-status/",
+    "https://talkoriginsarchive.github.io/foundation/2026-update/"
+  ],
+  "limits": [
+    "No live worker availability, cost savings, speedup, or expert-reviewed translation rate is claimed.",
+    "Private source records, addresses, credentials, and host inventory are omitted.",
+    "The public queue snapshot is dated; later source changes require new work."
+  ]
+}

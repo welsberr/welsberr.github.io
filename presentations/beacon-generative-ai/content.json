@@ -135,6 +135,55 @@
       "date": "2026-03-19",
       "url": "https://github.com/welsberr/CiteGeist/commit/4f3ac4d",
       "limit": "Earliest commit in the inspected repository history; a reproducible timeline anchor, not a claim about first personal use."
+    },
+    {
+      "id": "GenieHive",
+      "title": "GenieHive · public repository documentation",
+      "date": "Snapshot 705e82a",
+      "url": "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md",
+      "limit": "Public implementation description of routing, health, model discovery, and optional gateway controls. Does not establish live deployment configuration or measured savings."
+    },
+    {
+      "id": "geniehive-translation",
+      "title": "GenieHive · translation support",
+      "date": "Snapshot 705e82a",
+      "url": "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/docs/translation_support.md",
+      "limit": "Translation-role configuration guidance. A configured endpoint and a quality translation are separate requirements."
+    },
+    {
+      "id": "site-translation",
+      "title": "SciSiteForge · translation and review workflow",
+      "date": "Snapshot b61a4cb",
+      "url": "https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/docs/GENIEHIVE_TRANSLATION.md",
+      "limit": "Documents local translation integration, glossaries, separate source/output trees, review labels, and targeted correction workflow."
+    },
+    {
+      "id": "citegeist-talkorigins",
+      "title": "CiteGeist · TalkOrigins worked application",
+      "date": "Snapshot 8d4b799",
+      "url": "https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/examples/talkorigins/README.md",
+      "limit": "Documented legacy bibliography conversion, duplicate review, enrichment, and export pipeline; not a measured accuracy study."
+    },
+    {
+      "id": "toa-translation-status",
+      "title": "TalkOrigins Archive · public translation status",
+      "date": "Published snapshot 2026-07-08; accessed 2026-09-25",
+      "url": "https://talkoriginsarchive.github.io/translation-status/",
+      "limit": "Reports 2,872 translated pages per language for Spanish, French, German, and Portuguese in the recorded queue. Generation counts do not establish expert review or coverage of all future content."
+    },
+    {
+      "id": "toa-modernization",
+      "title": "TalkOrigins Foundation · modernization update",
+      "date": "Accessed 2026-09-25",
+      "url": "https://talkoriginsarchive.github.io/foundation/2026-update/",
+      "limit": "Public description of Archive modernization and the separation between a durable reference library and active commentary/education projects."
+    },
+    {
+      "id": "toa-workflow",
+      "title": "TalkOrigins · workflow inspection summary",
+      "date": "Inspection 2026-09-25",
+      "url": "evidence/talkorigins-workflow.json",
+      "limit": "Sanitized summary of inspected maintainer implementation, configuration, and public artifacts. Describes the workflow, not a live service-health check or independent audit."
     }
   ],
   "scenes": [
@@ -146,7 +195,8 @@
       "body": "<p>Generative AI produces text, images, code, and other outputs. An <strong>agentic workflow</strong> connects that generation to tools, memory, and actions.</p><p>Drafting an email, finding a source, and changing an account cross different boundaries of authority.</p><p class=\"takeaway\">Evaluate the whole workflow: what it can do, what it knows, and what happens when it is wrong.</p>",
       "visual": "<p class=\"eyebrow\">A conceptual progression</p><ol class=\"ladder\"><li><b>Generate</b><span>Propose an answer</span></li><li><b>Retrieve</b><span>Bring evidence into context</span></li><li><b>Act</b><span>Change something outside the conversation</span></li></ol><p class=\"visual-caption\">More authority calls for stronger checks at the boundary.</p>",
       "refs": [],
-      "notes": "Ask the room for one task they already delegate. Distinguish a model from the application wrapped around it. This progression is a teaching model, not a historical law."
+      "notes": "Ask the room for one task they already delegate. Distinguish a model from the application wrapped around it. This progression is a teaching model, not a historical law.",
+      "deep_dives": []
     },
     {
       "id": "claims-and-controls",
@@ -156,7 +206,8 @@
       "body": "<p>Before looking at examples, I want to set out the questions I bring to any AI-assisted workflow, including my own.</p><p>Define the tasks, agree on what better work looks like, and assess quality, productivity, and cost together. Distinguish expected benefits from observed results and causal evidence.</p><p class=\"takeaway\">Build in task-specific evaluation, review, and a clear path to escalate problems and correct outcomes.</p>",
       "visual": "<p class=\"eyebrow\">Shared design questions</p><dl class=\"pairs\"><dt>Useful capability</dt><dd>Which tasks, and what comparison establishes improvement?</dd><dt>Sustainable results</dt><dd>How will we track quality, failure rates, time, and cost?</dd><dt>Human accountability</dt><dd>What can a reviewer inspect, stop, or reverse?</dd><dt>Learning from problems</dt><dd>How can people raise concerns, contest outcomes, and record corrections?</dd></dl><p class=\"visual-caption\">A framework for organizational adoption and my personal workbench.</p>",
       "refs": [],
-      "notes": "Introduce these as shared design questions before the industry overview and company example. Apply them to the speaker’s own work as well as organizational adoption. Task-specific comparisons, failure rates, escalation records, and routes to contest or correct outcomes make improvement assessable. Distinguish modeled benefits, observed changes, and causal evidence. These are proposed evaluation criteria, not findings about any company. Keep this preface constructive: the aim is to help people deliver useful work sustainably and learn from problems."
+      "notes": "Introduce these as shared design questions before the industry overview and company example. Apply them to the speaker’s own work as well as organizational adoption. Task-specific comparisons, failure rates, escalation records, and routes to contest or correct outcomes make improvement assessable. Distinguish modeled benefits, observed changes, and causal evidence. These are proposed evaluation criteria, not findings about any company. Keep this preface constructive: the aim is to help people deliver useful work sustainably and learn from problems.",
+      "deep_dives": []
     },
     {
       "id": "adoption-evidence",
@@ -168,7 +219,8 @@
       "refs": [
         "census"
       ],
-      "notes": "Scope confirmed by the speaker: private-sector adoption. Distinguish individual use, company integration, and demonstrated outcomes. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI-only adoption rate. The overall range spans the reporting period; the large-firm figure is the report’s size-group example."
+      "notes": "Scope confirmed by the speaker: private-sector adoption. Distinguish individual use, company integration, and demonstrated outcomes. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI-only adoption rate. The overall range spans the reporting period; the large-firm figure is the report’s size-group example.",
+      "deep_dives": []
     },
     {
       "id": "realpage",
@@ -181,7 +233,8 @@
         "rp2025",
         "rp2026"
       ],
-      "notes": "RealPage is a commercial software company serving rental housing. Use its public announcements to illustrate a move from specialized agents toward an integrated platform. Attribute product descriptions and deployment figures to the company. Keep the public product account and the speaker’s firsthand development experience clearly attributed to their respective sources."
+      "notes": "RealPage is a commercial software company serving rental housing. Use its public announcements to illustrate a move from specialized agents toward an integrated platform. Attribute product descriptions and deployment figures to the company. Keep the public product account and the speaker’s firsthand development experience clearly attributed to their respective sources.",
+      "deep_dives": []
     },
     {
       "id": "internal-adoption",
@@ -193,7 +246,8 @@
       "refs": [
         "speaker-account"
       ],
-      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from public product announcements. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation."
+      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from public product announcements. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation.",
+      "deep_dives": []
     },
     {
       "id": "shared-concerns",
@@ -205,7 +259,8 @@
       "refs": [
         "speaker-account"
       ],
-      "notes": "Use this as the transition into the personal workbench. The overlap is in the problems being addressed; it does not imply the employer uses ClaimWright, GroundRecall, or the other personal repositories. For discussion, consider model usage cost alongside human review and rework; this is a proposed evaluation lens, not a reported company accounting practice. Do not invent expenditure figures, savings, or an achieved productivity multiplier."
+      "notes": "Use this as the transition into the personal workbench. The overlap is in the problems being addressed; it does not imply the employer uses ClaimWright, GroundRecall, or the other personal repositories. For discussion, consider model usage cost alongside human review and rework; this is a proposed evaluation lens, not a reported company accounting practice. Do not invent expenditure figures, savings, or an achieved productivity multiplier.",
+      "deep_dives": []
     },
     {
       "id": "virtues",
@@ -218,7 +273,10 @@
         "virtues",
         "ClaimWright"
       ],
-      "notes": "This connection is especially relevant to BEACON, but it does not imply Pennock or MSU endorses these tools. The mapping is ClaimWright’s practical interpretation."
+      "notes": "This connection is especially relevant to BEACON, but it does not imply Pennock or MSU endorses these tools. The mapping is ClaimWright’s practical interpretation.",
+      "deep_dives": [
+        "policy"
+      ]
     },
     {
       "id": "claimwright",
@@ -230,7 +288,10 @@
       "refs": [
         "ClaimWright"
       ],
-      "notes": "Avoid presenting the full claim lifecycle as an automatically enforced finite-state machine. The README explicitly identifies a configurable enforcement engine as future work. Human review remains part of the agreement."
+      "notes": "Avoid presenting the full claim lifecycle as an automatically enforced finite-state machine. The README explicitly identifies a configurable enforcement engine as future work. Human review remains part of the agreement.",
+      "deep_dives": [
+        "policy"
+      ]
     },
     {
       "id": "policy-gate",
@@ -242,7 +303,10 @@
       "refs": [
         "policy"
       ],
-      "notes": "The simulation is illustrative JavaScript, not the ClaimWright or GroundRecall engine. Demonstrate that a DOI alone does not clear a publication gate. Policy evaluation alone is not enforcement; inspect which call paths actually honor its result."
+      "notes": "The simulation is illustrative JavaScript, not the ClaimWright or GroundRecall engine. Demonstrate that a DOI alone does not clear a publication gate. Policy evaluation alone is not enforcement; inspect which call paths actually honor its result.",
+      "deep_dives": [
+        "policy"
+      ]
     },
     {
       "id": "memory",
@@ -255,7 +319,10 @@
         "GroundRecall",
         "Epistemap"
       ],
-      "notes": "A practical retrieval loop: search, inspect provenance and date, check the current artifact, then use the result. Graph diagnostics can expose missing evidence; they cannot make bad source material reliable. Private release tags must survive export."
+      "notes": "A practical retrieval loop: search, inspect provenance and date, check the current artifact, then use the result. Graph diagnostics can expose missing evidence; they cannot make bad source material reliable. Private release tags must survive export.",
+      "deep_dives": [
+        "memory"
+      ]
     },
     {
       "id": "ingestion",
@@ -268,7 +335,10 @@
         "doclift",
         "Didactopus"
       ],
-      "notes": "Explain sidecars as small companion files recording structure and conversion decisions. Separate the original source from the extracted text, interpretation, and teaching artifact. A detected prerequisite still deserves review."
+      "notes": "Explain sidecars as small companion files recording structure and conversion decisions. Separate the original source from the extracted text, interpretation, and teaching artifact. A detected prerequisite still deserves review.",
+      "deep_dives": [
+        "ingestion"
+      ]
     },
     {
       "id": "citegeist",
@@ -280,7 +350,10 @@
       "refs": [
         "CiteGeist"
       ],
-      "notes": "CiteGeist’s README describes substantial implemented plumbing and remaining gaps in evaluation depth and researcher ergonomics. Do not collapse metadata matching, disambiguation, and reading for support into one “verified” badge."
+      "notes": "CiteGeist’s README describes substantial implemented plumbing and remaining gaps in evaluation depth and researcher ergonomics. Do not collapse metadata matching, disambiguation, and reading for support into one “verified” badge.",
+      "deep_dives": [
+        "citegeist"
+      ]
     },
     {
       "id": "timeline",
@@ -295,7 +368,10 @@
         "opt",
         "ClaimWright"
       ],
-      "notes": "Invite the speaker to add the first actual CiteGeist use and the personal before/after account. Dates here are artifact evidence, not a causal study of AI productivity."
+      "notes": "Invite the speaker to add the first actual CiteGeist use and the personal before/after account. Dates here are artifact evidence, not a causal study of AI productivity.",
+      "deep_dives": [
+        "citegeist"
+      ]
     },
     {
       "id": "bibliography-outcome",
@@ -308,12 +384,35 @@
         "counts",
         "abiogenesis"
       ],
-      "notes": "Open the public page if useful, but the screenshot-free presentation works offline. Explain the stale search-engine copy found during preparation: direct live checking returned the expanded page. More citations can increase review burden; volume is not the quality measure."
+      "notes": "Open the public page if useful, but the screenshot-free presentation works offline. Explain the stale search-engine copy found during preparation: direct live checking returned the expanded page. More citations can increase review burden; volume is not the quality measure.",
+      "deep_dives": [
+        "citegeist",
+        "talkorigins"
+      ]
+    },
+    {
+      "id": "talkorigins-workflow",
+      "title": "An Archive update is a coordinated process.",
+      "body": "<p>Start with the English source: preserve attributed legacy articles, review changes, and use CiteGeist to improve the supporting bibliography. Render the changed pages and check their links and citations.</p><p>Queue new or changed content for <strong>Spanish, French, German, and Portuguese</strong>. Local LLM workers handle bulk translation; GenieHive provides a shared way to find and route to model services.</p><p class=\"takeaway\">Keep translation generation, review, and publication distinct. The process connects source maintenance, reusable citations, multilingual access, and local compute.</p>",
+      "visual": "<p class=\"eyebrow\">From source change to public update</p><ol class=\"flow\"><li>Review English content + references</li><li>Render and check affected pages</li><li>Queue translation by page + language</li><li>Run local LLMs; inspect outputs</li><li>Publish a scoped update</li></ol><p class=\"visual-caption\">GenieHive routes to model services; the site and queue determine the work.</p>",
+      "refs": [
+        "CiteGeist",
+        "site-translation",
+        "GenieHive",
+        "toa-workflow"
+      ],
+      "notes": "Explain this as the maintenance workflow used for the modernized Archive. Keep historical author text distinct from newly added study material. Translation covers four active target languages. Workers can use GenieHive or compatible endpoints directly; do not imply every job passes through the router. The deep dives cover queue recovery, the dated public translation milestone, and model hosting. No inference-cost savings or expert translation-quality rate has been measured for this talk.",
+      "group": "outcomes",
+      "kicker": "15 · Application: maintaining TalkOrigins",
+      "deep_dives": [
+        "talkorigins",
+        "geniehive"
+      ]
     },
     {
       "id": "notebook-outcome",
       "group": "outcomes",
-      "kicker": "15 · Application: evolution education",
+      "kicker": "16 · Application: evolution education",
       "title": "Publish explanations with a route back to evidence.",
       "body": "<p>The public <em>Notebook on Evolution</em> presents beginner routes, concept pages, learning paths, and source-trail status.</p><p>SciSiteForge provides reusable static-site patterns and optional bridges to the ingestion, memory, learning, and bibliography tools.</p><p class=\"takeaway\">Public readers need an explanation they can use and a source trail they can follow. Private working material needs a separate release decision.</p>",
       "visual": "<p class=\"eyebrow\">Two sides of a public artifact</p><dl class=\"pairs\"><dt>Reader’s surface</dt><dd>Concept · example · learning path</dd><dt>Evidence surface</dt><dd>Source trail · review status · bibliography</dd><dt>Release boundary</dt><dd>Reviewed material crosses; private working files stay behind</dd></dl>",
@@ -321,12 +420,15 @@
         "notebook",
         "SciSiteForge"
       ],
-      "notes": "This is an observed public site, not evidence of measured gains in learning. Show the beginner route to instructors and graduate students. Site frameworks can support release boundaries, but each build must still be checked."
+      "notes": "This is an observed public site, not evidence of measured gains in learning. Show the beginner route to instructors and graduate students. Site frameworks can support release boundaries, but each build must still be checked.",
+      "deep_dives": [
+        "publication"
+      ]
     },
     {
       "id": "learning-outcome",
       "group": "outcomes",
-      "kicker": "16 · Application: learning to reusable skill",
+      "kicker": "17 · Application: learning to reusable skill",
       "title": "Make the learning process inspectable.",
       "body": "<p>The Didactopus Information and Entropy example produces a topic pack, learner-session artifacts, progress views, and a reusable skill bundle.</p><p>Its skill demonstration includes an explanation, an evaluation, and a follow-up requesting a limitation or assumption.</p><p class=\"takeaway\">That demonstrates the workflow. Synthetic learner scores do not demonstrate that a person learned the material.</p>",
       "visual": "<p class=\"eyebrow\">Learning evidence loop</p><ol class=\"flow\"><li>Concept + prerequisite</li><li>Independent attempt</li><li>Feedback + critique</li><li>New evidence of understanding</li><li>Revise the next learning step</li></ol><p class=\"visual-caption\">For a human study: test transfer and delayed retention, not just immediate answer quality.</p>",
@@ -334,24 +436,30 @@
         "Didactopus",
         "ocw"
       ],
-      "notes": "Useful BEACON research question: does a graph-grounded mentor improve unaided transfer compared with answer generation alone? Clearly distinguish the proposed human experiment from the included deterministic/synthetic demo."
+      "notes": "Useful BEACON research question: does a graph-grounded mentor improve unaided transfer compared with answer generation alone? Clearly distinguish the proposed human experiment from the included deterministic/synthetic demo.",
+      "deep_dives": [
+        "ingestion"
+      ]
     },
     {
       "id": "assurance-outcome",
       "group": "outcomes",
-      "kicker": "17 · Application: AI assurance",
+      "kicker": "18 · Application: AI assurance",
       "title": "Name the mechanism and its failure modes.",
       "body": "<p>The <em>Mechanism-Aware AI Assurance</em> preprint proposes an Operational Premise Taxonomy: describe the computational mechanisms a system actually uses, then examine the assumptions and failure modes that follow.</p><p>It adds a question to the governance discussion: what evidence links the stated policy to the implemented system?</p><p class=\"takeaway\">This is a public, inspectable proposal. Its usefulness as an assurance method remains something to evaluate.</p>",
       "visual": "<p class=\"eyebrow\">A question for any AI workflow</p><dl class=\"pairs\"><dt>Intended behavior</dt><dd>What do we say it does?</dd><dt>Implemented mechanism</dt><dd>What actually produces the result?</dd><dt>Failure evidence</dt><dd>What breaks, under which conditions?</dd><dt>Control</dt><dd>What detects, contains, or corrects that failure?</dd></dl>",
       "refs": [
         "opt"
       ],
-      "notes": "Use this as a conceptual bridge back to industry promises. Do not present the preprint as peer-reviewed validation. The bibliography and governed-memory tools support traceability; no controlled attribution of the paper to a particular tool is claimed."
+      "notes": "Use this as a conceptual bridge back to industry promises. Do not present the preprint as peer-reviewed validation. The bibliography and governed-memory tools support traceability; no controlled attribution of the paper to a particular tool is claimed.",
+      "deep_dives": [
+        "publication"
+      ]
     },
     {
       "id": "limits",
       "group": "discussion",
-      "kicker": "18 · Keep the limits visible",
+      "kicker": "19 · Keep the limits visible",
       "title": "The controls create work, too.",
       "body": "<p>A source can be wrong. A citation can match the wrong work. A graph can preserve a mistaken interpretation. A policy can be bypassed by an uncovered path.</p><p>Review takes time, and repeated model agreement can reproduce a shared error. Local processing alone does not establish privacy or correctness.</p><p class=\"takeaway\">Track error rates, review effort, corrections, and boundary failures alongside the number of artifacts produced.</p>",
       "visual": "<p class=\"eyebrow\">What to measure next</p><ul class=\"measure-list\"><li>Citation identity accuracy</li><li>Claim–source fit</li><li>Time to find supporting evidence</li><li>Stale-claim detection</li><li>Release-boundary failures</li><li>Human review workload</li></ul>",
@@ -360,27 +468,319 @@
         "Epistemap",
         "policy"
       ],
-      "notes": "These are proposed evaluation dimensions, not a reported benchmark result for this stack. State the gap openly: much of the demonstrated progress is integration and artifact production."
+      "notes": "These are proposed evaluation dimensions, not a reported benchmark result for this stack. State the gap openly: much of the demonstrated progress is integration and artifact production.",
+      "deep_dives": [
+        "policy",
+        "memory"
+      ]
     },
     {
       "id": "lab-experiment",
       "group": "discussion",
-      "kicker": "19 · A BEACON-sized experiment",
+      "kicker": "20 · A BEACON-sized experiment",
       "title": "Try a bounded, falsifiable comparison.",
       "body": "<p>Choose one literature question. Compare a baseline workflow with a provenance-preserving workflow on the same task and time budget.</p><p>Have reviewers evaluate citation identity, source fit, uncertainty, and time needed to audit each result. Record rejected candidates and corrections.</p><p class=\"takeaway\">For teaching, add an unaided transfer task. For agents, test whether a prohibited action is actually blocked.</p>",
       "visual": "<p class=\"eyebrow\">Suggested pilot, not a completed study</p><div class=\"experiment\"><div><b>Baseline</b><span>Existing practice</span></div><span aria-hidden=\"true\">↔</span><div><b>Governed workflow</b><span>Explicit evidence + review</span></div></div><p class=\"visual-caption\">Same task. Comparable resources. Independent review. Predeclared success and failure criteria.</p>",
       "refs": [],
-      "notes": "Ask a postdoc, instructor, and graduate student what evidence would change their practice. The proposal should be scaled to available time; a small pilot can estimate review burden before a larger study."
+      "notes": "Ask a postdoc, instructor, and graduate student what evidence would change their practice. The proposal should be scaled to available time; a small pilot can estimate review burden before a larger study.",
+      "deep_dives": []
     },
     {
       "id": "conversation",
       "group": "discussion",
-      "kicker": "20 · Discussion",
+      "kicker": "21 · Discussion",
       "title": "What would earn your trust?",
       "body": "<p>Which tasks are worth delegating now?</p><p>Which decisions should require an explicit human release?</p><p>What evidence would show that the system helps us do better science—and makes our mistakes easier to find?</p><p class=\"closing\">The output is an artifact.<br><em>The responsibility stays with us.</em></p>",
       "visual": "<p class=\"eyebrow\">Take this back to your lab</p><div class=\"big-word\">One task.<br>One boundary.<br><em>One test.</em></div><p class=\"visual-caption\">Start with something useful, reviewable, and small enough to learn from.</p>",
       "refs": [],
-      "notes": "Return to the task named at the beginning. Invite disagreement and specific failure cases. Leave the source appendix available for questions."
+      "notes": "Return to the task named at the beginning. Invite disagreement and specific failure cases. Leave the source appendix available for questions.",
+      "deep_dives": []
+    }
+  ],
+  "deep_dives": [
+    {
+      "id": "policy",
+      "title": "ClaimWright & policy gates",
+      "caller": "claimwright",
+      "description": "From an explicit agreement to a check that can stop an operation.",
+      "scenes": [
+        {
+          "id": "dive-policy",
+          "title": "Write down what “responsible” requires.",
+          "body": "<p>ClaimWright’s memorandum, policy files, and role cards make a collaboration agreement inspectable. They describe claim states, evidence expectations, review responsibilities, and release boundaries.</p><p>The same claim can be useful in private exploration and unready for public release. A review record should retain its scope, source access, unresolved objections, and the reason for the release decision.</p><p class=\"takeaway\">The agreement supplies a standard against which to review work. Its current Rust checker checks that required policy files exist.</p>",
+          "visual": "<p class=\"eyebrow\">What a review should preserve</p><dl class=\"pairs\"><dt>Claim</dt><dd>What is being asserted, and within what scope?</dd><dt>Evidence</dt><dd>Which source was actually inspected?</dd><dt>Decision</dt><dd>What remains unresolved; who approved release?</dd></dl>",
+          "refs": [
+            "ClaimWright"
+          ],
+          "notes": "Use the repository’s documented full-path example as an illustration. Do not present all declared claim states or checks as automatically enforced features.",
+          "kicker": "D1.1 · ClaimWright & policy gates"
+        },
+        {
+          "id": "dive-policy-enforcement",
+          "title": "Put the check on the path to the action.",
+          "body": "<p>A policy decision point evaluates a proposed operation. An enforcement point acts on that result before the protected operation runs. Logging a rejection while still performing the action would fail this design.</p><p>GroundRecall documents allow, require-review, soft-gate, hard-gate, and deny outcomes around covered memory operations. Actual protection depends on the policy configuration and the call paths that honor it.</p><p class=\"takeaway\">A useful test is behavioral: attempt a prohibited operation and check that it was blocked, with a reason that can be inspected.</p>",
+          "visual": "<p class=\"eyebrow\">Illustrative release boundary</p><ol class=\"flow\"><li>Propose a public export</li><li>Check scope, evidence, and review</li><li>Hold or deny when requirements fail</li><li>Execute only on a permitted path</li></ol><p class=\"visual-caption\">ClaimWright defines the agreement; GroundRecall implements policy hooks for its own operations.</p>",
+          "refs": [
+            "ClaimWright",
+            "policy"
+          ],
+          "notes": "Connect back to the main talk’s teaching simulation. This is a design explanation, not a claim that every local tool or operating-system command is governed by GroundRecall.",
+          "kicker": "D1.2 · ClaimWright & policy gates"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "GroundRecall & Epistemap",
+      "caller": "memory",
+      "description": "Find prior work, inspect its source trail, and preserve reasons to revise it.",
+      "scenes": [
+        {
+          "id": "dive-memory",
+          "title": "Store a claim with the reasons behind it.",
+          "body": "<p>A durable record needs more than a sentence. GroundRecall can retain concepts, claims, sources, review state, and release scope outside the chat that produced them.</p><p>Epistemap supplies common nodes and relations so projects can traverse dependencies and inspect graph structure. It does not decide what a review status means or authorize a release.</p><p class=\"takeaway\">Keep the source, the interpretation, and the review decision distinguishable. That makes a later correction possible.</p>",
+          "visual": "<p class=\"eyebrow\">An illustrative record</p><ol class=\"flow\"><li>Source + access date</li><li>Claim + scope</li><li>Support and challenge relations</li><li>Review state + release scope</li></ol>",
+          "refs": [
+            "GroundRecall",
+            "Epistemap"
+          ],
+          "notes": "This is a conceptual record, not an export of private memory. Explain the separation between a document’s statement and a curator’s interpretation.",
+          "kicker": "D2.1 · GroundRecall & Epistemap"
+        },
+        {
+          "id": "dive-memory-retrieval",
+          "title": "Search is the beginning of checking.",
+          "body": "<p>Indexed full-text search locates candidate records. Graph traversal then exposes related sources, dependencies, challenges, and context that a phrase match alone may miss.</p><p>Preparing this presentation followed that pattern: consult prior-work records, locate the relevant repository or artifact, inspect it afresh, then choose evidence suitable for a public talk.</p><p class=\"takeaway\">Durable memory saves context from being lost. Fresh inspection establishes whether that context still applies.</p>",
+          "visual": "<p class=\"eyebrow\">The retrieval loop</p><ol class=\"flow\"><li>Search a name or question</li><li>Inspect record and provenance</li><li>Follow relevant graph relations</li><li>Check the current source artifact</li><li>Use the result with its limits</li></ol>",
+          "refs": [
+            "GroundRecall",
+            "Epistemap"
+          ],
+          "notes": "The preparation example describes work performed for this presentation, not a benchmark. No private records, host names, or internal endpoints are displayed.",
+          "kicker": "D2.2 · GroundRecall & Epistemap"
+        },
+        {
+          "id": "dive-memory-revision",
+          "title": "A correction should reach dependent claims.",
+          "body": "<p>If a premise becomes stale or is challenged, connected claims deserve another look. Graph dependencies help identify that review surface.</p><p>Epistemap includes temporal and contradiction diagnostics, plus assessment-readiness checks for provenance and confidence metadata. GroundRecall supplies the domain-specific review and release workflow.</p><p class=\"takeaway\">A confidence estimate describes an assessment under stated assumptions. It does not turn an unsupported claim into a fact.</p>",
+          "visual": "<p class=\"eyebrow\">Questions a graph helps expose</p><dl class=\"pairs\"><dt>Dependency</dt><dd>Which conclusions rely on this premise?</dd><dt>Time</dt><dd>Was the evidence current for this claim?</dd><dt>Review</dt><dd>What needs checking after a correction?</dd></dl>",
+          "refs": [
+            "GroundRecall",
+            "Epistemap"
+          ],
+          "notes": "Keep implemented diagnostics separate from a claim of automatic, comprehensive stale-claim repair. Human decisions and policy remain necessary.",
+          "kicker": "D2.3 · GroundRecall & Epistemap"
+        }
+      ]
+    },
+    {
+      "id": "ingestion",
+      "title": "doclift & Didactopus",
+      "caller": "ingestion",
+      "description": "Transform source files into reviewable learning material and reusable skills.",
+      "scenes": [
+        {
+          "id": "dive-ingestion",
+          "title": "Recover structure without losing the source.",
+          "body": "<p>doclift handles legacy Word and WordPerfect files. It emits extracted text and normalized Markdown, together with companion JSON files for conversion decisions, layout cues, tables, figures, and asset inventory.</p><p>Those companion files make extraction quality inspectable. The original and the normalized text remain distinguishable when a downstream system uses the material.</p><p class=\"takeaway\">The handoff is a source bundle. It is ready for review, not automatically ready to teach or publish.</p>",
+          "visual": "<p class=\"eyebrow\">The conversion bundle</p><dl class=\"pairs\"><dt>Readable text</dt><dd>Extracted text and normalized Markdown</dd><dt>Structure</dt><dd>Layout, table, and figure records</dd><dt>Audit trail</dt><dd>Manifest and conversion report</dd></dl>",
+          "refs": [
+            "doclift"
+          ],
+          "notes": "doclift owns legacy-format normalization. Its README lists RTF, higher-fidelity DOCX, old HTML, and OCR as follow-on plans, so do not imply these are all implemented.",
+          "kicker": "D3.1 · doclift & Didactopus"
+        },
+        {
+          "id": "dive-ingestion-learning",
+          "title": "Turn content into a path through concepts.",
+          "body": "<p>Didactopus consumes educational material and drafts domain packs: concepts, prerequisites, learning routes, attribution, and review flags. Packs pass through validation, review, and promotion.</p><p>A learning graph can help choose the next concept. Practice and learner evidence then inform the next step rather than treating a generated explanation as proof of mastery.</p><p class=\"takeaway\">Ask the learner to explain, apply, and identify limitations. Keep the evidence of understanding alongside the learning path.</p>",
+          "visual": "<p class=\"eyebrow\">The learning loop</p><ol class=\"flow\"><li>Reviewed concepts + prerequisites</li><li>A learner attempt</li><li>Feedback and evaluation</li><li>Evidence of capability</li><li>An adjusted next step</li></ol>",
+          "refs": [
+            "Didactopus",
+            "doclift"
+          ],
+          "notes": "This is the documented workflow and a pedagogical rationale, not a demonstrated human learning effect. Mention pack, notebook, and hybrid output modes only if useful.",
+          "kicker": "D3.2 · doclift & Didactopus"
+        },
+        {
+          "id": "dive-ingestion-skill",
+          "title": "Inspect a worked example end to end.",
+          "body": "<p>The Information and Entropy example produces a topic pack, learner-session records, progress views, and a reusable skill bundle. The skill demo includes explanation, evaluation, and a follow-up about an assumption or limitation.</p><p>A separate provider transcript illustrates how a local-LLM-backed mentor interaction can look. The deterministic demo’s synthetic learner scores demonstrate the plumbing, not a person’s learning.</p><p class=\"takeaway\">For BEACON, the next evidence would be unaided transfer and delayed retention measured with real learners.</p>",
+          "visual": "<p class=\"eyebrow\">What the example makes inspectable</p><dl class=\"pairs\"><dt>Domain</dt><dd>Concepts and their prerequisites</dd><dt>Session</dt><dd>Attempts, feedback, and evaluation</dd><dt>Export</dt><dd>Progress records and a reusable skill</dd></dl>",
+          "refs": [
+            "Didactopus",
+            "ocw"
+          ],
+          "notes": "Offer the repository’s public example artifacts for inspection. Do not describe synthetic learner scores as Wesley’s or any human student’s performance.",
+          "kicker": "D3.3 · doclift & Didactopus"
+        }
+      ]
+    },
+    {
+      "id": "citegeist",
+      "title": "CiteGeist",
+      "caller": "citegeist",
+      "description": "From rough references through verification and discovery to the TalkOrigins bibliography.",
+      "scenes": [
+        {
+          "id": "dive-citegeist",
+          "title": "A citation starts as a candidate.",
+          "body": "<p>CiteGeist can extract a rough reference from free text and turn it into draft BibTeX. Identifier lookup and title-based matching help resolve the work and enrich its metadata.</p><p>A local database retains identifiers, source provenance, review states, and field conflicts. Alternate candidates and unresolved cases remain available for inspection.</p><p class=\"takeaway\">Resolve identity before accepting metadata. Read the source before treating it as support for a particular claim.</p>",
+          "visual": "<p class=\"eyebrow\">Two different checks</p><ol class=\"flow\"><li>Free-text reference</li><li>Candidate works + identifiers</li><li>Identity and metadata review</li><li>Claim–source fit review</li><li>Reviewed BibTeX export</li></ol>",
+          "refs": [
+            "CiteGeist"
+          ],
+          "notes": "Use the two verification questions from the main section. A successful DOI lookup is evidence of identity, not necessarily of correct interpretation or relevance.",
+          "kicker": "D4.1 · CiteGeist"
+        },
+        {
+          "id": "dive-citegeist-discovery",
+          "title": "Use a question to grow a bibliography.",
+          "body": "<p>A topic phrase or seed bibliography can start a bootstrap workflow. Citation links lead to related works; topic search and local text search help find candidates beyond the references already in hand.</p><p>The workbench records where candidates came from. Relevance review then separates useful additions from duplicates, ambiguous matches, and results that only share terminology.</p><p class=\"takeaway\">Directed discovery is a repeatable search-and-review process. It is not evidence that the resulting bibliography is exhaustive.</p>",
+          "visual": "<p class=\"eyebrow\">From search to selection</p><dl class=\"pairs\"><dt>Seed</dt><dd>A research question or known work</dd><dt>Expand</dt><dd>Citation links and scholarly metadata sources</dd><dt>Curate</dt><dd>Relevance, duplicates, conflicts, and source fit</dd></dl>",
+          "refs": [
+            "CiteGeist"
+          ],
+          "notes": "The repository supports citation-graph expansion and topic workflows. Avoid presenting a semantic similarity result as an argument that two papers make the same claim.",
+          "kicker": "D4.2 · CiteGeist"
+        },
+        {
+          "id": "dive-citegeist-talkorigins",
+          "title": "Repair an old bibliography; make it reusable.",
+          "body": "<p>The TalkOrigins example handles legacy plaintext references, including repeated-author notation, and produces topic-level seed BibTeX, cleaned text, review reports, and reconstructed pages.</p><p>This became a public application: the retained May build has 1,029 topic pages and 39,930 citation placements. Readers can inspect entries, follow source links, and reuse BibTeX.</p><p class=\"takeaway\">The output connects a legacy collection to continued literature discovery. Counts describe publication scope, not unique works or a measured accuracy rate.</p>",
+          "visual": "<p class=\"eyebrow\">The documented application</p><ol class=\"flow\"><li>Legacy topic bibliography</li><li>Normalize references and author repeats</li><li>Review parsing, duplicates, and metadata</li><li>Expand and curate by topic</li><li>Publish readable entries + BibTeX</li></ol>",
+          "refs": [
+            "citegeist-talkorigins",
+            "counts",
+            "abiogenesis"
+          ],
+          "notes": "Connect this worked application to the main TalkOrigins outcome. Citation placements repeat works across topics. The first actual date of personal CiteGeist use still awaits speaker confirmation.",
+          "kicker": "D4.3 · CiteGeist"
+        }
+      ]
+    },
+    {
+      "id": "talkorigins",
+      "title": "TalkOrigins updates & translation",
+      "caller": "talkorigins-workflow",
+      "description": "Follow a source change through bibliography, language work, and publication.",
+      "scenes": [
+        {
+          "id": "dive-talkorigins",
+          "title": "Preserve the article; make additions legible.",
+          "body": "<p>The modernization workflow preserves attributed legacy article content while changing the surrounding presentation and adding clearly separate study material, navigation, and bibliography support.</p><p>For bibliography updates, CiteGeist supplies the topic data. Pages and BibTeX exports are rendered, index entries are updated, and citation counts and links are checked.</p><p class=\"takeaway\">Keep the scope of an update visible: which source changed, which generated pages follow from it, and which checks were performed.</p>",
+          "visual": "<p class=\"eyebrow\">A scoped English update</p><ol class=\"flow\"><li>Choose a page or bibliography topic</li><li>Review source text and citations</li><li>Render affected pages + downloads</li><li>Update navigation and indexes</li><li>Inspect the scoped changes</li></ol>",
+          "refs": [
+            "toa-workflow",
+            "citegeist-talkorigins",
+            "toa-modernization"
+          ],
+          "notes": "Separate the historical source of record from the modernization output. This workflow description comes from inspected maintainer scripts and public artifacts; it is not a claim that every legacy statement has been newly fact-checked.",
+          "kicker": "D5.1 · TalkOrigins updates & translation"
+        },
+        {
+          "id": "dive-talkorigins-translation",
+          "title": "Translate changed content as tracked work.",
+          "body": "<p>New and changed pages enter work orders for Spanish, French, German, and Portuguese. When only a large bibliography index’s rows or count change, the workflow can update those fragments rather than translating the entire index again.</p><p>The translator uses a terminology compendium and bounded chunks. The resilient queue checks available workers, claims a batch-and-language unit, records results, and can resume interrupted work.</p><p class=\"takeaway\">Local models handle bulk work. The configured hybrid policy reserves a capped fallback for selected routes or outputs with failures or warnings.</p>",
+          "visual": "<p class=\"eyebrow\">A page × language work unit</p><ol class=\"flow\"><li>Reviewed English source</li><li>Work order + terminology</li><li>Bounded translation requests</li><li>Output + warnings + run record</li><li>Check and publish the intended files</li></ol>",
+          "refs": [
+            "toa-workflow",
+            "site-translation"
+          ],
+          "notes": "Do not imply queue completion means an expert has approved the prose. Local workers can be directly addressed or reached through GenieHive. Explain a lease as a temporary claim on a work unit that can expire after interruption.",
+          "kicker": "D5.2 · TalkOrigins updates & translation"
+        },
+        {
+          "id": "dive-talkorigins-results",
+          "title": "Translation coverage and review are different records.",
+          "body": "<p>The public status page’s <strong>8 July 2026</strong> snapshot lists <strong>2,872 translated pages per language</strong> across Spanish, French, German, and Portuguese, with no remaining work in that recorded queue.</p><p>That is a generation milestone for a defined set of pages. SciSiteForge supports a visible automated-translation disclaimer and an <em>automated-unreviewed</em> label until review.</p><p class=\"takeaway\">Revisit scientific terminology, negation, links, and attribution during review. Publish corrections and regenerate affected translations when the English source changes.</p>",
+          "visual": "<p class=\"eyebrow\">Keep both kinds of status</p><dl class=\"pairs\"><dt>Coverage</dt><dd>Has an output been generated for this page and language?</dd><dt>Review</dt><dd>Has its meaning and technical wording been checked?</dd><dt>Currency</dt><dd>Does it still match the English source?</dd></dl><p class=\"visual-caption\">The published queue snapshot is dated; it is not a live claim about every Archive page.</p>",
+          "refs": [
+            "toa-translation-status",
+            "site-translation",
+            "toa-workflow"
+          ],
+          "notes": "Figures were fetched from the public status page for this presentation. Do not convert “translated” to “expert-reviewed.” The retained evidence summary records the published timestamp and scope.",
+          "kicker": "D5.3 · TalkOrigins updates & translation"
+        }
+      ]
+    },
+    {
+      "id": "geniehive",
+      "title": "GenieHive & local LLMs",
+      "caller": "talkorigins-workflow",
+      "description": "Separate model hosting, request routing, and application-level work.",
+      "scenes": [
+        {
+          "id": "dive-geniehive",
+          "title": "Host the model; route the request.",
+          "body": "<p>A model runtime loads weights and runs inference on local hardware. In this workflow, llama.cpp-based services provide local translation capacity; the inspected queue configuration selects Qwen3.5-9B workers.</p><p>GenieHive registers hosts and services, receives health and inventory updates, and routes chat, embedding, or transcription requests. A client can address a model directly or use a role such as <em>scientific translator</em>.</p><p class=\"takeaway\">The runtime runs the model. GenieHive chooses a suitable service. The application decides what work to request.</p>",
+          "visual": "<p class=\"eyebrow\">Three responsibilities</p><ol class=\"flow\"><li>Application: translation job</li><li>GenieHive: role + health-aware routing</li><li>Runtime: loaded model + inference</li><li>Application: output checks + review</li></ol><p class=\"visual-caption\">Compatible endpoints can also be called directly; not every local job passes through GenieHive.</p>",
+          "refs": [
+            "GenieHive",
+            "geniehive-translation",
+            "toa-workflow"
+          ],
+          "notes": "Explain local hosting without exposing internal addresses, host inventory, or credentials. The model label is an inspected configuration, not a claim that workers are online at presentation time. GenieHive’s node agent does not start or supervise upstream model servers.",
+          "kicker": "D6.1 · GenieHive & local LLMs"
+        },
+        {
+          "id": "dive-geniehive-workload",
+          "title": "A steady queue makes local compute useful.",
+          "body": "<p>Translation creates many bounded jobs with similar output requirements. The queue can assign work to available services, retain results, and retry interrupted units instead of restarting the whole collection.</p><p>GenieHive’s documented routing can consider loaded state, health, observed performance, and scheduling policy. Its translation guidance emphasizes enough context and predictable, translation-only responses.</p><p class=\"takeaway\">Local hosting shifts the cost question toward hardware, electricity, utilization, maintenance, and review. Its value needs measurement alongside any reduction in paid API use.</p>",
+          "visual": "<p class=\"eyebrow\">Match the service to the work</p><dl class=\"pairs\"><dt>Ready</dt><dd>Healthy, loaded, and enough context</dd><dt>Predictable</dt><dd>Stable response format and terminology</dd><dt>Recoverable</dt><dd>Recorded outputs and resumable queue units</dd></dl>",
+          "refs": [
+            "GenieHive",
+            "geniehive-translation",
+            "toa-workflow"
+          ],
+          "notes": "No cost or speed benchmark is claimed. Do not equate an endpoint responding with a high-quality scientific translation. The queue’s recovery mechanism and GenieHive’s request scheduling are separate layers.",
+          "kicker": "D6.2 · GenieHive & local LLMs"
+        },
+        {
+          "id": "dive-geniehive-controls",
+          "title": "Make the routing policy inspectable.",
+          "body": "<p>The optional Foundation gateway profile adds revocable client keys, model and operation scopes, metadata-only request auditing, and opt-in token or cost budgets.</p><p>Those controls depend on configuration; the casual example leaves them disabled. Local placement alone also does not establish privacy, model quality, or complete control of an application’s actions.</p><p class=\"takeaway\">For a lab deployment, specify who may call which service, what is recorded, and what happens when a limit or service failure is reached.</p>",
+          "visual": "<p class=\"eyebrow\">Questions for a local service</p><dl class=\"pairs\"><dt>Access</dt><dd>Which client may use which operation?</dd><dt>Budget</dt><dd>What happens when a configured limit is reached?</dd><dt>Evidence</dt><dd>Can the request decision be inspected?</dd></dl>",
+          "refs": [
+            "GenieHive"
+          ],
+          "notes": "Describe these as implemented optional capabilities in the pinned public README, not proof that every local translation worker uses the gateway profile. Connect the proposed deployment questions to the constructive adoption preface.",
+          "kicker": "D6.3 · GenieHive & local LLMs"
+        }
+      ]
+    },
+    {
+      "id": "publication",
+      "title": "SciSiteForge & public artifacts",
+      "caller": "notebook-outcome",
+      "description": "Build a reader-facing site while preserving evidence and release boundaries.",
+      "scenes": [
+        {
+          "id": "dive-publication",
+          "title": "Give readers an explanation and a source trail.",
+          "body": "<p>SciSiteForge supplies static-site patterns for topic pages, bibliographies, language switching, search, and Notebook learning paths. Optional bridges connect source normalization, memory, learning packs, and citation data.</p><p>The public Notebook on Evolution illustrates the reader-facing aim: beginner routes and concept pages with a path back to sources and review status.</p><p class=\"takeaway\">A public export is a selected artifact. It should contain the material appropriate for readers, with provenance and uncertainty they can understand.</p>",
+          "visual": "<p class=\"eyebrow\">Three reader needs</p><dl class=\"pairs\"><dt>Orientation</dt><dd>Where do I start, and what does this concept mean?</dd><dt>Evidence</dt><dd>Where can I check or follow up?</dd><dt>Status</dt><dd>What has been reviewed, and what remains provisional?</dd></dl>",
+          "refs": [
+            "SciSiteForge",
+            "notebook"
+          ],
+          "notes": "Do not imply the static site publishes the entire private knowledge store. The public Notebook is an observed artifact; it does not demonstrate measured learning gains.",
+          "kicker": "D7.1 · SciSiteForge & public artifacts"
+        },
+        {
+          "id": "dive-publication-assurance",
+          "title": "Make the mechanism available for criticism.",
+          "body": "<p>The Mechanism-Aware AI Assurance preprint asks how implemented computational mechanisms relate to a system’s assumptions and failure modes. It provides a public proposal that others can inspect and challenge.</p><p>The connection to this workbench is traceability: a reader should be able to distinguish a policy statement, implemented control, demonstration, and measured result.</p><p class=\"takeaway\">Public artifacts make review possible. Evidence that a method improves outcomes still requires an appropriate evaluation.</p>",
+          "visual": "<p class=\"eyebrow\">An assurance argument</p><dl class=\"pairs\"><dt>Mechanism</dt><dd>What produces the behavior?</dd><dt>Assumption</dt><dd>What must hold for the claim to apply?</dd><dt>Failure test</dt><dd>What observation would challenge it?</dd></dl>",
+          "refs": [
+            "opt",
+            "SciSiteForge"
+          ],
+          "notes": "The preprint is not peer-reviewed validation or evidence that any individual tool caused the research result. Present it as another inspectable public output.",
+          "kicker": "D7.2 · SciSiteForge & public artifacts"
+        }
+      ]
     }
   ]
 }
