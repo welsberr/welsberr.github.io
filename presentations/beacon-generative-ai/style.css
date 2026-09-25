@@ -120,6 +120,7 @@ html { scroll-padding-bottom: 90px; }
 }
 
 /* Optional scrollytell appendix, with a visible route back to the caller. */
+html:not(.js) { scroll-behavior: auto; }
 .dive-links {
   display: flex;
   flex-wrap: wrap;

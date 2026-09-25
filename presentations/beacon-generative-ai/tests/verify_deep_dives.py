@@ -117,7 +117,7 @@ with sync_playwright() as p:
     assert fallback.locator('#dive-policy .dive-return').get_attribute('href') == '#virtues'
 
     # Without JS, native fragment links still reach every dive and its canonical caller.
-    nojs = browser.new_page(java_script_enabled=False, reduced_motion="reduce")
+    nojs = browser.new_page(java_script_enabled=False)
     nojs.goto(BASE)
     for key, dive in DIVES.items():
         caller = dive['caller']
