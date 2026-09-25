@@ -1,0 +1,19 @@
+{
+  "artifact": "TalkOrigins bibliography build aggregate",
+  "build_date": "2026-05-02",
+  "checked_on": "2026-09-25",
+  "source_manifest_sha256": "88e2b5cc0727c671856d0d242ba79b7711d0917f41f96f1ca1a95c9eb7d34d2d",
+  "counts": {
+    "topic_count": 1029,
+    "entry_count": 39930,
+    "doi_count": 26604,
+    "abstract_count": 17432
+  },
+  "interpretation": "entry_count, doi_count and abstract_count sum per-topic placements. They are not counts of deduplicated works or verified claim support.",
+  "live_example": {
+    "url": "https://talkorigins.org/origins/biblio/abiogenesis.html",
+    "checked_on": "2026-09-25",
+    "citation_elements": 76
+  },
+  "method": "Counts copied from the retained site build manifest. Live example counted using HTML elements with class citation."
+}
