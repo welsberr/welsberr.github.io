@@ -32,6 +32,13 @@
       "limit": "Marketing language and modeled net operating income claim. Page footnote says results vary and are not guaranteed."
     },
     {
+      "id": "speaker-account",
+      "title": "Wesley R. Elsberry · Firsthand account of internal AI adoption",
+      "date": "Speaker-provided account · 2026-09-25",
+      "url": "#internal-adoption",
+      "limit": "Personal experience at an unnamed company. Productivity and quality are stated management goals; no measured effect size or cost savings were supplied. This account is distinct from RealPage’s public statements and does not identify the employer or its tool stack."
+    },
+    {
       "id": "virtues",
       "title": "Pennock & O’Rourke · Scientific virtue and research ethics",
       "date": "2017",
@@ -184,12 +191,36 @@
         "rpworkforce",
         "rp2026"
       ],
-      "notes": "Personal RealPage assessment is pending speaker input. These questions are proposed discussion framing, not attributed personal testimony. Ask which failure would matter most to a resident versus an operator."
+      "notes": "These are proposed evaluation questions about public claims. The next sections give the speaker’s firsthand experience of internal adoption at an unnamed company; they do not establish facts about RealPage’s internal operations. Ask which failure would matter most to a resident versus an operator."
+    },
+    {
+      "id": "internal-adoption",
+      "group": "adoption",
+      "kicker": "05 · My experience: internal adoption",
+      "title": "The developer’s work is shifting.",
+      "body": "<p>I work at a company pursuing broad internal AI adoption. Management is looking for <strong>greater productivity and higher quality</strong> in software production.</p><p>Development is shifting toward a person directing an AI assistant to do the coding, then applying domain expertise to review the workflow and the product it produces.</p><p class=\"takeaway\">Keeping generative-AI costs contained is part of the challenge.</p><p class=\"label\">Firsthand experience · management goals, not measured outcomes</p>",
+      "visual": "<p class=\"eyebrow\">The changing development workflow</p><ol class=\"flow\"><li>Person: define the task and domain needs</li><li>AI assistant: implement the code</li><li>Person: review workflow and product</li><li>Direct revisions and check the result</li></ol><p class=\"visual-caption\">The assistant’s coding role grows; domain judgment and review remain human responsibilities.</p>",
+      "refs": [
+        "speaker-account"
+      ],
+      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed. Do not identify it as RealPage, imply an employer endorsement, or attach internal practices to RealPage’s public product claims. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it."
+    },
+    {
+      "id": "shared-concerns",
+      "group": "adoption",
+      "kicker": "06 · The connection to my own work",
+      "title": "The same concerns recur at work and at home.",
+      "body": "<p>Some of the issues I have been working through personally are also concerns in the organization: <strong>accuracy with efficiency, accountability of results, and making knowledge durable.</strong></p><p>These connect the internal-adoption discussion to my own work on explicit policies, reviewable evidence, and governed memory.</p><p class=\"takeaway\">Discussion question: how do we improve the work while containing cost and preserving responsibility for the result?</p>",
+      "visual": "<p class=\"eyebrow\">Shared concerns</p><dl class=\"pairs\"><dt>Accuracy with efficiency</dt><dd>Useful progress that survives review</dd><dt>Accountability</dt><dd>Results someone can inspect and own</dd><dt>Durable knowledge</dt><dd>Context that outlives the session</dd><dt>Cost containment</dt><dd>AI use within a sustainable budget</dd></dl>",
+      "refs": [
+        "speaker-account"
+      ],
+      "notes": "Use this as the transition into the personal workbench. The overlap is in the problems being addressed; it does not imply the employer uses ClaimWright, GroundRecall, or the other personal repositories. For discussion, consider model usage cost alongside human review and rework; this is a proposed evaluation lens, not a reported company accounting practice. Do not invent expenditure figures, savings, or an achieved productivity multiplier."
     },
     {
       "id": "virtues",
       "group": "practice",
-      "kicker": "05 · A bridge to research practice",
+      "kicker": "07 · A bridge to research practice",
       "title": "Make scientific virtues operational.",
       "body": "<p>ClaimWright draws explicitly on Robert Pennock’s scientific-virtues work: curiosity, honesty, attention to evidence, and willingness to revise.</p><p>The engineering question is how to turn those commitments into repeatable actions—and preserve evidence that the actions happened.</p><p class=\"takeaway\">A declaration states a value. A gate checks a condition. An enforcement point can stop an action.</p>",
       "visual": "<p class=\"eyebrow\">Values → observable practice</p><dl class=\"pairs\"><dt>Honesty</dt><dd>Expose source-access limits</dd><dt>Skepticism</dt><dd>Seek counterevidence</dd><dt>Humility</dt><dd>Retain uncertainty and revise claims</dd><dt>Accountability</dt><dd>Record who approved what</dd></dl>",
@@ -202,7 +233,7 @@
     {
       "id": "claimwright",
       "group": "practice",
-      "kicker": "06 · ClaimWright",
+      "kicker": "08 · ClaimWright",
       "title": "Write the agreement before the output.",
       "body": "<p>ClaimWright supplies a human-readable collaboration agreement, policy files, claim states, review roles, and pre- and post-action checks.</p><p>A claim may be exploratory, supported, contested, stale, contradicted, or private-only. The workflow makes those distinctions visible before public release.</p><p class=\"takeaway\">Current boundary: this is an initial policy framework. Its Rust checker verifies the presence of the policy files; it does not prove that a claim is true.</p>",
       "visual": "<p class=\"eyebrow\">A claim has a history</p><ol class=\"flow\"><li>Working claim</li><li>Evidence + source fit</li><li>Adversarial review</li><li>Release decision</li><li>Correction when evidence changes</li></ol>",
@@ -214,7 +245,7 @@
     {
       "id": "policy-gate",
       "group": "practice",
-      "kicker": "07 · Policy gating & enforcement",
+      "kicker": "09 · Policy gating & enforcement",
       "title": "A gate must be able to say “stop.”",
       "body": "<p>GroundRecall defines policy decision points around memory operations. Its documented outcomes include <strong>allow, require review, soft gate, hard gate, and deny</strong>; hard gates and denials block covered operations.</p><p>Keep the decision to propose an action separate from the authority to execute it. Enforcement has to happen on the actual path to the protected operation.</p><p>Try this simplified release rule. Change an input and inspect the reason.</p><div id=\"gate-demo\" class=\"demo\"><p class=\"label\">Teaching simulation · no data is submitted</p><label for=\"visibility\">Release scope<select id=\"visibility\"><option value=\"public\">Publicly releasable</option><option value=\"private\">Private-only</option></select></label><label for=\"evidence\">Evidence state<select id=\"evidence\"><option value=\"missing\">Citation unresolved</option><option value=\"metadata\">Identifier verified; support unchecked</option><option value=\"supported\">Source checked; claim supported</option><option value=\"stale\">Stale or contradicted</option></select></label><label for=\"review\">Human release review<select id=\"review\"><option value=\"pending\">Pending</option><option value=\"approved\">Recorded</option></select></label><output id=\"gate-result\" aria-live=\"polite\">Hold: resolve the citation and check claim support.</output></div>",
       "visual": "<p class=\"eyebrow\">The enforcement boundary</p><div class=\"gate-diagram\"><span>Proposed action</span><span aria-hidden=\"true\">↓</span><strong>Evaluate policy</strong><span aria-hidden=\"true\">↓</span><span>Permit · hold · block</span><span aria-hidden=\"true\">↓</span><span>Execute only if permitted</span></div><p class=\"visual-caption\">Actual protection depends on configured policy and covered call paths. This diagram is not a claim of complete enforcement.</p>",
@@ -226,7 +257,7 @@
     {
       "id": "memory",
       "group": "practice",
-      "kicker": "08 · GroundRecall + Epistemap",
+      "kicker": "10 · GroundRecall + Epistemap",
       "title": "Remember why, not just what.",
       "body": "<p>GroundRecall keeps durable claims, source provenance, review status, and release scope outside an individual chat. Indexed search finds candidate records; graph relations recover context.</p><p>Epistemap supplies a shared graph representation, traversal, and diagnostics. It stays below domain policy.</p><p class=\"takeaway\">A retrieved record is evidence to inspect. A graph edge or confidence estimate is not a truth certificate.</p>",
       "visual": "<p class=\"eyebrow\">An illustrative provenance graph</p><div class=\"knowledge-graph\"><div class=\"node\">Source passage</div><div class=\"edge\">supports ↓</div><div class=\"node accent\">Scoped claim</div><div class=\"branch\"><div><span>reviewed by ↓</span><div class=\"node\">Review receipt</div></div><div><span>challenged by ↓</span><div class=\"node\">Counterevidence</div></div></div></div><p class=\"visual-caption\">Search locates a record. The graph exposes its dependencies and challenges.</p>",
@@ -239,7 +270,7 @@
     {
       "id": "ingestion",
       "group": "practice",
-      "kicker": "09 · doclift + Didactopus",
+      "kicker": "11 · doclift + Didactopus",
       "title": "Keep the source trail through transformation.",
       "body": "<p>doclift normalizes legacy Word and WordPerfect documents into text, Markdown, and structured sidecars that preserve extraction information.</p><p>Didactopus turns educational material into draft learning domains, prerequisite graphs, practice, and reviewable skill artifacts.</p><p class=\"takeaway\">Conversion is a transformation to inspect. Ingestion does not automatically make material accurate, mastered, or suitable for publication.</p>",
       "visual": "<p class=\"eyebrow\">From old files to usable structure</p><ol class=\"flow\"><li>Legacy source</li><li>doclift: extraction + conversion report</li><li>Didactopus: draft domain + prerequisites</li><li>Review + learner evidence</li><li>Learning pack or reusable skill</li></ol>",
@@ -252,7 +283,7 @@
     {
       "id": "citegeist",
       "group": "practice",
-      "kicker": "10 · CiteGeist",
+      "kicker": "12 · CiteGeist",
       "title": "From a rough reference to a defensible citation.",
       "body": "<p>CiteGeist converts free-text references into draft BibTeX, resolves identifiers and metadata, retains conflicts and provenance, and expands a bibliography through citation links and topic search.</p><p>It supports directed literature discovery as well as repair of references already in hand.</p><p class=\"takeaway\">Verification has two questions: <strong>Does this work exist?</strong> and <strong>Does this work support this claim?</strong></p>",
       "visual": "<p class=\"eyebrow\">The bibliography workbench</p><ol class=\"flow\"><li>Rough reference or research question</li><li>Candidate match</li><li>Identifier + metadata verification</li><li>Claim-support review</li><li>Reviewed BibTeX + public source link</li></ol><p class=\"visual-caption\">Rejected and unresolved candidates are useful review history.</p>",
@@ -264,7 +295,7 @@
     {
       "id": "timeline",
       "group": "outcomes",
-      "kicker": "11 · The visible trajectory",
+      "kicker": "13 · The visible trajectory",
       "title": "A workbench became a publication pipeline.",
       "body": "<p>The inspected CiteGeist history begins on <strong>19 March 2026</strong>. That is a reproducible repository milestone; the date of first personal use still needs confirmation.</p><p>By May, there were large bibliography exports and public educational artifacts. July brought further graph, governance, and publication work.</p><p class=\"takeaway\">These artifacts show increased scope of work. They do not, by themselves, measure time saved or establish what would have happened without AI.</p>",
       "visual": "<p class=\"eyebrow\">Documented milestones · 2026</p><div class=\"timeline-mini\"><p><b>19 Mar</b>CiteGeist initial commit</p><p><b>02 May</b>Bibliography build snapshot</p><p><b>02 Jul</b>AI assurance preprint</p><p><b>12 Jul</b>ClaimWright initial framework</p></div>",
@@ -279,7 +310,7 @@
     {
       "id": "bibliography-outcome",
       "group": "outcomes",
-      "kicker": "12 · Application: TalkOrigins",
+      "kicker": "14 · Application: TalkOrigins",
       "title": "A bibliography people can inspect and reuse.",
       "body": "<p>The retained May build contains <strong>1,029 topic pages</strong> and <strong>39,930 citation placements</strong>, with DOI links and abstract records where available.</p><p>A direct check of the live abiogenesis page found <strong>76 entries</strong>, expandable citation details, and BibTeX.</p><p class=\"takeaway\">The accomplishment is a navigable, reusable research surface. Quality still depends on relevance checks and editorial review.</p>",
       "visual": "<p class=\"eyebrow\">May 2026 build snapshot</p><div class=\"metric\"><strong>1,029</strong><span>Topic pages</span></div><div class=\"metric\"><strong>39,930</strong><span>Citation placements across topics</span></div><p class=\"visual-caption\">26,604 DOI placements · 17,432 abstract placements.<br>Counts are not deduplicated unique works or a count of individually verified claims.</p>",
@@ -292,7 +323,7 @@
     {
       "id": "notebook-outcome",
       "group": "outcomes",
-      "kicker": "13 · Application: evolution education",
+      "kicker": "15 · Application: evolution education",
       "title": "Publish explanations with a route back to evidence.",
       "body": "<p>The public <em>Notebook on Evolution</em> presents beginner routes, concept pages, learning paths, and source-trail status.</p><p>SciSiteForge provides reusable static-site patterns and optional bridges to the ingestion, memory, learning, and bibliography tools.</p><p class=\"takeaway\">Public readers need an explanation they can use and a source trail they can follow. Private working material needs a separate release decision.</p>",
       "visual": "<p class=\"eyebrow\">Two sides of a public artifact</p><dl class=\"pairs\"><dt>Reader’s surface</dt><dd>Concept · example · learning path</dd><dt>Evidence surface</dt><dd>Source trail · review status · bibliography</dd><dt>Release boundary</dt><dd>Reviewed material crosses; private working files stay behind</dd></dl>",
@@ -305,7 +336,7 @@
     {
       "id": "learning-outcome",
       "group": "outcomes",
-      "kicker": "14 · Application: learning to reusable skill",
+      "kicker": "16 · Application: learning to reusable skill",
       "title": "Make the learning process inspectable.",
       "body": "<p>The Didactopus Information and Entropy example produces a topic pack, learner-session artifacts, progress views, and a reusable skill bundle.</p><p>Its skill demonstration includes an explanation, an evaluation, and a follow-up requesting a limitation or assumption.</p><p class=\"takeaway\">That demonstrates the workflow. Synthetic learner scores do not demonstrate that a person learned the material.</p>",
       "visual": "<p class=\"eyebrow\">Learning evidence loop</p><ol class=\"flow\"><li>Concept + prerequisite</li><li>Independent attempt</li><li>Feedback + critique</li><li>New evidence of understanding</li><li>Revise the next learning step</li></ol><p class=\"visual-caption\">For a human study: test transfer and delayed retention, not just immediate answer quality.</p>",
@@ -318,7 +349,7 @@
     {
       "id": "assurance-outcome",
       "group": "outcomes",
-      "kicker": "15 · Application: AI assurance",
+      "kicker": "17 · Application: AI assurance",
       "title": "Name the mechanism and its failure modes.",
       "body": "<p>The <em>Mechanism-Aware AI Assurance</em> preprint proposes an Operational Premise Taxonomy: describe the computational mechanisms a system actually uses, then examine the assumptions and failure modes that follow.</p><p>It adds a question to the governance discussion: what evidence links the stated policy to the implemented system?</p><p class=\"takeaway\">This is a public, inspectable proposal. Its usefulness as an assurance method remains something to evaluate.</p>",
       "visual": "<p class=\"eyebrow\">A question for any AI workflow</p><dl class=\"pairs\"><dt>Intended behavior</dt><dd>What do we say it does?</dd><dt>Implemented mechanism</dt><dd>What actually produces the result?</dd><dt>Failure evidence</dt><dd>What breaks, under which conditions?</dd><dt>Control</dt><dd>What detects, contains, or corrects that failure?</dd></dl>",
@@ -330,7 +361,7 @@
     {
       "id": "limits",
       "group": "discussion",
-      "kicker": "16 · Keep the limits visible",
+      "kicker": "18 · Keep the limits visible",
       "title": "The controls create work, too.",
       "body": "<p>A source can be wrong. A citation can match the wrong work. A graph can preserve a mistaken interpretation. A policy can be bypassed by an uncovered path.</p><p>Review takes time, and repeated model agreement can reproduce a shared error. Local processing alone does not establish privacy or correctness.</p><p class=\"takeaway\">Track error rates, review effort, corrections, and boundary failures alongside the number of artifacts produced.</p>",
       "visual": "<p class=\"eyebrow\">What to measure next</p><ul class=\"measure-list\"><li>Citation identity accuracy</li><li>Claim–source fit</li><li>Time to find supporting evidence</li><li>Stale-claim detection</li><li>Release-boundary failures</li><li>Human review workload</li></ul>",
@@ -344,7 +375,7 @@
     {
       "id": "lab-experiment",
       "group": "discussion",
-      "kicker": "17 · A BEACON-sized experiment",
+      "kicker": "19 · A BEACON-sized experiment",
       "title": "Try a bounded, falsifiable comparison.",
       "body": "<p>Choose one literature question. Compare a baseline workflow with a provenance-preserving workflow on the same task and time budget.</p><p>Have reviewers evaluate citation identity, source fit, uncertainty, and time needed to audit each result. Record rejected candidates and corrections.</p><p class=\"takeaway\">For teaching, add an unaided transfer task. For agents, test whether a prohibited action is actually blocked.</p>",
       "visual": "<p class=\"eyebrow\">Suggested pilot, not a completed study</p><div class=\"experiment\"><div><b>Baseline</b><span>Existing practice</span></div><span aria-hidden=\"true\">↔</span><div><b>Governed workflow</b><span>Explicit evidence + review</span></div></div><p class=\"visual-caption\">Same task. Comparable resources. Independent review. Predeclared success and failure criteria.</p>",
@@ -354,7 +385,7 @@
     {
       "id": "conversation",
       "group": "discussion",
-      "kicker": "18 · Discussion",
+      "kicker": "20 · Discussion",
       "title": "What would earn your trust?",
       "body": "<p>Which tasks are worth delegating now?</p><p>Which decisions should require an explicit human release?</p><p>What evidence would show that the system helps us do better science—and makes our mistakes easier to find?</p><p class=\"closing\">The output is an artifact.<br><em>The responsibility stays with us.</em></p>",
       "visual": "<p class=\"eyebrow\">Take this back to your lab</p><div class=\"big-word\">One task.<br>One boundary.<br><em>One test.</em></div><p class=\"visual-caption\">Start with something useful, reviewable, and small enough to learn from.</p>",
