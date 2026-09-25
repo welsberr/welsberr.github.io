@@ -782,5 +782,47 @@
         }
       ]
     }
-  ]
+  ],
+  "acknowledgements": {
+    "credit": "Wesley R. Elsberry defined the scope, supplied the personal experience, and directed revisions. OpenAI Codex assisted with source research and synthesis, drafting and editing, the HTML/CSS/JavaScript implementation, and browser-based checks. The social-preview artwork was generated with AI.",
+    "notice": "AI assistance can introduce factual, citation, interpretation, and software errors. Source links and verification notes support independent checking; they do not guarantee accuracy. The author retains responsibility for the presentation’s claims, editorial decisions, and final release. This version remains a speaker-review draft. No endorsement by OpenAI, Michigan State University, or the organizations discussed is implied.",
+    "timeline_note": "Repository milestones on 25 September 2026. Times are Eastern Daylight Time (UTC−04:00) and record commits, not continuous working time.",
+    "milestones": [
+      {
+        "time": "05:00",
+        "title": "Initial scrollytell draft",
+        "detail": "Main narrative, source ledger, speaker notes, and interactive policy-gate example committed.",
+        "commits": [
+          "707cf62"
+        ]
+      },
+      {
+        "time": "05:25",
+        "title": "Private-sector scope clarified",
+        "detail": "Adoption framing revised to reflect the speaker’s correction.",
+        "commits": [
+          "4ec2d7b"
+        ]
+      },
+      {
+        "time": "08:10–08:34",
+        "title": "Experience, design, and editorial refinement",
+        "detail": "Firsthand adoption experience added; compatible MSU web styles adopted; general evaluation questions moved into an introductory preface.",
+        "commits": [
+          "69bca4b",
+          "2bdc443",
+          "32e692c"
+        ]
+      },
+      {
+        "time": "11:44–11:45",
+        "title": "Optional detail and the Archive workflow",
+        "detail": "Seven Deep Dives and the TalkOrigins update/translation section added, with caller-return navigation and a no-JavaScript refinement.",
+        "commits": [
+          "ae16bce",
+          "4034d3f"
+        ]
+      }
+    ]
+  }
 }

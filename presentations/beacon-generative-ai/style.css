@@ -161,3 +161,28 @@ html:not(.js) { scroll-behavior: auto; }
   .dive-links, .dive-directory { display: none; }
   .dive-step { break-after: page; }
 }
+
+.acknowledgements { border-top: 1px solid var(--line); }
+.acknowledgements > p { font-size: 17px; }
+.acknowledgements h3 { font-family: var(--brand-font); margin-top: 36px; }
+.acknowledgements .timeline-note { font-size: 14px; color: var(--muted); }
+.development-timeline { list-style: none; padding: 0; max-width: 850px; }
+.development-timeline li {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+  line-height: 1.6;
+}
+.milestone-time { font-size: 14px; font-variant-numeric: tabular-nums; }
+.development-timeline p { margin: 6px 0; }
+.development-timeline .commit-links { font-size: 12px; color: var(--muted); }
+@media (max-width: 760px) {
+  .development-timeline li { grid-template-columns: 1fr; gap: 6px; }
+}
+@media print {
+  .acknowledgements { break-before: page; }
+  .acknowledgements > p { font-size: 12px; }
+  .development-timeline li { break-inside: avoid; font-size: 12px; }
+}

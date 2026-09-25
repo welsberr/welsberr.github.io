@@ -321,3 +321,18 @@ The preprint is not peer-reviewed validation or evidence that any individual too
 Sources: https://welsberr.github.io/preprints/operational-premise-taxonomy/mechanism-aware-ai-assurance-opt-preprint-20260702.pdf, https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/README.md
 
 Default return: #notebook-outcome. When opened from another main section, the return link follows that caller.
+
+## Acknowledgements
+
+Wesley R. Elsberry defined the scope, supplied the personal experience, and directed revisions. OpenAI Codex assisted with source research and synthesis, drafting and editing, the HTML/CSS/JavaScript implementation, and browser-based checks. The social-preview artwork was generated with AI.
+
+AI assistance can introduce factual, citation, interpretation, and software errors. Source links and verification notes support independent checking; they do not guarantee accuracy. The author retains responsibility for the presentation’s claims, editorial decisions, and final release. This version remains a speaker-review draft. No endorsement by OpenAI, Michigan State University, or the organizations discussed is implied.
+
+### Development timeline
+
+Repository milestones on 25 September 2026. Times are Eastern Daylight Time (UTC−04:00) and record commits, not continuous working time.
+
+- 05:00 — Initial scrollytell draft: Main narrative, source ledger, speaker notes, and interactive policy-gate example committed. (707cf62)
+- 05:25 — Private-sector scope clarified: Adoption framing revised to reflect the speaker’s correction. (4ec2d7b)
+- 08:10–08:34 — Experience, design, and editorial refinement: Firsthand adoption experience added; compatible MSU web styles adopted; general evaluation questions moved into an introductory preface. (69bca4b, 2bdc443, 32e692c)
+- 11:44–11:45 — Optional detail and the Archive workflow: Seven Deep Dives and the TalkOrigins update/translation section added, with caller-return navigation and a no-JavaScript refinement. (ae16bce, 4034d3f)

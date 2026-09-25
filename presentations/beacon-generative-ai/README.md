@@ -28,6 +28,8 @@ The TalkOrigins workflow section covers English source review, bibliography upda
 
 The source ledger is in `content.json` and the rendered appendix. Pinned repository references document the inspected versions. `evidence/bibliography-build.json` contains only aggregate, nonprivate counts and the source manifest checksum. Counts refer to placements across topic bibliographies, not unique papers or verified scientific claims. `evidence/repository-snapshots.json` records inspected commit identifiers. Private memory records and local operational paths are excluded.
 
+An Acknowledgements section follows the source ledger, credits OpenAI Codex, states the assistance/review boundary, and gives a short development timeline from repository commits (25 September 2026, EDT). Its editable text and milestones live in `content.json` and also appear in the speaker notes.
+
 The social card was generated with AI for this presentation. It is original decorative typography, not documentary evidence.
 
 ## Validation
