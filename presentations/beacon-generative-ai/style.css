@@ -163,6 +163,7 @@ html:not(.js) { scroll-behavior: auto; }
 }
 
 .acknowledgements { border-top: 1px solid var(--line); }
+.sources > .acknowledgements { padding-left: 0; padding-right: 0; }
 .acknowledgements > p { font-size: 17px; }
 .acknowledgements h3 { font-family: var(--brand-font); margin-top: 36px; }
 .acknowledgements .timeline-note { font-size: 14px; color: var(--muted); }
