@@ -25,13 +25,6 @@
       "limit": "Primary company statement about deployment, suite expansion, and five governance principles. No independent audit performed for this talk."
     },
     {
-      "id": "rpworkforce",
-      "title": "RealPage · Lumina AI Workforce product page",
-      "date": "Accessed 2026-09-25",
-      "url": "https://www.realpage.com/lp/ai-workforce-agents/",
-      "limit": "Marketing language and modeled net operating income claim. Page footnote says results vary and are not guaranteed."
-    },
-    {
       "id": "speaker-account",
       "title": "Wesley R. Elsberry · Firsthand account of internal AI adoption",
       "date": "Speaker-provided account · 2026-09-25",
@@ -156,9 +149,19 @@
       "notes": "Ask the room for one task they already delegate. Distinguish a model from the application wrapped around it. This progression is a teaching model, not a historical law."
     },
     {
+      "id": "claims-and-controls",
+      "group": "adoption",
+      "kicker": "02 · A shared framework for adoption",
+      "title": "Start with the work we want to improve.",
+      "body": "<p>Before looking at examples, I want to set out the questions I bring to any AI-assisted workflow, including my own.</p><p>Define the tasks, agree on what better work looks like, and assess quality, productivity, and cost together. Distinguish expected benefits from observed results and causal evidence.</p><p class=\"takeaway\">Build in task-specific evaluation, review, and a clear path to escalate problems and correct outcomes.</p>",
+      "visual": "<p class=\"eyebrow\">Shared design questions</p><dl class=\"pairs\"><dt>Useful capability</dt><dd>Which tasks, and what comparison establishes improvement?</dd><dt>Sustainable results</dt><dd>How will we track quality, failure rates, time, and cost?</dd><dt>Human accountability</dt><dd>What can a reviewer inspect, stop, or reverse?</dd><dt>Learning from problems</dt><dd>How can people raise concerns, contest outcomes, and record corrections?</dd></dl><p class=\"visual-caption\">A framework for organizational adoption and my personal workbench.</p>",
+      "refs": [],
+      "notes": "Introduce these as shared design questions before the industry overview and company example. Apply them to the speaker’s own work as well as organizational adoption. Task-specific comparisons, failure rates, escalation records, and routes to contest or correct outcomes make improvement assessable. Distinguish modeled benefits, observed changes, and causal evidence. These are proposed evaluation criteria, not findings about any company. Keep this preface constructive: the aim is to help people deliver useful work sustainably and learn from problems."
+    },
+    {
       "id": "adoption-evidence",
       "group": "adoption",
-      "kicker": "02 · What the measurements mean",
+      "kicker": "03 · What the measurements mean",
       "title": "Private-sector adoption is uneven.",
       "body": "<p>U.S. Census data show <strong>17–20%</strong> of businesses reporting AI use from December 2025 to May 2026. This covers AI broadly, across business functions.</p><p>Among firms with <strong>250 or more employees</strong>, 37% reported using AI. Adoption varies by company size and sector.</p><p class=\"takeaway\">Using AI, integrating it into workflows, and demonstrating better outcomes are separate milestones.</p>",
       "visual": "<p class=\"eyebrow\">Business adoption · Census, May 2026 report</p><div class=\"metric\"><strong>17–20<span>%</span></strong><span>Businesses reporting AI use<br>Across the Dec 2025–May 2026 period</span></div><div class=\"metric\"><strong>37<span>%</span></strong><span>Firms with 250 or more employees<br>Reporting AI use</span></div><p class=\"visual-caption\">AI in any business function. These figures include more than generative AI and do not measure deployment quality.</p>",
@@ -170,28 +173,15 @@
     {
       "id": "realpage",
       "group": "adoption",
-      "kicker": "03 · RealPage: the public account",
+      "kicker": "04 · RealPage: the public account",
       "title": "From specialized agents to a platform.",
       "body": "<p>In August 2025, RealPage described coordinated agents for leasing, resident support, operations, facilities, and finance.</p><p>In August 2026, it announced a broader suite connecting agents, operational analytics, institutional intelligence, and data access through a shared knowledge graph.</p><p>It also reported deployment at more than <strong>175 management companies</strong> for its leasing agent.</p><p class=\"label\">Evidence type: company statements</p>",
-      "visual": "<p class=\"eyebrow\">RealPage’s stated direction</p><div class=\"timeline-mini\"><p><b>2025</b>Coordinated agents embedded in property workflows</p><p><b>2026</b>Connected intelligence and governed data access</p></div><p class=\"visual-caption\">Product descriptions and adoption claims establish what the company says. They do not independently establish reliability.</p>",
+      "visual": "<p class=\"eyebrow\">RealPage’s stated direction</p><div class=\"timeline-mini\"><p><b>2025</b>Coordinated agents embedded in property workflows</p><p><b>2026</b>Connected intelligence and governed data access</p></div><p class=\"visual-caption\">These public announcements describe the scope and direction of RealPage’s AI platform.</p>",
       "refs": [
         "rp2025",
         "rp2026"
       ],
-      "notes": "RealPage is a commercial software company serving rental housing. Treat this as a case study, not a representative sample of all industry. Avoid conflating generative/agentic systems with other algorithmic products or inferring internal practice from marketing."
-    },
-    {
-      "id": "claims-and-controls",
-      "group": "adoption",
-      "kicker": "04 · Reading the claims carefully",
-      "title": "What would make the promise testable?",
-      "body": "<p>The product page uses the phrase <q>human-level intelligence</q> and advertises up to 10% improvement in net operating income. Its footnote identifies internal modeling and industry benchmarks, with variable, unguaranteed results.</p><p>The 2026 announcement also promises traceable recommendations, auditable actions, and a person accountable for decisions.</p><p class=\"takeaway\">Ask for task-specific evaluations, escalation records, failure rates, and the ability to contest an outcome.</p>",
-      "visual": "<p class=\"eyebrow\">Discussion lens</p><dl class=\"pairs\"><dt>Capability claim</dt><dd>Which tasks? Compared with whom?</dd><dt>Business outcome</dt><dd>Modeled, observed, or causally tested?</dd><dt>Human accountability</dt><dd>What can that person see, stop, and reverse?</dd></dl><p class=\"visual-caption\">These are evaluation questions, not findings about RealPage’s internal systems.</p>",
-      "refs": [
-        "rpworkforce",
-        "rp2026"
-      ],
-      "notes": "These are proposed evaluation questions about public claims. The next sections give the speaker’s firsthand experience of internal adoption at an unnamed company; they do not establish facts about RealPage’s internal operations. Ask which failure would matter most to a resident versus an operator."
+      "notes": "RealPage is a commercial software company serving rental housing. Use its public announcements to illustrate a move from specialized agents toward an integrated platform. Attribute product descriptions and deployment figures to the company. Keep the public product account and the speaker’s firsthand development experience clearly attributed to their respective sources."
     },
     {
       "id": "internal-adoption",
@@ -203,7 +193,7 @@
       "refs": [
         "speaker-account"
       ],
-      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed. Do not identify it as RealPage, imply an employer endorsement, or attach internal practices to RealPage’s public product claims. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it."
+      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from public product announcements. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation."
     },
     {
       "id": "shared-concerns",

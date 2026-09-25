@@ -15,7 +15,7 @@ Wesley R. Elsberry · Michigan State University BEACON large group
 - Values and workbench: 9 minutes.
 - Applications: 8 minutes.
 - Limits and discussion setup: 4 minutes.
-- For a shorter talk, keep sections 1, 3–6, 8–10, 12, 14, and 20.
+- For a shorter talk, keep sections 1–2, 4–6, 8–10, 12, 14, and 20.
 
 ## 01 · Adoption — What are we delegating?
 
@@ -23,27 +23,27 @@ Ask the room for one task they already delegate. Distinguish a model from the ap
 
 Sources:
 
-## 02 · What the measurements mean — Private-sector adoption is uneven.
+## 02 · A shared framework for adoption — Start with the work we want to improve.
+
+Introduce these as shared design questions before the industry overview and company example. Apply them to the speaker’s own work as well as organizational adoption. Task-specific comparisons, failure rates, escalation records, and routes to contest or correct outcomes make improvement assessable. Distinguish modeled benefits, observed changes, and causal evidence. These are proposed evaluation criteria, not findings about any company. Keep this preface constructive: the aim is to help people deliver useful work sustainably and learn from problems.
+
+Sources:
+
+## 03 · What the measurements mean — Private-sector adoption is uneven.
 
 Scope confirmed by the speaker: private-sector adoption. Distinguish individual use, company integration, and demonstrated outcomes. Census changed question wording in November 2025; do not present this as an uninterrupted growth series or a GenAI-only adoption rate. The overall range spans the reporting period; the large-firm figure is the report’s size-group example.
 
 Sources: https://www.census.gov/library/stories/2026/05/ai-use-businesses.html
 
-## 03 · RealPage: the public account — From specialized agents to a platform.
+## 04 · RealPage: the public account — From specialized agents to a platform.
 
-RealPage is a commercial software company serving rental housing. Treat this as a case study, not a representative sample of all industry. Avoid conflating generative/agentic systems with other algorithmic products or inferring internal practice from marketing.
+RealPage is a commercial software company serving rental housing. Use its public announcements to illustrate a move from specialized agents toward an integrated platform. Attribute product descriptions and deployment figures to the company. Keep the public product account and the speaker’s firsthand development experience clearly attributed to their respective sources.
 
 Sources: https://www.realpage.com/news/realpage-unveils-next-generation-ai-workforce-at-realworld-2025/, https://www.realpage.com/news/realpage-introduces-lumina-ai-suite/
 
-## 04 · Reading the claims carefully — What would make the promise testable?
-
-These are proposed evaluation questions about public claims. The next sections give the speaker’s firsthand experience of internal adoption at an unnamed company; they do not establish facts about RealPage’s internal operations. Ask which failure would matter most to a resident versus an operator.
-
-Sources: https://www.realpage.com/lp/ai-workforce-agents/, https://www.realpage.com/news/realpage-introduces-lumina-ai-suite/
-
 ## 05 · My experience: internal adoption — The developer’s work is shifting.
 
-This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed. Do not identify it as RealPage, imply an employer endorsement, or attach internal practices to RealPage’s public product claims. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it.
+This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from public product announcements. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation.
 
 Sources: #internal-adoption
 
