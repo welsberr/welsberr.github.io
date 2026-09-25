@@ -6,11 +6,11 @@ A dependency-free, static scrollytell for Wesley R. Elsberry’s MSU BEACON larg
 
 Edit `content.json`, then run `python3 build.py`. This regenerates `index.html`, `speaker-notes.md`, and `speaker-notes.html`. Content fields contain trusted, author-written HTML; this is not a runtime input system. Styles and interaction code live in `style.css` and `presentation.js`.
 
-Serve the repository root with any static HTTP server. GitHub Pages serves the files directly; there are no runtime packages, CDN scripts, API keys, external fonts, analytics, or model calls.
+Serve the repository root with any static HTTP server. GitHub Pages serves the files directly; there are no runtime packages, CDN scripts, API keys, externally hosted fonts, analytics, or model calls.
 
 ## Present
 
-Scroll normally, use the previous/next buttons or left/right keys, or select a section. `N` toggles all speaker notes. Links support direct section URLs. Keyboard shortcuts do not override links, form controls, or expanded-note controls. Printing uses a dedicated stylesheet; all main text and references remain readable without JavaScript. On narrow screens, illustrations move into the reading flow.
+Scroll normally, use the previous/next buttons or left/right keys, or select a section. `Alt+N` toggles all speaker notes. Links support direct section URLs. Keyboard shortcuts do not override links, form controls, or expanded-note controls. Printing uses a dedicated stylesheet; all main text and references remain readable without JavaScript. On narrow screens, illustrations move into the reading flow.
 
 The gate demonstration is a teaching simulation. Its release decisions are local JavaScript, not the GroundRecall or ClaimWright enforcement engine.
 
@@ -27,3 +27,7 @@ The social card was generated with AI for this presentation. It is original deco
 ## Validation
 
 Validated with local Chromium: 20 scenes, 20 source records, unique IDs and valid internal anchors; all 16 release-gate input combinations; section navigation, diagram changes, notes toggle, and keyboard next; widths 320, 390, 760, 768, 1024, and 1440 pixels without horizontal overflow; print controls hidden; no-JavaScript text availability; no JavaScript errors. Representative desktop and mobile screenshots were visually reviewed. This verifies the presentation, not the underlying research tools or their scientific claims.
+
+## MSU web guidance
+
+The color and typography adaptation follows MSU’s official brand and web accessibility guidance. See [DESIGN-GUIDANCE.md](DESIGN-GUIDANCE.md) for source links, adopted rules, and scope. Metropolis fonts are served locally. The scrollytell layout, gate demonstration, navigation, and print view are retained.

@@ -22,7 +22,7 @@ parts = [f'''<!doctype html>
 <a class="skip" href="#story">Skip to presentation</a>
 <header><a href="../">WRE / Presentations</a><span>BEACON · Michigan State University</span><a href="#sources">Sources</a></header>
 <div id="progress" aria-hidden="true"></div>
-<main id="story">
+<main id="story" tabindex="-1">
 <section class="hero" id="opening" data-stop>
 <p class="eyebrow">Wesley R. Elsberry · Large-group discussion</p>
 <h1>Generative AI,<br>with <em>receipts.</em></h1>
@@ -57,7 +57,7 @@ parts.append('''</div><p class="disclosure">Prepared with generative-AI assistan
 for s in content['scenes']:
  parts.append(f'<option value="{s["id"]}">{e(s["kicker"].split(" · ")[0])} / {e(s["title"])}</option>')
 parts.append('''<option value="sources">Sources</option></select><button id="next" aria-label="Next section">→</button><button id="notes" aria-pressed="false">Notes</button><button id="fullscreen">Full screen</button><button id="print">Print</button></nav><div class="sr-only" id="section-status" aria-live="polite"></div>
-<footer class="site-footer">Wesley R. Elsberry · BEACON discussion · <a href="../">All presentations</a><span>Use ← / → to move between sections; N toggles notes. Normal scrolling always works.</span></footer></body></html>''')
+<footer class="site-footer">Wesley R. Elsberry · BEACON discussion · <a href="../">All presentations</a><span>Use ← / → to move between sections; Alt+N toggles notes. Normal scrolling always works.</span></footer></body></html>''')
 (ROOT/'index.html').write_text('\n'.join(parts)+'\n')
 notes=['# Generative AI, with receipts.','', 'Wesley R. Elsberry · Michigan State University BEACON large group','', '**Status:** speaker review draft. Default timing: 30-minute core plus discussion.','', '## Speaker input still needed','', '- Confirm meeting date and available time.','- Confirm date and anecdote of first CiteGeist use; repository history begins 19 March 2026.','', '## Suggested pacing','', '- Opening, adoption, and firsthand experience: 9 minutes.','- Values and workbench: 9 minutes.','- Applications: 8 minutes.','- Limits and discussion setup: 4 minutes.','- For a shorter talk, keep sections 1, 3–6, 8–10, 12, 14, and 20.','']
 for s in content['scenes']:

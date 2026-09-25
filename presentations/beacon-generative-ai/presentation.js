@@ -48,11 +48,12 @@
   }
   notesButton.addEventListener('click', toggleNotes);
   document.addEventListener('keydown', event => {
-    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.defaultPrevented) return;
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.defaultPrevented) return;
     if (event.target.closest('input,select,textarea,button,summary,a,[contenteditable="true"]')) return;
+    if (event.altKey && event.key.toLowerCase() === 'n') { event.preventDefault(); toggleNotes(); return; }
+    if (event.altKey) return;
     if (event.key === 'ArrowRight') { event.preventDefault(); go(current + 1); }
     if (event.key === 'ArrowLeft') { event.preventDefault(); go(current - 1); }
-    if (event.key.toLowerCase() === 'n') { event.preventDefault(); toggleNotes(); }
   });
   const fullscreen = document.querySelector('#fullscreen');
   if (!document.fullscreenEnabled) fullscreen.hidden = true;
