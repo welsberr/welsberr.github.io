@@ -1,0 +1,205 @@
+{
+  "observed_date": "2026-09-26",
+  "sources": [
+    {
+      "url": "https://github.com/welsberr/Didactopus/commit/41ca57d60fa2a68d323a140950f18f5eec44f0f9",
+      "label": "Didactopus commit"
+    },
+    {
+      "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "label": "Karpathy\u2019s gist"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.08560",
+      "label": "MemGPT (2023)"
+    },
+    {
+      "url": "https://arxiv.org/abs/2501.13956",
+      "label": "Zep (2025)"
+    },
+    {
+      "url": "https://supercompanies.substack.com/p/why-your-ai-agent-sucks",
+      "label": "\u201cWhy your AI agent sucks,\u201d Supercompanies with Greg & Taylor, 27 August 2026"
+    },
+    {
+      "url": "https://github.com/welsberr/ClaimWright/tree/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://github.com/welsberr/ClaimWright/pull/1",
+      "label": "PR #1"
+    },
+    {
+      "url": "https://github.com/welsberr/ClaimWright/actions/runs/36220079481",
+      "label": "GitHub CI"
+    },
+    {
+      "url": "https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/docs/validation-2026-09-26.md",
+      "label": "validation record"
+    },
+    {
+      "url": "https://www.openpolicyagent.org/docs",
+      "label": "Open Policy Agent"
+    },
+    {
+      "url": "https://www.openpolicyagent.org/docs/management-decision-logs",
+      "label": "decision logging"
+    },
+    {
+      "url": "https://docs.cedarpolicy.com/",
+      "label": "Cedar"
+    },
+    {
+      "url": "https://github.com/NVIDIA-NeMo/Guardrails",
+      "label": "NeMo Guardrails"
+    },
+    {
+      "url": "https://github.com/welsberr/GroundRecall/tree/68ef5744306f247ddbf9cc3a114d7a520331f4c2",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md",
+      "label": "policy interface"
+    },
+    {
+      "url": "https://github.com/qualixar/superlocalmemory",
+      "label": "SuperLocalMemory"
+    },
+    {
+      "url": "https://github.com/getzep/graphiti",
+      "label": "Graphiti"
+    },
+    {
+      "url": "https://github.com/mem0ai/mem0",
+      "label": "Mem0"
+    },
+    {
+      "url": "https://docs.mem0.ai/open-source/features/graph-memory",
+      "label": "graph option"
+    },
+    {
+      "url": "https://github.com/Obelyth/Cortex",
+      "label": "Cortex"
+    },
+    {
+      "url": "https://docs.letta.com/v1-sdk/concepts/stateful-agents",
+      "label": "Letta"
+    },
+    {
+      "url": "https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/src/groundrecall/mcp_http.py",
+      "label": "pinned HTTP adapter"
+    },
+    {
+      "url": "https://github.com/welsberr/Epistemap/tree/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://rdflib.readthedocs.io/en/stable/",
+      "label": "RDFLib"
+    },
+    {
+      "url": "https://www.w3.org/TR/prov-o/",
+      "label": "W3C PROV-O"
+    },
+    {
+      "url": "https://github.com/RDFLib/pySHACL",
+      "label": "pySHACL"
+    },
+    {
+      "url": "https://github.com/welsberr/Didactopus/tree/f0b0e8ac55459e05bdf16604ec971ea266278b84",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://github.com/CAHLR/OATutor",
+      "label": "OATutor"
+    },
+    {
+      "url": "https://support.google.com/gemininotebook/answer/16206563?hl=en",
+      "label": "NotebookLM / Google Notebook"
+    },
+    {
+      "url": "https://github.com/welsberr/CiteGeist/tree/8d4b7996fab39be384be6f1acfbbdd55f6fc9756",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://www.zotero.org/support/",
+      "label": "Zotero"
+    },
+    {
+      "url": "https://retorque.re/zotero-better-bibtex/",
+      "label": "Better BibTeX"
+    },
+    {
+      "url": "https://www.jabref.org/",
+      "label": "JabRef"
+    },
+    {
+      "url": "https://docs.jabref.org/collect/import-using-online-bibliographic-database",
+      "label": "catalog search, identifier lookup and import inspection"
+    },
+    {
+      "url": "https://grobid.readthedocs.io/en/latest/Introduction/",
+      "label": "GROBID"
+    },
+    {
+      "url": "https://github.com/welsberr/doclift/tree/85ccadc30d0ae405846efc7d2fd4b70cdbbdd545",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://tika.apache.org/3.3.0/formats.html",
+      "label": "Apache Tika"
+    },
+    {
+      "url": "https://docling-project.github.io/docling/",
+      "label": "Docling"
+    },
+    {
+      "url": "https://docling-project.github.io/docling/reference/cli/",
+      "label": "CLI lists DOC and RTF inputs"
+    },
+    {
+      "url": "https://docs.unstructured.io/open-source/core-functionality/partitioning",
+      "label": "Unstructured"
+    },
+    {
+      "url": "https://github.com/welsberr/GenieHive/tree/a664348180501277d5ec793b7a548d9d4931b977",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://github.com/welsberr/GenieHive/actions/runs/36220017827",
+      "label": "GitHub CI passed"
+    },
+    {
+      "url": "https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/validation-2026-09-26.md",
+      "label": "validation record"
+    },
+    {
+      "url": "https://docs.litellm.ai/docs/routing",
+      "label": "LiteLLM"
+    },
+    {
+      "url": "https://docs.litellm.ai/docs/proxy/virtual_keys",
+      "label": "virtual-key facilities"
+    },
+    {
+      "url": "https://docs.gpustack.ai/latest/overview/",
+      "label": "GPUStack"
+    },
+    {
+      "url": "https://github.com/welsberr/SciSiteForge/tree/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7",
+      "label": "public snapshot"
+    },
+    {
+      "url": "https://quarto.org/docs/books/",
+      "label": "Quarto"
+    },
+    {
+      "url": "https://mystmd.org/guide",
+      "label": "Jupyter Book / MyST"
+    },
+    {
+      "url": "https://github.com/welsberr/Didactopus/commit/6c04e1e7bf0f54adaad831bf65f54f29ea04dc5f",
+      "label": "`6c04e1e`"
+    }
+  ]
+}

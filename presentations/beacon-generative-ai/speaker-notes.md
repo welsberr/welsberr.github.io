@@ -2,12 +2,13 @@
 
 Wesley R. Elsberry · Michigan State University BEACON large group
 
-**Status:** speaker review draft. Default timing: 30-minute core plus discussion.
+**Status:** author-approved public revision, 26 September 2026. Default timing: approximately 30 minutes plus discussion.
 
-## Speaker input still needed
+## Presentation context
 
-- Confirm meeting date and available time.
-- Confirm date and anecdote of first CiteGeist use; repository history begins 19 March 2026.
+- Revised after the BEACON discussion for broader public sharing.
+- The timeline uses CiteGeist repository history beginning 19 March 2026, not an asserted first-use date.
+- Companion report: [Repository capabilities and alternatives](comparison/).
 
 ## Suggested pacing
 
@@ -15,7 +16,7 @@ Wesley R. Elsberry · Michigan State University BEACON large group
 - Values and workbench: 9 minutes.
 - Applications, including the TalkOrigins update workflow: 8 minutes.
 - Limits and discussion setup: 4 minutes.
-- For a shorter talk, keep sections 1–2, 4–6, 8–10, 12, 14–15, and 21.
+- For a shorter talk, focus on delegation, personal experience, policy, memory, citations, the Archive workflow, and discussion.
 - Deep Dives are optional discussion material, outside the 30-minute core. Links return to the section that opened the dive.
 
 ## 01 · Adoption — What are we delegating?
@@ -36,41 +37,35 @@ Scope confirmed by the speaker: private-sector adoption. Distinguish individual 
 
 Sources: https://www.census.gov/library/stories/2026/05/ai-use-businesses.html
 
-## 04 · RealPage: the public account — From specialized agents to a platform.
+## 04 · My experience: internal adoption — The developer’s work is shifting.
 
-RealPage is a commercial software company serving rental housing. Use its public announcements to illustrate a move from specialized agents toward an integrated platform. Attribute product descriptions and deployment figures to the company. Keep the public product account and the speaker’s firsthand development experience clearly attributed to their respective sources.
-
-Sources: https://www.realpage.com/news/realpage-unveils-next-generation-ai-workforce-at-realworld-2025/, https://www.realpage.com/news/realpage-introduces-lumina-ai-suite/
-
-## 05 · My experience: internal adoption — The developer’s work is shifting.
-
-This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from public product announcements. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation.
+This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from measured adoption outcomes. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation.
 
 Sources: #internal-adoption
 
-## 06 · The connection to my own work — The same concerns recur at work and at home.
+## 05 · The connection to my own work — The same concerns recur at work and at home.
 
 Use this as the transition into the personal workbench. The overlap is in the problems being addressed; it does not imply the employer uses ClaimWright, GroundRecall, or the other personal repositories. For discussion, consider model usage cost alongside human review and rework; this is a proposed evaluation lens, not a reported company accounting practice. Do not invent expenditure figures, savings, or an achieved productivity multiplier.
 
 Sources: #internal-adoption
 
-## 07 · A bridge to research practice — Make scientific virtues operational.
+## 06 · A bridge to research practice — Make scientific virtues operational.
 
 This connection is especially relevant to BEACON, but it does not imply Pennock or MSU endorses these tools. The mapping is ClaimWright’s practical interpretation.
 
-Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC5236068/, https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md
+Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC5236068/, https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md
 
 Deep Dives: ClaimWright & policy gates
 
-## 08 · ClaimWright — Write the agreement before the output.
+## 07 · ClaimWright — Write the agreement before the output.
 
-Avoid presenting the full claim lifecycle as an automatically enforced finite-state machine. The README explicitly identifies a configurable enforcement engine as future work. Human review remains part of the agreement.
+The public revision includes the policy substrate checker and an offline publication gate, with 23 passing software regression tests. These tests do not authenticate a human approval or certify claim accuracy. Not every declared lifecycle state or action is automatically enforced; human publication responsibility remains explicit.
 
-Sources: https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md
+Sources: https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md
 
 Deep Dives: ClaimWright & policy gates
 
-## 09 · Policy gating & enforcement — A gate must be able to say “stop.”
+## 08 · Policy gating & enforcement — A gate must be able to say “stop.”
 
 The simulation is illustrative JavaScript, not the ClaimWright or GroundRecall engine. Demonstrate that a DOI alone does not clear a publication gate. Policy evaluation alone is not enforcement; inspect which call paths actually honor its result.
 
@@ -78,7 +73,7 @@ Sources: https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a1
 
 Deep Dives: ClaimWright & policy gates
 
-## 10 · GroundRecall + Epistemap — Remember why, not just what.
+## 09 · GroundRecall + Epistemap — Remember why, not just what.
 
 A practical retrieval loop: search, inspect provenance and date, check the current artifact, then use the result. Graph diagnostics can expose missing evidence; they cannot make bad source material reliable. Private release tags must survive export.
 
@@ -86,7 +81,7 @@ Sources: https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a1
 
 Deep Dives: GroundRecall & Epistemap
 
-## 11 · doclift + Didactopus — Keep the source trail through transformation.
+## 10 · doclift + Didactopus — Keep the source trail through transformation.
 
 Explain sidecars as small companion files recording structure and conversion decisions. Separate the original source from the extracted text, interpretation, and teaching artifact. A detected prerequisite still deserves review.
 
@@ -94,7 +89,7 @@ Sources: https://github.com/welsberr/doclift/blob/85ccadc30d0ae405846efc7d2fd4b7
 
 Deep Dives: doclift & Didactopus
 
-## 12 · CiteGeist — From a rough reference to a defensible citation.
+## 11 · CiteGeist — From a rough reference to a defensible citation.
 
 CiteGeist’s README describes substantial implemented plumbing and remaining gaps in evaluation depth and researcher ergonomics. Do not collapse metadata matching, disambiguation, and reading for support into one “verified” badge.
 
@@ -102,15 +97,15 @@ Sources: https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbb
 
 Deep Dives: CiteGeist
 
-## 13 · The visible trajectory — A workbench became a publication pipeline.
+## 12 · The visible trajectory — A workbench became a publication pipeline.
 
 Invite the speaker to add the first actual CiteGeist use and the personal before/after account. Dates here are artifact evidence, not a causal study of AI productivity.
 
-Sources: https://github.com/welsberr/CiteGeist/commit/4f3ac4d, evidence/bibliography-build.json, https://welsberr.github.io/preprints/operational-premise-taxonomy/mechanism-aware-ai-assurance-opt-preprint-20260702.pdf, https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md
+Sources: https://github.com/welsberr/CiteGeist/commit/4f3ac4d, evidence/bibliography-build.json, https://welsberr.github.io/preprints/operational-premise-taxonomy/mechanism-aware-ai-assurance-opt-preprint-20260702.pdf, https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md
 
 Deep Dives: CiteGeist
 
-## 14 · Application: TalkOrigins — A bibliography people can inspect and reuse.
+## 13 · Application: TalkOrigins — A bibliography people can inspect and reuse.
 
 Open the public page if useful, but the screenshot-free presentation works offline. Explain the stale search-engine copy found during preparation: direct live checking returned the expanded page. More citations can increase review burden; volume is not the quality measure.
 
@@ -118,15 +113,15 @@ Sources: evidence/bibliography-build.json, https://talkorigins.org/origins/bibli
 
 Deep Dives: CiteGeist, TalkOrigins updates & translation
 
-## 15 · Application: maintaining TalkOrigins — An Archive update is a coordinated process.
+## 14 · Application: maintaining TalkOrigins — An Archive update is a coordinated process.
 
 Explain this as the maintenance workflow used for the modernized Archive. Keep historical author text distinct from newly added study material. Translation covers four active target languages. Workers can use GenieHive or compatible endpoints directly; do not imply every job passes through the router. The deep dives cover queue recovery, the dated public translation milestone, and model hosting. No inference-cost savings or expert translation-quality rate has been measured for this talk.
 
-Sources: https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/README.md, https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/docs/GENIEHIVE_TRANSLATION.md, https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md, evidence/talkorigins-workflow.json
+Sources: https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/README.md, https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/docs/GENIEHIVE_TRANSLATION.md, https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md, evidence/talkorigins-workflow.json
 
 Deep Dives: TalkOrigins updates & translation, GenieHive & local LLMs
 
-## 16 · Application: evolution education — Publish explanations with a route back to evidence.
+## 15 · Application: evolution education — Publish explanations with a route back to evidence.
 
 This is an observed public site, not evidence of measured gains in learning. Show the beginner route to instructors and graduate students. Site frameworks can support release boundaries, but each build must still be checked.
 
@@ -134,7 +129,7 @@ Sources: https://evo-edu.org/notebook/, https://github.com/welsberr/SciSiteForge
 
 Deep Dives: SciSiteForge & public artifacts
 
-## 17 · Application: learning to reusable skill — Make the learning process inspectable.
+## 16 · Application: learning to reusable skill — Make the learning process inspectable.
 
 Useful BEACON research question: does a graph-grounded mentor improve unaided transfer compared with answer generation alone? Clearly distinguish the proposed human experiment from the included deterministic/synthetic demo.
 
@@ -142,7 +137,7 @@ Sources: https://github.com/welsberr/Didactopus/blob/f0b0e8ac55459e05bdf16604ec9
 
 Deep Dives: doclift & Didactopus
 
-## 18 · Application: AI assurance — Name the mechanism and its failure modes.
+## 17 · Application: AI assurance — Name the mechanism and its failure modes.
 
 Use this as a conceptual bridge back to industry promises. Do not present the preprint as peer-reviewed validation. The bibliography and governed-memory tools support traceability; no controlled attribution of the paper to a particular tool is claimed.
 
@@ -150,21 +145,21 @@ Sources: https://welsberr.github.io/preprints/operational-premise-taxonomy/mecha
 
 Deep Dives: SciSiteForge & public artifacts
 
-## 19 · Keep the limits visible — The controls create work, too.
+## 18 · Keep the limits visible — The controls create work, too.
 
 These are proposed evaluation dimensions, not a reported benchmark result for this stack. State the gap openly: much of the demonstrated progress is integration and artifact production.
 
-Sources: https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/README.md, https://github.com/welsberr/Epistemap/blob/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6/README.md, https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md
+Sources: https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/README.md, https://github.com/welsberr/Epistemap/blob/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6/README.md, https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md, comparison/
 
 Deep Dives: ClaimWright & policy gates, GroundRecall & Epistemap
 
-## 20 · A BEACON-sized experiment — Try a bounded, falsifiable comparison.
+## 19 · A BEACON-sized experiment — Try a bounded, falsifiable comparison.
 
 Ask a postdoc, instructor, and graduate student what evidence would change their practice. The proposal should be scaled to available time; a small pilot can estimate review burden before a larger study.
 
 Sources:
 
-## 21 · Discussion — What would earn your trust?
+## 20 · Discussion — What would earn your trust?
 
 Return to the task named at the beginning. Invite disagreement and specific failure cases. Leave the source appendix available for questions.
 
@@ -174,7 +169,7 @@ Sources:
 
 Use the repository’s documented full-path example as an illustration. Do not present all declared claim states or checks as automatically enforced features.
 
-Sources: https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md
+Sources: https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md
 
 Default return: #claimwright. When opened from another main section, the return link follows that caller.
 
@@ -182,7 +177,7 @@ Default return: #claimwright. When opened from another main section, the return 
 
 Connect back to the main talk’s teaching simulation. This is a design explanation, not a claim that every local tool or operating-system command is governed by GroundRecall.
 
-Sources: https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md, https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md
+Sources: https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md, https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md
 
 Default return: #claimwright. When opened from another main section, the return link follows that caller.
 
@@ -286,7 +281,7 @@ Default return: #talkorigins-workflow. When opened from another main section, th
 
 Explain local hosting without exposing internal addresses, host inventory, or credentials. The model label is an inspected configuration, not a claim that workers are online at presentation time. GenieHive’s node agent does not start or supervise upstream model servers.
 
-Sources: https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md, https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/docs/translation_support.md, evidence/talkorigins-workflow.json
+Sources: https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md, https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/translation_support.md, evidence/talkorigins-workflow.json
 
 Default return: #talkorigins-workflow. When opened from another main section, the return link follows that caller.
 
@@ -294,7 +289,7 @@ Default return: #talkorigins-workflow. When opened from another main section, th
 
 No cost or speed benchmark is claimed. Do not equate an endpoint responding with a high-quality scientific translation. The queue’s recovery mechanism and GenieHive’s request scheduling are separate layers.
 
-Sources: https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md, https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/docs/translation_support.md, evidence/talkorigins-workflow.json
+Sources: https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md, https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/translation_support.md, evidence/talkorigins-workflow.json
 
 Default return: #talkorigins-workflow. When opened from another main section, the return link follows that caller.
 
@@ -302,7 +297,7 @@ Default return: #talkorigins-workflow. When opened from another main section, th
 
 Describe these as implemented optional capabilities in the pinned public README, not proof that every local translation worker uses the gateway profile. Connect the proposed deployment questions to the constructive adoption preface.
 
-Sources: https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md
+Sources: https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md, comparison/
 
 Default return: #talkorigins-workflow. When opened from another main section, the return link follows that caller.
 
@@ -326,13 +321,14 @@ Default return: #notebook-outcome. When opened from another main section, the re
 
 Wesley R. Elsberry defined the scope, supplied the personal experience, and directed revisions. OpenAI Codex assisted with source research and synthesis, drafting and editing, the HTML/CSS/JavaScript implementation, and browser-based checks. The social-preview artwork was generated with AI.
 
-AI assistance can introduce factual, citation, interpretation, and software errors. Source links and verification notes support independent checking; they do not guarantee accuracy. The author retains responsibility for the presentation’s claims, editorial decisions, and final release. This version remains a speaker-review draft. No endorsement by OpenAI, Michigan State University, or the organizations discussed is implied.
+AI assistance can introduce factual, citation, interpretation, and software errors. Source links and verification notes support independent checking; they do not guarantee accuracy. The author retains responsibility for the presentation’s claims, editorial decisions, and final release. The author approved this revision for broader public release. No endorsement by OpenAI, Michigan State University, or the organizations discussed is implied.
 
 ### Development timeline
 
-Repository milestones on 25 September 2026. Times are Eastern Daylight Time (UTC−04:00) and record commits, not continuous working time.
+Initial repository milestones are from 25 September 2026; their times are Eastern Daylight Time (UTC−04:00), not continuous working time. The public revision is recorded by release date.
 
 - 05:00 — Initial scrollytell draft: Main narrative, source ledger, speaker notes, and interactive policy-gate example committed. (707cf62)
 - 05:25 — Private-sector scope clarified: Adoption framing revised to reflect the speaker’s correction. (4ec2d7b)
 - 08:10–08:34 — Experience, design, and editorial refinement: Firsthand adoption experience added; compatible MSU web styles adopted; general evaluation questions moved into an introductory preface. (69bca4b, 2bdc443, 32e692c)
 - 11:44–11:45 — Optional detail and the Archive workflow: Seven Deep Dives and the TalkOrigins update/translation section added, with caller-return navigation and a no-JavaScript refinement. (ae16bce, 4034d3f)
+- 26 Sep 2026 — Revision for broader public release: Original preserved in a dated archive; company-specific material removed; personal experience retained anonymously; approved repository capabilities and alternatives report linked. ()

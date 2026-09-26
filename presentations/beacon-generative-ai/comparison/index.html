@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An evidence-based comparison of eight responsible AI workflow repositories, alternatives, implementation history and adoption tradeoffs.">
+<title>What this framework contributes — BEACON companion</title><link rel="canonical" href="https://welsberr.github.io/presentations/beacon-generative-ai/comparison/"><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to report</a>
+<header><a href="../">BEACON presentation</a><span>Repository comparison · Public report</span></header>
+<main id="main"><nav aria-label="Report sections"><a href="#assessment">Assessment</a><a href="#comparison">Eight repositories</a><a href="#article">Section article</a><a href="#adoption">For a course</a><a href="#provenance">Evidence</a><a href="#sources">Source index</a></nav>
+<h1 id="what-this-framework-contributes">What this framework contributes</h1>
+<p>An evidence-based comparison of eight repositories and their alternatives, prepared after the Michigan State University BEACON discussion. Assessment date: <strong>26 September 2026</strong>. <strong>Author-approved public report.</strong></p>
+<h2 id="assessment">Assessment</h2>
+<p>The modest version of Wesley Elsberry’s assessment is supported: these projects form a useful, deliberately integrated approach to responsible AI-assisted work, and people with similar needs may find value in them. Their strongest potential contribution is the connection between evidence, review, durable memory, learning, and release decisions. The evidence does <strong>not</strong> establish that the components are unprecedented, generally superior, or the easiest choices for another laboratory.</p>
+<p>The timing claim about Didactopus is accurate when stated precisely. A first-class knowledge-graph implementation was committed on <strong>16 March 2026</strong>, <strong>19 calendar days</strong> before Karpathy’s <strong>4 April</strong> LLM Wiki gist. That establishes an earlier recorded implementation than this particular publication. It does not establish priority for knowledge graphs, learning graphs, or LLM-assisted knowledge management. <a href="https://github.com/welsberr/Didactopus/commit/41ca57d60fa2a68d323a140950f18f5eec44f0f9">Didactopus commit</a>; <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">Karpathy’s gist</a>.</p>
+<p>“The infrastructure was still developing” is a reasonable description of the environment. “Little comparable infrastructure existed” would be too broad. Persistent agent memory was already a research topic in <a href="https://arxiv.org/abs/2310.08560">MemGPT (2023)</a>, and temporal graph memory in <a href="https://arxiv.org/abs/2501.13956">Zep (2025)</a>. Provenance standards, policy engines, reference managers, and adaptive tutoring have longer histories. Contemporary products still differ substantially in how they combine these capabilities.</p>
+<p>A defensible self-description would be:</p>
+<blockquote>
+<p>I specified and iteratively developed this workflow around my own research, learning, and publication needs, with AI assistance. Some implementations preceded particular later descriptions of similar patterns. Existing packages overlap substantially with individual components. What I can offer is a working integration with explicit evidence, review, and release practices—not a demonstrated best-in-class replacement for every component. Its usefulness to another group should be established through a small, reproducible trial.</p>
+</blockquote>
+<p>The first sentence reflects the developer’s account. Repository history can establish recorded changes and implementation choices; it cannot independently apportion intellectual contribution between a human and an assistant. A stronger contribution record would preserve requirements, design decisions, rejected alternatives, review corrections, and AI assistance alongside commits.</p>
+<h2 id="article">What the remembered article supports</h2>
+<p>The confirmed article is <a href="https://supercompanies.substack.com/p/why-your-ai-agent-sucks">“Why your AI agent sucks,” Supercompanies with Greg &amp; Taylor, 27 August 2026</a>. Its Section example concerns accessible company material that remains difficult for an agent to interpret: obsolete versus current, internal versus client-facing, and draft versus authoritative. The author describes work still needed in Section’s own information environment.</p>
+<p>That is a close match to the problem GroundRecall addresses through explicit status, provenance, review, and release metadata. It supports the relevance of the design. It is a practitioner account, not a systematic survey demonstrating that other packages lack solutions. Existing governance features also do not automatically make an organization’s content authoritative: people must establish owners, label material, resolve conflicts, and maintain the rules.</p>
+<p>Three meanings of “governance” need to remain separate:</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Example control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Question">Who may access or change this?</td>
+<td data-label="Example control">Identity, permissions, tenant separation</td>
+</tr>
+<tr>
+<td data-label="Question">Why should this be believed or reused?</td>
+<td data-label="Example control">Evidence, review state, conflicting claims, freshness</td>
+</tr>
+<tr>
+<td data-label="Question">Where may this information go?</td>
+<td data-label="Example control">Release classification, redaction, export and publication gates</td>
+</tr>
+</tbody>
+</table></div>
+<p>An access-control system can be strong without providing scholarly claim review. Conversely, a well-designed review schema is not a security boundary unless the relevant operations enforce it.</p>
+<h2 id="comparison">Repository comparison at a glance</h2>
+<p>“Best alternative” here means the strongest starting point for the named task among the reviewed candidates. These are fit judgments, not measured rankings. Some alternatives replace a component; others are building blocks to combine.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Start by comparing with</th>
+<th>Reason to retain this project</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Repository"><a href="#claimwright">ClaimWright</a></td>
+<td data-label="Start by comparing with">Open Policy Agent; Cedar; NeMo Guardrails</td>
+<td data-label="Reason to retain this project">Research-specific operating agreement and publication review</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#groundrecall">GroundRecall</a></td>
+<td data-label="Start by comparing with">SuperLocalMemory; Graphiti/Zep; Mem0; Cortex; Letta</td>
+<td data-label="Reason to retain this project">Claim lifecycle, stewardship, policy-aware reuse and release</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#epistemap">Epistemap</a></td>
+<td data-label="Start by comparing with">RDFLib + PROV-O + pySHACL</td>
+<td data-label="Reason to retain this project">Shared graph and assessment vocabulary across this workflow</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#didactopus">Didactopus</a></td>
+<td data-label="Start by comparing with">OATutor; NotebookLM / Google Notebook</td>
+<td data-label="Reason to retain this project">Reviewed source-to-curriculum pipeline and learner evidence</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#citegeist">CiteGeist</a></td>
+<td data-label="Start by comparing with">Zotero + Better BibTeX; JabRef; GROBID</td>
+<td data-label="Reason to retain this project">Scriptable citation repair, provenance and archive integration</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#doclift">doclift</a></td>
+<td data-label="Start by comparing with">Apache Tika; Docling; Unstructured</td>
+<td data-label="Reason to retain this project">Legacy-document review bundles and downstream adapters</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#geniehive">GenieHive</a></td>
+<td data-label="Start by comparing with">LiteLLM; GPUStack</td>
+<td data-label="Reason to retain this project">Role-based routing over an existing local model fleet</td>
+</tr>
+<tr>
+<td data-label="Repository"><a href="#scisiteforge">SciSiteForge</a></td>
+<td data-label="Start by comparing with">Quarto; Jupyter Book / MyST</td>
+<td data-label="Reason to retain this project">Legacy science-archive integration and custom public interfaces</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="claimwright">ClaimWright: research policy and accountable release</h3>
+<p>The <a href="https://github.com/welsberr/ClaimWright/tree/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917">public snapshot</a> supplies a collaboration agreement, claim states, several dimensions of confidence, role definitions, policy files, a substrate checker, and an executable offline publication gate. The gate binds review records to artifacts and policy versions, retains similarity findings, checks destination requirements, and preserves pass, hard-gate and deny outcomes. It does not enforce every policy described in prose.</p>
+<p><strong>Availability gap closed on 26 September 2026.</strong> The gate was previously on a public feature branch and draft PR, rather than public <code>main</code>; the first version of this report described it too narrowly as local-only. After inspection, fixes and <strong>23 passing tests</strong> in both the working repository and a clean checkout, <a href="https://github.com/welsberr/ClaimWright/pull/1">PR #1</a> was merged. <a href="https://github.com/welsberr/ClaimWright/actions/runs/36220079481">GitHub CI</a> checks the published revision. The <a href="https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/docs/validation-2026-09-26.md">validation record</a> describes tested cases and limits.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://www.openpolicyagent.org/docs">Open Policy Agent</a></td>
+<td data-label="Feature difference and best fit">General policy decisions over structured inputs, with <a href="https://www.openpolicyagent.org/docs/management-decision-logs">decision logging</a>. Strong candidate for reusable enforcement across services or CI. A team must still write the research-specific policy and enforce decisions at each operation.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://docs.cedarpolicy.com/">Cedar</a></td>
+<td data-label="Feature difference and best fit">A focused authorization language and schema validation: useful for deciding which principal may perform which action on which resource. It does not supply ClaimWright’s scholarly review agreement.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://github.com/NVIDIA-NeMo/Guardrails">NeMo Guardrails</a></td>
+<td data-label="Feature difference and best fit">Programmable input, dialogue, retrieval, tool-execution, and output rails. Better aligned with runtime assistant behavior; it is complementary to artifact-level publication review.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Assessment:</strong> retain ClaimWright for its policy content and human accountability model. Reuse a general policy engine where that reduces custom enforcement code. Do not infer scientific truth, adequate attribution, or actual human approval merely because a review record validates. The published CLI now has regression evidence for pass, blocked and denied workflows. External adoption still needs user trials and a supported release process; a merged revision is not a security certification. Non-text artifacts remain gated because this version cannot verify their extracted text.</p>
+<h3 id="groundrecall">GroundRecall: governed research memory</h3>
+<p>The <a href="https://github.com/welsberr/GroundRecall/tree/68ef5744306f247ddbf9cc3a114d7a520331f4c2">public snapshot</a> represents artifacts, observations, claims, concepts, and relations; combines indexed search with graph context; and supports review, promotion, confidence, supersession, and release-aware workflows. Its <a href="https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md">policy interface</a> distinguishes allow, review, soft gate, hard gate, and deny decisions. This is more specific than retaining conversation summaries.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://github.com/qualixar/superlocalmemory">SuperLocalMemory</a></td>
+<td data-label="Feature difference and best fit">The closest broad local-memory comparison reviewed: SQLite storage, several retrieval channels including graphs, workspaces, governance, audit and retention controls. Its current documentation materially weakens any claim that governed local memory is absent elsewhere. Compare its actual admission and context rules with GroundRecall’s claim-review and release semantics.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://github.com/getzep/graphiti">Graphiti</a> / Zep</td>
+<td data-label="Feature difference and best fit">Strong comparison for temporal graph memory: source episodes, changing facts, validity intervals and hybrid retrieval. Graphiti is the self-managed library; Zep provides a managed service with additional operational features. Graph provenance does not by itself reproduce a particular human promotion or publication policy.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://github.com/mem0ai/mem0">Mem0</a></td>
+<td data-label="Feature difference and best fit">Focuses on extracting and retrieving reusable memory. Its <a href="https://docs.mem0.ai/open-source/features/graph-memory">graph option</a> supplements vector retrieval. Appropriate when automatic memory integration is the main need; determine separately how review, classification and public release will be enforced.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://github.com/Obelyth/Cortex">Cortex</a></td>
+<td data-label="Feature difference and best fit">Particularly relevant for accountable notes: Git-backed Markdown, trusted and guest MCP access, a proposal/acceptance queue, and quoted-source checks. It demonstrates that review-before-write and verifiable citations are available in other projects. Its note-oriented model differs from GroundRecall’s explicit claims and relations.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://docs.letta.com/v1-sdk/concepts/stateful-agents">Letta</a></td>
+<td data-label="Feature difference and best fit">Agent-managed persistent context blocks and retrievable history. A useful choice when the application is organized around persistent agents rather than a shared research claim store.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Knowledge graphs are therefore <strong>not universal</strong>, but neither are they rare enough in the reviewed set to establish distinctiveness on their own. The worthwhile comparison is what a relation means, how it was derived, when it is invalidated, and which uses are permitted.</p>
+<p>GroundRecall’s enforcement is integration-dependent. Its public HTTP adapter owns policy configuration and caller identity, but describes itself as a bounded local/private pilot. The policy specification documents selected integrated operations, not an independently audited guarantee that every path is covered. New uncommitted broker and application work was excluded from this assessment. See the <a href="https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/src/groundrecall/mcp_http.py">pinned HTTP adapter</a>.</p>
+<p><strong>Assessment:</strong> this is among the most defensible projects to demonstrate to peers, especially through a stale-source or prohibited-export example. Test it against SuperLocalMemory and Cortex for review/governance, and Graphiti for temporal retrieval. None of these comparisons establishes a winner without common tasks. SuperLocalMemory’s older-version benchmark figures were not treated as validation of its current version; Cortex’s citation checks establish textual occurrence, not truth or entailment.</p>
+<h3 id="epistemap">Epistemap: a shared representation</h3>
+<p>The <a href="https://github.com/welsberr/Epistemap/tree/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6">public snapshot</a> supplies typed graph bundles, nodes, edges, provenance references, status, confidence assessments, traversal and diagnostic utilities. Its value within this collection is a shared vocabulary for moving evidence between applications. It deliberately sits below decisions such as whether a learner has mastered a concept or a claim should be promoted.</p>
+<p>The strongest standards-based alternative is a composition: <a href="https://rdflib.readthedocs.io/en/stable/">RDFLib</a> for RDF graphs and querying, <a href="https://www.w3.org/TR/prov-o/">W3C PROV-O</a> for provenance, and <a href="https://github.com/RDFLib/pySHACL">pySHACL</a> for validating graph constraints. That route offers wider semantic-web interoperability; a team must define its domain vocabulary and mappings. Epistemap offers a smaller, opinionated application schema already aligned with the other repositories.</p>
+<p><strong>Assessment:</strong> retain it where those adapters save real work. Prefer the standards stack where exchange with institutional repositories or external graph tools dominates. Exporting to PROV-O/SHACL could make these complementary. Provenance graphs predate this project; neither typed confidence nor a Bayesian assessment field should be presented as a calibrated probability of truth without validation.</p>
+<h3 id="didactopus">Didactopus: learning from sources rather than collecting answers</h3>
+<p>The <a href="https://github.com/welsberr/Didactopus/tree/f0b0e8ac55459e05bdf16604ec971ea266278b84">public snapshot</a> connects source ingestion to reviewed domain packs, concepts and prerequisites, merged learning graphs, practice, assessment, and learner evidence. Mentor, practice and evaluator roles make the intended learning process explicit. This is a useful distinction from simply asking a model to explain a document. Demonstrations and software tests do not establish improved student learning or protection against cognitive offloading.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://github.com/CAHLR/OATutor">OATutor</a></td>
+<td data-label="Feature difference and best fit">Open adaptive tutoring with knowledge components, Bayesian knowledge tracing, authored problems and hints, and classroom/research integration. Its repository links published research and existing course content. A stronger starting point for an instructor seeking an established tutoring experiment; subject-specific content still requires work.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://support.google.com/gemininotebook/answer/16206563?hl=en">NotebookLM / Google Notebook</a></td>
+<td data-label="Feature difference and best fit">A hosted source-study interface with quizzes, flashcards, mind maps and other generated study materials. Convenient for students exploring supplied sources. The inspected help documents do not establish an equivalent user-controlled graph schema, review-to-promotion pipeline, or learner-evidence export contract.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Karpathy’s <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">LLM Wiki gist</a> is a design pattern for maintaining linked knowledge from sources, not a packaged adaptive tutor. It is useful related work, but a weak sole comparator for Didactopus’s learning goals.</p>
+<p><strong>Assessment:</strong> offer Didactopus as a researchable source-to-learning workflow, not a demonstrated remedy for reduced cognition. For a course, begin with one concept cluster, instructor-reviewed prompts and assessments, and an unaided delayed test. Compare both the learning outcome and the instructor’s preparation burden with OATutor or a simpler study workflow.</p>
+<h3 id="citegeist">CiteGeist: a bibliography workbench</h3>
+<p>The <a href="https://github.com/welsberr/CiteGeist/tree/8d4b7996fab39be384be6f1acfbbdd55f6fc9756">public snapshot</a> combines rough citation intake, identifier resolution, metadata enrichment, conflicts and field provenance, citation discovery, and reviewed export through CLI/MCP workflows. Its practical niche is repairing and maintaining bibliographies in an automated publication pipeline, including the TalkOrigins work described in the presentation.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://www.zotero.org/support/">Zotero</a> + <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a></td>
+<td data-label="Feature difference and best fit">Strong default for a research group’s shared reference collection, attachments, annotation and writing integration. Better BibTeX adds customizable citation keys and automated exports. CiteGeist’s case rests on the particular scripted reconciliation and provenance workflow, not exclusive access to BibTeX automation.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://www.jabref.org/">JabRef</a></td>
+<td data-label="Feature difference and best fit">A BibTeX-oriented desktop manager with <a href="https://docs.jabref.org/collect/import-using-online-bibliographic-database">catalog search, identifier lookup and import inspection</a>. A close alternative for people wanting visible review and bibliographic editing without assembling an agent workflow.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://grobid.readthedocs.io/en/latest/Introduction/">GROBID</a></td>
+<td data-label="Feature difference and best fit">A specialized parser for scholarly PDFs and reference strings, with structured outputs and metadata consolidation. It can replace or strengthen extraction within a workbench; it is not a complete substitute for collection stewardship and publication review.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Assessment:</strong> keep CiteGeist for archive-scale maintenance and explicit reconciliation records; start a new lab with Zotero or JabRef unless its requirements justify the extra infrastructure. Measure difficult citation matches, incorrect confident matches, field conflicts and human correction time. Matching a DOI verifies an identity candidate; it does not verify that the cited work supports the surrounding claim.</p>
+<h3 id="doclift">doclift: legacy sources with review context</h3>
+<p>The <a href="https://github.com/welsberr/doclift/tree/85ccadc30d0ae405846efc7d2fd4b70cdbbdd545">public snapshot</a> targets older Word and WordPerfect documents. It wraps conversion tools, produces text/Markdown and review sidecars, and carries conversion warnings and document structure into downstream workflows. Its current value is the review bundle and integration, not a new document parsing engine. Planned format or OCR work should remain labeled as planned.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://tika.apache.org/3.3.0/formats.html">Apache Tika</a></td>
+<td data-label="Feature difference and best fit">Broad format detection and text/metadata extraction, including legacy Word and WordPerfect. A strong first comparison for heterogeneous archival collections.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://docling-project.github.io/docling/">Docling</a></td>
+<td data-label="Feature difference and best fit">Structured conversion with layout, tables and OCR capabilities. Its current <a href="https://docling-project.github.io/docling/reference/cli/">CLI lists DOC and RTF inputs</a>, so “supports old Word files” is not a sufficient differentiator for doclift.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://docs.unstructured.io/open-source/core-functionality/partitioning">Unstructured</a></td>
+<td data-label="Feature difference and best fit">Partitions documents into typed elements. Its DOC path uses LibreOffice conversion before DOCX processing, overlapping doclift’s use of existing converters.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Assessment:</strong> preserve doclift’s manifests, quality flags, and adapters where they simplify historical-source review. Compare the same damaged documents, tables and footnotes before choosing an extraction backend. A successful conversion exit code is not evidence that the reading order, figures, or citations survived accurately.</p>
+<h3 id="geniehive">GenieHive: directing work to local models</h3>
+<p>The <a href="https://github.com/welsberr/GenieHive/tree/a664348180501277d5ec793b7a548d9d4931b977">public snapshot</a> provides a registry of hosts/services and role-based routing across configured model endpoints, with health, loaded-model and benchmark information. Its optional Foundation profile adds client keys, model/operation scopes, request auditing and opt-in budgets; these are disabled in the casual example configuration. It proxies supported inference requests; it does not itself become the process supervisor for every upstream model server. Local model hosting in the TalkOrigins translation workflow also depends on those model runtimes and the separate translation queue.</p>
+<p><strong>Availability gap closed on 26 September 2026.</strong> Versioned role/model evaluation contracts and case-level results are now on public <code>main</code>, with dataset and evaluator identity, pass thresholds and declared hard-failure overrides. <strong>119 tests passed</strong> in the working repository and a clean checkout, and <a href="https://github.com/welsberr/GenieHive/actions/runs/36220017827">GitHub CI passed</a>. The <a href="https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/validation-2026-09-26.md">validation record</a> distinguishes deterministic checks from model qualification. The public catalog contains four synthetic starter cases; the larger role matrix remains planned. No live model quality, GPU performance or production routing was evaluated in this validation.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://docs.litellm.ai/docs/routing">LiteLLM</a></td>
+<td data-label="Feature difference and best fit">A close gateway comparison for routing, fallback and provider abstraction. Its <a href="https://docs.litellm.ai/docs/proxy/virtual_keys">virtual-key facilities</a> add model access and budget controls. Compare required deployment dependencies and edition-specific features before treating it as an interchangeable service.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://docs.gpustack.ai/latest/overview/">GPUStack</a></td>
+<td data-label="Feature difference and best fit">A broader model-deployment and GPU-cluster manager, including inference-engine orchestration, scheduling, monitoring and access control. Better aligned with managing the fleet itself than merely directing requests to already-running services.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Assessment:</strong> GenieHive is a plausible lightweight fit for the developer’s existing machines and roles. Routing, load awareness and cost control are established categories; its advantage must be shown through lower operational effort or better task outcomes in this particular setting. The newly published evaluation contracts improve traceability, but a deterministic contract pass does not establish semantic correctness or authorize model promotion. Native protocol support and stronger deployment controls must be assessed from implemented adapters, not roadmap aspirations.</p>
+<h3 id="scisiteforge">SciSiteForge: publishing a science archive</h3>
+<p>The <a href="https://github.com/welsberr/SciSiteForge/tree/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7">public snapshot</a> collects a static science/OER publishing approach: site shells, bibliography integration, language status/fallback conventions, and patterns for notebooks and interactive applications. Some capabilities are patterns implemented in consuming sites rather than a centrally packaged framework. The entire TalkOrigins update and translation system should not be attributed to this repository alone.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Alternative</th>
+<th>Feature difference and best fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Alternative"><a href="https://quarto.org/docs/books/">Quarto</a></td>
+<td data-label="Feature difference and best fit">A strong default for a new scholarly site or course book, with citations, cross-references, executable content, multiple output formats and web navigation. It reduces the amount of publishing infrastructure a course team must maintain.</td>
+</tr>
+<tr>
+<td data-label="Alternative"><a href="https://mystmd.org/guide">Jupyter Book / MyST</a></td>
+<td data-label="Feature difference and best fit">A strong comparison for computational teaching materials, notebooks, structured citations and cross-references, interactive web content and publication exports. Existing content may need conversion into the chosen authoring system.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Assessment:</strong> retain SciSiteForge where legacy URLs, archive structure, bibliography pages and custom public applications drive requirements. For a new course without that legacy, start by evaluating Quarto or MyST. The value of the existing TalkOrigins integration is real as a local accomplishment, but another institution’s migration cost and usability remain unmeasured.</p>
+<h2 id="adoption">What to offer a course or laboratory</h2>
+<p>The most useful invitation is to evaluate a small part of the workflow with ordinary course material. Adoption need not require all eight repositories.</p>
+<ol>
+<li><strong>Teach the policy first.</strong> Give students a short ClaimWright-derived agreement: disclose assistance, retain sources, separate drafts from accepted knowledge, and remain responsible for claims. This can be used with other tools.</li>
+<li><strong>Demonstrate one governed-memory case.</strong> Introduce an obsolete source and a corrected source, then show retrieval, review and correction. Add a synthetic restricted item and test whether an inappropriate export is denied. Compare the same case with the closest alternative.</li>
+<li><strong>Evaluate one learning module.</strong> Compare Didactopus with an existing course workflow using unaided explanation, delayed recall and transfer—not just completion speed or satisfaction. This is a proposed evaluation, not a claim of established efficacy.</li>
+<li><strong>Count the whole cost.</strong> Record setup and maintenance time, student friction, review effort, model use, failures and recovery. Provider savings can be outweighed by maintenance; a richer graph can be outweighed by annotation burden.</li>
+</ol>
+<p>For external adoption, the immediate deliverables are versioned releases, synthetic example data, a short installation path, policy-denial examples, export/restore instructions, and a clear support boundary. A documented failure and correction is more informative than another capability list.</p>
+<h2 id="provenance">Evidence, provenance and limits</h2>
+<p>This is a bounded documentary and source-code comparison with targeted software regression validation for ClaimWright and GenieHive. It is not a systematic market review, security audit, usability study, or performance benchmark. Official documentation and repository source were preferred over third-party rankings. Own-project history and selected implementation files were inspected locally; public main revisions were checked separately. Alternatives were assessed from their official documentation/source pages, without installing and running a common evaluation suite. Their feature descriptions therefore establish <strong>documented capability</strong>, not independently verified reliability.</p>
+<p>The current alternatives comparison asks what a prospective adopter can use <strong>now</strong>. It does not reconstruct every competitor’s feature set on the date each personal repository began. “Not located in the inspected documentation” is not equivalent to “impossible in that product.” Compositions of tools may satisfy requirements even when no single package does.</p>
+<p><strong>Stewardship:</strong> Wesley R. Elsberry is the human editorial steward and developer of the compared repositories. OpenAI Codex performed the research assistance, code/history inspection, comparison drafting and page construction. Elsberry reviewed the report and approved its public release on 26 September 2026. This relationship is a relevant competing interest; the report is not an independent external product review. No empirical superiority, student benefit, or security certification is claimed.</p>
+<p><strong>Confidence labels:</strong> high means direct source or history support for a narrowly stated fact; moderate means a reasoned comparison of documented features with incomplete operational evidence; unestablished means the evidence needed for the conclusion was not obtained. These labels are editorial judgments, not numerical probabilities. Each evidence record below inherits this stewardship statement and the recorded UTC assessment time.</p>
+<h3 id="p1-chronology-and-the-19-day-figure">P1 — chronology and the 19-day figure</h3>
+<p><strong>Confidence: high for recorded ordering; unestablished for idea priority.</strong> The initial Didactopus commit on 12 March is not, by itself, the graph implementation. Commit <a href="https://github.com/welsberr/Didactopus/commit/6c04e1e7bf0f54adaad831bf65f54f29ea04dc5f"><code>6c04e1e</code></a>, recorded 12 March at 21:21:59 EDT, adds learning-graph code. Commit <a href="https://github.com/welsberr/Didactopus/commit/41ca57d60fa2a68d323a140950f18f5eec44f0f9"><code>41ca57d</code></a>, 16 March at 21:46:33 UTC, makes knowledge graphs first-class domain-pack components. The original gist page displays creation on 4 April. The figure is the calendar-date subtraction <strong>4 April − 16 March = 19 days</strong>; it is not an exact elapsed-hour claim. Git dates do not independently establish first public availability or the origin of an idea.</p>
+<h3 id="p2-governance-is-relevant-and-overlaps-alternatives">P2 — governance is relevant and overlaps alternatives</h3>
+<p><strong>Confidence: high for the article’s scope and documented overlap; moderate for comparative fit.</strong> Evidence: the linked Section article, GroundRecall policy specification and public HTTP adapter, plus the linked SuperLocalMemory, Cortex, Graphiti, Mem0 and Letta documentation. The article supplies a practitioner example, not prevalence estimates. The comparison checks access, evidence status and release separately. No end-to-end adversarial security tests were run.</p>
+<h3 id="p3-graph-representation-and-learning">P3 — graph representation and learning</h3>
+<p><strong>Confidence: high for documented structures; unestablished for learning superiority.</strong> Evidence: pinned Epistemap and Didactopus repositories, PROV-O, RDFLib, pySHACL, OATutor and Google’s study-tool help. The older standards and tutoring work establish relevant prior approaches. Their existence does not prove that a specific alternative replaces every local adapter. No human learning trial was conducted or inferred from demonstrations.</p>
+<h3 id="p4-bibliography-conversion-serving-and-publishing">P4 — bibliography, conversion, serving and publishing</h3>
+<p><strong>Confidence: moderate for best-fit recommendations; high for the recorded software test outcomes.</strong> Evidence: pinned CiteGeist, doclift, GenieHive and SciSiteForge snapshots, official alternative documentation, and the linked GenieHive validation and CI records. No shared document corpus, citation gold standard, latency/cost test or site migration trial was run. Reported personal applications motivate the comparison; they do not establish a causal productivity gain or transferable cost advantage.</p>
+<h3 id="p5-availability-and-contribution-claims">P5 — availability and contribution claims</h3>
+<p><strong>Confidence: high for verified branch updates and recorded test results; limited for authorship attribution.</strong> Public-main hashes and local hashes are recorded below. The initial audit found ClaimWright’s publication gate absent from <code>main</code> (but already on a public feature branch) and GenieHive’s evaluation work unpushed. Both gaps were closed after inspection and fixes on 26 September 2026. The counts <strong>23</strong> and <strong>119</strong> are passing test cases reported by Cargo and pytest, respectively; they are not measures of coverage, model quality or product superiority. Clean-checkout runs and GitHub CI corroborate these software checks. Uncommitted work in other repositories remains excluded. A Git author field does not apportion human and AI contribution.</p>
+<h3 id="repository-snapshots">Repository snapshots</h3>
+<p>The following table is generated from the inspected inventory. “First commit” is a recorded repository event, not a claim that all current features existed then. Full hashes, evidence paths and assessment timestamp are available in <a href="provenance.json">provenance.json</a>.</p>
+<div class="table-wrap" role="region" aria-label="Comparison or evidence table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>First recorded commit</th>
+<th>Public main</th>
+<th>Local HEAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Repository">ClaimWright</td>
+<td data-label="First recorded commit">2026-07-12</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/ClaimWright/tree/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917">366d19e4</a></td>
+<td data-label="Local HEAD"><code>366d19e4</code></td>
+</tr>
+<tr>
+<td data-label="Repository">Epistemap</td>
+<td data-label="First recorded commit">2026-07-02</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/Epistemap/tree/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6">4f5a7cd1</a></td>
+<td data-label="Local HEAD"><code>4f5a7cd1</code></td>
+</tr>
+<tr>
+<td data-label="Repository">GroundRecall</td>
+<td data-label="First recorded commit">2026-04-17</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/GroundRecall/tree/68ef5744306f247ddbf9cc3a114d7a520331f4c2">68ef5744</a></td>
+<td data-label="Local HEAD"><code>68ef5744</code></td>
+</tr>
+<tr>
+<td data-label="Repository">doclift</td>
+<td data-label="First recorded commit">2026-04-22</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/doclift/tree/85ccadc30d0ae405846efc7d2fd4b70cdbbdd545">85ccadc3</a></td>
+<td data-label="Local HEAD"><code>85ccadc3</code></td>
+</tr>
+<tr>
+<td data-label="Repository">Didactopus</td>
+<td data-label="First recorded commit">2026-03-12</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/Didactopus/tree/f0b0e8ac55459e05bdf16604ec971ea266278b84">f0b0e8ac</a></td>
+<td data-label="Local HEAD"><code>f0b0e8ac</code></td>
+</tr>
+<tr>
+<td data-label="Repository">CiteGeist</td>
+<td data-label="First recorded commit">2026-03-19</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/CiteGeist/tree/8d4b7996fab39be384be6f1acfbbdd55f6fc9756">8d4b7996</a></td>
+<td data-label="Local HEAD"><code>8d4b7996</code></td>
+</tr>
+<tr>
+<td data-label="Repository">GenieHive</td>
+<td data-label="First recorded commit">2026-04-07</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/GenieHive/tree/a664348180501277d5ec793b7a548d9d4931b977">a6643481</a></td>
+<td data-label="Local HEAD"><code>a6643481</code></td>
+</tr>
+<tr>
+<td data-label="Repository">SciSiteForge</td>
+<td data-label="First recorded commit">2025-10-14</td>
+<td data-label="Public main"><a href="https://github.com/welsberr/SciSiteForge/tree/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7">b61a4cb8</a></td>
+<td data-label="Local HEAD"><code>b61a4cb8</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Assessment record: <strong>2026-09-26T05:14:12+00:00</strong>. Public-main observations were made during the research session on this date; this is not a continuous branch monitor.</p>
+<h3 id="review-and-maintenance">Review and maintenance</h3>
+<p>Recheck feature documentation and public releases before an adoption decision. Revise this report if an implementation contradicts its documentation, a public release closes a stated availability gap, or a common evaluation produces contrary results. The report contains no benchmark chart or reproduced source figure. All tables are original qualitative comparisons; the chronology calculation is documented in P1.</p>
+<h3 id="acknowledgements-and-development-record">Acknowledgements and development record</h3>
+<p>OpenAI Codex assisted with research, repository inspection, source comparison, drafting, and HTML rendering. Wesley R. Elsberry supplied the questions and personal experience, reviewed the result, and approved publication. Corrections remain welcome. This report is a companion to the <a href="../">BEACON presentation</a>; it is not an MSU endorsement of the projects.</p>
+<p>Development on 26 September 2026 proceeded through local history and public-source checks, identification and user confirmation of the Section article, comparison drafting, and local rendering review. A subsequent maintainer-authorized update tested, corrected and published the ClaimWright and GenieHive changes, then revised this report’s availability findings. The author then approved promotion of the report alongside a revised presentation for broader public release. The exact update and automated-check timestamps are recorded in the accompanying provenance and review files.</p>
+<section id="sources"><h2>Source index</h2><p>Primary project documentation, repository snapshots and the confirmed practitioner article. Web sources were consulted on 26 September 2026. Links to moving documentation describe that observation, not a frozen future guarantee.</p><ol class="source-index"><li><a href="https://github.com/welsberr/Didactopus/commit/41ca57d60fa2a68d323a140950f18f5eec44f0f9">Didactopus commit</a></li>
+<li><a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">Karpathy’s gist</a></li>
+<li><a href="https://arxiv.org/abs/2310.08560">MemGPT (2023)</a></li>
+<li><a href="https://arxiv.org/abs/2501.13956">Zep (2025)</a></li>
+<li><a href="https://supercompanies.substack.com/p/why-your-ai-agent-sucks">“Why your AI agent sucks,” Supercompanies with Greg &amp; Taylor, 27 August 2026</a></li>
+<li><a href="https://github.com/welsberr/ClaimWright/tree/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917">public snapshot</a></li>
+<li><a href="https://github.com/welsberr/ClaimWright/pull/1">PR #1</a></li>
+<li><a href="https://github.com/welsberr/ClaimWright/actions/runs/36220079481">GitHub CI</a></li>
+<li><a href="https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/docs/validation-2026-09-26.md">validation record</a></li>
+<li><a href="https://www.openpolicyagent.org/docs">Open Policy Agent</a></li>
+<li><a href="https://www.openpolicyagent.org/docs/management-decision-logs">decision logging</a></li>
+<li><a href="https://docs.cedarpolicy.com/">Cedar</a></li>
+<li><a href="https://github.com/NVIDIA-NeMo/Guardrails">NeMo Guardrails</a></li>
+<li><a href="https://github.com/welsberr/GroundRecall/tree/68ef5744306f247ddbf9cc3a114d7a520331f4c2">public snapshot</a></li>
+<li><a href="https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md">policy interface</a></li>
+<li><a href="https://github.com/qualixar/superlocalmemory">SuperLocalMemory</a></li>
+<li><a href="https://github.com/getzep/graphiti">Graphiti</a></li>
+<li><a href="https://github.com/mem0ai/mem0">Mem0</a></li>
+<li><a href="https://docs.mem0.ai/open-source/features/graph-memory">graph option</a></li>
+<li><a href="https://github.com/Obelyth/Cortex">Cortex</a></li>
+<li><a href="https://docs.letta.com/v1-sdk/concepts/stateful-agents">Letta</a></li>
+<li><a href="https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/src/groundrecall/mcp_http.py">pinned HTTP adapter</a></li>
+<li><a href="https://github.com/welsberr/Epistemap/tree/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6">public snapshot</a></li>
+<li><a href="https://rdflib.readthedocs.io/en/stable/">RDFLib</a></li>
+<li><a href="https://www.w3.org/TR/prov-o/">W3C PROV-O</a></li>
+<li><a href="https://github.com/RDFLib/pySHACL">pySHACL</a></li>
+<li><a href="https://github.com/welsberr/Didactopus/tree/f0b0e8ac55459e05bdf16604ec971ea266278b84">public snapshot</a></li>
+<li><a href="https://github.com/CAHLR/OATutor">OATutor</a></li>
+<li><a href="https://support.google.com/gemininotebook/answer/16206563?hl=en">NotebookLM / Google Notebook</a></li>
+<li><a href="https://github.com/welsberr/CiteGeist/tree/8d4b7996fab39be384be6f1acfbbdd55f6fc9756">public snapshot</a></li>
+<li><a href="https://www.zotero.org/support/">Zotero</a></li>
+<li><a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a></li>
+<li><a href="https://www.jabref.org/">JabRef</a></li>
+<li><a href="https://docs.jabref.org/collect/import-using-online-bibliographic-database">catalog search, identifier lookup and import inspection</a></li>
+<li><a href="https://grobid.readthedocs.io/en/latest/Introduction/">GROBID</a></li>
+<li><a href="https://github.com/welsberr/doclift/tree/85ccadc30d0ae405846efc7d2fd4b70cdbbdd545">public snapshot</a></li>
+<li><a href="https://tika.apache.org/3.3.0/formats.html">Apache Tika</a></li>
+<li><a href="https://docling-project.github.io/docling/">Docling</a></li>
+<li><a href="https://docling-project.github.io/docling/reference/cli/">CLI lists DOC and RTF inputs</a></li>
+<li><a href="https://docs.unstructured.io/open-source/core-functionality/partitioning">Unstructured</a></li>
+<li><a href="https://github.com/welsberr/GenieHive/tree/a664348180501277d5ec793b7a548d9d4931b977">public snapshot</a></li>
+<li><a href="https://github.com/welsberr/GenieHive/actions/runs/36220017827">GitHub CI passed</a></li>
+<li><a href="https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/validation-2026-09-26.md">validation record</a></li>
+<li><a href="https://docs.litellm.ai/docs/routing">LiteLLM</a></li>
+<li><a href="https://docs.litellm.ai/docs/proxy/virtual_keys">virtual-key facilities</a></li>
+<li><a href="https://docs.gpustack.ai/latest/overview/">GPUStack</a></li>
+<li><a href="https://github.com/welsberr/SciSiteForge/tree/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7">public snapshot</a></li>
+<li><a href="https://quarto.org/docs/books/">Quarto</a></li>
+<li><a href="https://mystmd.org/guide">Jupyter Book / MyST</a></li>
+<li><a href="https://github.com/welsberr/Didactopus/commit/6c04e1e7bf0f54adaad831bf65f54f29ea04dc5f">`6c04e1e`</a></li></ol></section>
+<div class="downloads"><a href="report.md">Download Markdown</a> · <a href="provenance.json">Provenance data</a> · <a href="publication-integrity-review.json">Review record</a></div>
+</main><footer>Prepared with OpenAI Codex assistance. Reviewed and approved for publication by Wesley R. Elsberry. Personal research report; no institutional endorsement.</footer></body></html>

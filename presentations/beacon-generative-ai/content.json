@@ -1,7 +1,7 @@
 {
   "title": "Generative AI, with receipts.",
-  "status": "Speaker review draft",
-  "as_of": "2026-09-25",
+  "status": "Public revision · 26 September 2026",
+  "as_of": "2026-09-26",
   "sources": [
     {
       "id": "census",
@@ -11,25 +11,11 @@
       "limit": "Survey report. AI use in any business function, not a generative-AI-only measure; wording changed in November 2025."
     },
     {
-      "id": "rp2025",
-      "title": "RealPage · AI Workforce announcement",
-      "date": "2025-08-12",
-      "url": "https://www.realpage.com/news/realpage-unveils-next-generation-ai-workforce-at-realworld-2025/",
-      "limit": "Primary company statement about five coordinated agents; product and impact claims are not independent evaluations."
-    },
-    {
-      "id": "rp2026",
-      "title": "RealPage · Lumina AI Suite announcement",
-      "date": "2026-08-10",
-      "url": "https://www.realpage.com/news/realpage-introduces-lumina-ai-suite/",
-      "limit": "Primary company statement about deployment, suite expansion, and five governance principles. No independent audit performed for this talk."
-    },
-    {
       "id": "speaker-account",
       "title": "Wesley R. Elsberry · Firsthand account of internal AI adoption",
       "date": "Speaker-provided account · 2026-09-25",
       "url": "#internal-adoption",
-      "limit": "Personal experience at an unnamed company. Productivity and quality are stated management goals; no measured effect size or cost savings were supplied. This account is distinct from RealPage’s public statements and does not identify the employer or its tool stack."
+      "limit": "Personal experience at an unnamed company. Productivity and quality are stated management goals; no measured effect size or cost savings were supplied. The account does not identify the employer or its tool stack."
     },
     {
       "id": "virtues",
@@ -48,8 +34,8 @@
     {
       "id": "ClaimWright",
       "title": "ClaimWright · repository documentation",
-      "date": "Snapshot 836cbe8",
-      "url": "https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md",
+      "date": "Public snapshot 366d19e · 2026-09-26",
+      "url": "https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md",
       "limit": "Implementation claims refer to the inspected repository and documentation; they are not a certification of every deployment."
     },
     {
@@ -139,15 +125,15 @@
     {
       "id": "GenieHive",
       "title": "GenieHive · public repository documentation",
-      "date": "Snapshot 705e82a",
-      "url": "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md",
+      "date": "Public snapshot a664348 · 2026-09-26",
+      "url": "https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md",
       "limit": "Public implementation description of routing, health, model discovery, and optional gateway controls. Does not establish live deployment configuration or measured savings."
     },
     {
       "id": "geniehive-translation",
       "title": "GenieHive · translation support",
-      "date": "Snapshot 705e82a",
-      "url": "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/docs/translation_support.md",
+      "date": "Public snapshot a664348 · 2026-09-26",
+      "url": "https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/translation_support.md",
       "limit": "Translation-role configuration guidance. A configured endpoint and a quality translation are separate requirements."
     },
     {
@@ -184,6 +170,13 @@
       "date": "Inspection 2026-09-25",
       "url": "evidence/talkorigins-workflow.json",
       "limit": "Sanitized summary of inspected maintainer implementation, configuration, and public artifacts. Describes the workflow, not a live service-health check or independent audit."
+    },
+    {
+      "id": "repository-comparison",
+      "title": "Repository capabilities and alternatives · evidence-based comparison",
+      "date": "Author-approved public report · 2026-09-26",
+      "url": "comparison/",
+      "limit": "Eight repositories compared with task-specific alternatives, pinned implementation evidence and documented limitations. Includes software regression results for ClaimWright and GenieHive; not a head-to-head product benchmark."
     }
   ],
   "scenes": [
@@ -223,36 +216,22 @@
       "deep_dives": []
     },
     {
-      "id": "realpage",
-      "group": "adoption",
-      "kicker": "04 · RealPage: the public account",
-      "title": "From specialized agents to a platform.",
-      "body": "<p>In August 2025, RealPage described coordinated agents for leasing, resident support, operations, facilities, and finance.</p><p>In August 2026, it announced a broader suite connecting agents, operational analytics, institutional intelligence, and data access through a shared knowledge graph.</p><p>It also reported deployment at more than <strong>175 management companies</strong> for its leasing agent.</p><p class=\"label\">Evidence type: company statements</p>",
-      "visual": "<p class=\"eyebrow\">RealPage’s stated direction</p><div class=\"timeline-mini\"><p><b>2025</b>Coordinated agents embedded in property workflows</p><p><b>2026</b>Connected intelligence and governed data access</p></div><p class=\"visual-caption\">These public announcements describe the scope and direction of RealPage’s AI platform.</p>",
-      "refs": [
-        "rp2025",
-        "rp2026"
-      ],
-      "notes": "RealPage is a commercial software company serving rental housing. Use its public announcements to illustrate a move from specialized agents toward an integrated platform. Attribute product descriptions and deployment figures to the company. Keep the public product account and the speaker’s firsthand development experience clearly attributed to their respective sources.",
-      "deep_dives": []
-    },
-    {
       "id": "internal-adoption",
       "group": "adoption",
-      "kicker": "05 · My experience: internal adoption",
+      "kicker": "04 · My experience: internal adoption",
       "title": "The developer’s work is shifting.",
       "body": "<p>I work at a company pursuing broad internal AI adoption. Management is looking for <strong>greater productivity and higher quality</strong> in software production.</p><p>Development is shifting toward a person directing an AI assistant to do the coding, then applying domain expertise to review the workflow and the product it produces.</p><p class=\"takeaway\">Keeping generative-AI costs contained is part of the challenge.</p><p class=\"label\">Firsthand experience · management goals, not measured outcomes</p>",
       "visual": "<p class=\"eyebrow\">The changing development workflow</p><ol class=\"flow\"><li>Person: define the task and domain needs</li><li>AI assistant: implement the code</li><li>Person: review workflow and product</li><li>Direct revisions and check the result</li></ol><p class=\"visual-caption\">The assistant’s coding role grows; domain judgment and review remain human responsibilities.</p>",
       "refs": [
         "speaker-account"
       ],
-      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from public product announcements. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation.",
+      "notes": "This section paraphrases the speaker’s supplied firsthand account of broad internal AI adoption. Keep the employer unnamed in this account and distinguish personal experience from measured adoption outcomes. Higher productivity and quality are management objectives, not measured gains reported by the speaker. The workflow is shifting; do not imply that every developer or task already follows it or that the employer endorses this presentation.",
       "deep_dives": []
     },
     {
       "id": "shared-concerns",
       "group": "adoption",
-      "kicker": "06 · The connection to my own work",
+      "kicker": "05 · The connection to my own work",
       "title": "The same concerns recur at work and at home.",
       "body": "<p>Some of the issues I have been working through personally are also concerns in the organization: <strong>accuracy with efficiency, accountability of results, and making knowledge durable.</strong></p><p>These connect the internal-adoption discussion to my own work on explicit policies, reviewable evidence, and governed memory.</p><p class=\"takeaway\">Discussion question: how do we improve the work while containing cost and preserving responsibility for the result?</p>",
       "visual": "<p class=\"eyebrow\">Shared concerns</p><dl class=\"pairs\"><dt>Accuracy with efficiency</dt><dd>Useful progress that survives review</dd><dt>Accountability</dt><dd>Results someone can inspect and own</dd><dt>Durable knowledge</dt><dd>Context that outlives the session</dd><dt>Cost containment</dt><dd>AI use within a sustainable budget</dd></dl>",
@@ -265,7 +244,7 @@
     {
       "id": "virtues",
       "group": "practice",
-      "kicker": "07 · A bridge to research practice",
+      "kicker": "06 · A bridge to research practice",
       "title": "Make scientific virtues operational.",
       "body": "<p>ClaimWright draws explicitly on Robert Pennock’s scientific-virtues work: curiosity, honesty, attention to evidence, and willingness to revise.</p><p>The engineering question is how to turn those commitments into repeatable actions—and preserve evidence that the actions happened.</p><p class=\"takeaway\">A declaration states a value. A gate checks a condition. An enforcement point can stop an action.</p>",
       "visual": "<p class=\"eyebrow\">Values → observable practice</p><dl class=\"pairs\"><dt>Honesty</dt><dd>Expose source-access limits</dd><dt>Skepticism</dt><dd>Seek counterevidence</dd><dt>Humility</dt><dd>Retain uncertainty and revise claims</dd><dt>Accountability</dt><dd>Record who approved what</dd></dl>",
@@ -281,14 +260,14 @@
     {
       "id": "claimwright",
       "group": "practice",
-      "kicker": "08 · ClaimWright",
+      "kicker": "07 · ClaimWright",
       "title": "Write the agreement before the output.",
-      "body": "<p>ClaimWright supplies a human-readable collaboration agreement, policy files, claim states, review roles, and pre- and post-action checks.</p><p>A claim may be exploratory, supported, contested, stale, contradicted, or private-only. The workflow makes those distinctions visible before public release.</p><p class=\"takeaway\">Current boundary: this is an initial policy framework. Its Rust checker verifies the presence of the policy files; it does not prove that a claim is true.</p>",
+      "body": "<p>ClaimWright supplies a human-readable collaboration agreement, policy files, claim states, review roles, and pre- and post-action checks.</p><p>A claim may be exploratory, supported, contested, stale, contradicted, or private-only. The workflow makes those distinctions visible before public release.</p><p class=\"takeaway\">The offline publication gate checks declared reviews, artifact and policy hashes, similarity findings, and destination requirements. A passing check does not establish scientific truth or grant permission to publish.</p>",
       "visual": "<p class=\"eyebrow\">A claim has a history</p><ol class=\"flow\"><li>Working claim</li><li>Evidence + source fit</li><li>Adversarial review</li><li>Release decision</li><li>Correction when evidence changes</li></ol>",
       "refs": [
         "ClaimWright"
       ],
-      "notes": "Avoid presenting the full claim lifecycle as an automatically enforced finite-state machine. The README explicitly identifies a configurable enforcement engine as future work. Human review remains part of the agreement.",
+      "notes": "The public revision includes the policy substrate checker and an offline publication gate, with 23 passing software regression tests. These tests do not authenticate a human approval or certify claim accuracy. Not every declared lifecycle state or action is automatically enforced; human publication responsibility remains explicit.",
       "deep_dives": [
         "policy"
       ]
@@ -296,7 +275,7 @@
     {
       "id": "policy-gate",
       "group": "practice",
-      "kicker": "09 · Policy gating & enforcement",
+      "kicker": "08 · Policy gating & enforcement",
       "title": "A gate must be able to say “stop.”",
       "body": "<p>GroundRecall defines policy decision points around memory operations. Its documented outcomes include <strong>allow, require review, soft gate, hard gate, and deny</strong>; hard gates and denials block covered operations.</p><p>Keep the decision to propose an action separate from the authority to execute it. Enforcement has to happen on the actual path to the protected operation.</p><p>Try this simplified release rule. Change an input and inspect the reason.</p><div id=\"gate-demo\" class=\"demo\"><p class=\"label\">Teaching simulation · no data is submitted</p><label for=\"visibility\">Release scope<select id=\"visibility\"><option value=\"public\">Publicly releasable</option><option value=\"private\">Private-only</option></select></label><label for=\"evidence\">Evidence state<select id=\"evidence\"><option value=\"missing\">Citation unresolved</option><option value=\"metadata\">Identifier verified; support unchecked</option><option value=\"supported\">Source checked; claim supported</option><option value=\"stale\">Stale or contradicted</option></select></label><label for=\"review\">Human release review<select id=\"review\"><option value=\"pending\">Pending</option><option value=\"approved\">Recorded</option></select></label><output id=\"gate-result\" aria-live=\"polite\">Hold: resolve the citation and check claim support.</output></div>",
       "visual": "<p class=\"eyebrow\">The enforcement boundary</p><div class=\"gate-diagram\"><span>Proposed action</span><span aria-hidden=\"true\">↓</span><strong>Evaluate policy</strong><span aria-hidden=\"true\">↓</span><span>Permit · hold · block</span><span aria-hidden=\"true\">↓</span><span>Execute only if permitted</span></div><p class=\"visual-caption\">Actual protection depends on configured policy and covered call paths. This diagram is not a claim of complete enforcement.</p>",
@@ -311,7 +290,7 @@
     {
       "id": "memory",
       "group": "practice",
-      "kicker": "10 · GroundRecall + Epistemap",
+      "kicker": "09 · GroundRecall + Epistemap",
       "title": "Remember why, not just what.",
       "body": "<p>GroundRecall keeps durable claims, source provenance, review status, and release scope outside an individual chat. Indexed search finds candidate records; graph relations recover context.</p><p>Epistemap supplies a shared graph representation, traversal, and diagnostics. It stays below domain policy.</p><p class=\"takeaway\">A retrieved record is evidence to inspect. A graph edge or confidence estimate is not a truth certificate.</p>",
       "visual": "<p class=\"eyebrow\">An illustrative provenance graph</p><div class=\"knowledge-graph\"><div class=\"node\">Source passage</div><div class=\"edge\">supports ↓</div><div class=\"node accent\">Scoped claim</div><div class=\"branch\"><div><span>reviewed by ↓</span><div class=\"node\">Review receipt</div></div><div><span>challenged by ↓</span><div class=\"node\">Counterevidence</div></div></div></div><p class=\"visual-caption\">Search locates a record. The graph exposes its dependencies and challenges.</p>",
@@ -327,7 +306,7 @@
     {
       "id": "ingestion",
       "group": "practice",
-      "kicker": "11 · doclift + Didactopus",
+      "kicker": "10 · doclift + Didactopus",
       "title": "Keep the source trail through transformation.",
       "body": "<p>doclift normalizes legacy Word and WordPerfect documents into text, Markdown, and structured sidecars that preserve extraction information.</p><p>Didactopus turns educational material into draft learning domains, prerequisite graphs, practice, and reviewable skill artifacts.</p><p class=\"takeaway\">Conversion is a transformation to inspect. Ingestion does not automatically make material accurate, mastered, or suitable for publication.</p>",
       "visual": "<p class=\"eyebrow\">From old files to usable structure</p><ol class=\"flow\"><li>Legacy source</li><li>doclift: extraction + conversion report</li><li>Didactopus: draft domain + prerequisites</li><li>Review + learner evidence</li><li>Learning pack or reusable skill</li></ol>",
@@ -343,7 +322,7 @@
     {
       "id": "citegeist",
       "group": "practice",
-      "kicker": "12 · CiteGeist",
+      "kicker": "11 · CiteGeist",
       "title": "From a rough reference to a defensible citation.",
       "body": "<p>CiteGeist converts free-text references into draft BibTeX, resolves identifiers and metadata, retains conflicts and provenance, and expands a bibliography through citation links and topic search.</p><p>It supports directed literature discovery as well as repair of references already in hand.</p><p class=\"takeaway\">Verification has two questions: <strong>Does this work exist?</strong> and <strong>Does this work support this claim?</strong></p>",
       "visual": "<p class=\"eyebrow\">The bibliography workbench</p><ol class=\"flow\"><li>Rough reference or research question</li><li>Candidate match</li><li>Identifier + metadata verification</li><li>Claim-support review</li><li>Reviewed BibTeX + public source link</li></ol><p class=\"visual-caption\">Rejected and unresolved candidates are useful review history.</p>",
@@ -358,7 +337,7 @@
     {
       "id": "timeline",
       "group": "outcomes",
-      "kicker": "13 · The visible trajectory",
+      "kicker": "12 · The visible trajectory",
       "title": "A workbench became a publication pipeline.",
       "body": "<p>The inspected CiteGeist history begins on <strong>19 March 2026</strong>. That is a reproducible repository milestone; the date of first personal use still needs confirmation.</p><p>By May, there were large bibliography exports and public educational artifacts. July brought further graph, governance, and publication work.</p><p class=\"takeaway\">These artifacts show increased scope of work. They do not, by themselves, measure time saved or establish what would have happened without AI.</p>",
       "visual": "<p class=\"eyebrow\">Documented milestones · 2026</p><div class=\"timeline-mini\"><p><b>19 Mar</b>CiteGeist initial commit</p><p><b>02 May</b>Bibliography build snapshot</p><p><b>02 Jul</b>AI assurance preprint</p><p><b>12 Jul</b>ClaimWright initial framework</p></div>",
@@ -376,7 +355,7 @@
     {
       "id": "bibliography-outcome",
       "group": "outcomes",
-      "kicker": "14 · Application: TalkOrigins",
+      "kicker": "13 · Application: TalkOrigins",
       "title": "A bibliography people can inspect and reuse.",
       "body": "<p>The retained May build contains <strong>1,029 topic pages</strong> and <strong>39,930 citation placements</strong>, with DOI links and abstract records where available.</p><p>A direct check of the live abiogenesis page found <strong>76 entries</strong>, expandable citation details, and BibTeX.</p><p class=\"takeaway\">The accomplishment is a navigable, reusable research surface. Quality still depends on relevance checks and editorial review.</p>",
       "visual": "<p class=\"eyebrow\">May 2026 build snapshot</p><div class=\"metric\"><strong>1,029</strong><span>Topic pages</span></div><div class=\"metric\"><strong>39,930</strong><span>Citation placements across topics</span></div><p class=\"visual-caption\">26,604 DOI placements · 17,432 abstract placements.<br>Counts are not deduplicated unique works or a count of individually verified claims.</p>",
@@ -403,7 +382,7 @@
       ],
       "notes": "Explain this as the maintenance workflow used for the modernized Archive. Keep historical author text distinct from newly added study material. Translation covers four active target languages. Workers can use GenieHive or compatible endpoints directly; do not imply every job passes through the router. The deep dives cover queue recovery, the dated public translation milestone, and model hosting. No inference-cost savings or expert translation-quality rate has been measured for this talk.",
       "group": "outcomes",
-      "kicker": "15 · Application: maintaining TalkOrigins",
+      "kicker": "14 · Application: maintaining TalkOrigins",
       "deep_dives": [
         "talkorigins",
         "geniehive"
@@ -412,7 +391,7 @@
     {
       "id": "notebook-outcome",
       "group": "outcomes",
-      "kicker": "16 · Application: evolution education",
+      "kicker": "15 · Application: evolution education",
       "title": "Publish explanations with a route back to evidence.",
       "body": "<p>The public <em>Notebook on Evolution</em> presents beginner routes, concept pages, learning paths, and source-trail status.</p><p>SciSiteForge provides reusable static-site patterns and optional bridges to the ingestion, memory, learning, and bibliography tools.</p><p class=\"takeaway\">Public readers need an explanation they can use and a source trail they can follow. Private working material needs a separate release decision.</p>",
       "visual": "<p class=\"eyebrow\">Two sides of a public artifact</p><dl class=\"pairs\"><dt>Reader’s surface</dt><dd>Concept · example · learning path</dd><dt>Evidence surface</dt><dd>Source trail · review status · bibliography</dd><dt>Release boundary</dt><dd>Reviewed material crosses; private working files stay behind</dd></dl>",
@@ -428,7 +407,7 @@
     {
       "id": "learning-outcome",
       "group": "outcomes",
-      "kicker": "17 · Application: learning to reusable skill",
+      "kicker": "16 · Application: learning to reusable skill",
       "title": "Make the learning process inspectable.",
       "body": "<p>The Didactopus Information and Entropy example produces a topic pack, learner-session artifacts, progress views, and a reusable skill bundle.</p><p>Its skill demonstration includes an explanation, an evaluation, and a follow-up requesting a limitation or assumption.</p><p class=\"takeaway\">That demonstrates the workflow. Synthetic learner scores do not demonstrate that a person learned the material.</p>",
       "visual": "<p class=\"eyebrow\">Learning evidence loop</p><ol class=\"flow\"><li>Concept + prerequisite</li><li>Independent attempt</li><li>Feedback + critique</li><li>New evidence of understanding</li><li>Revise the next learning step</li></ol><p class=\"visual-caption\">For a human study: test transfer and delayed retention, not just immediate answer quality.</p>",
@@ -444,7 +423,7 @@
     {
       "id": "assurance-outcome",
       "group": "outcomes",
-      "kicker": "18 · Application: AI assurance",
+      "kicker": "17 · Application: AI assurance",
       "title": "Name the mechanism and its failure modes.",
       "body": "<p>The <em>Mechanism-Aware AI Assurance</em> preprint proposes an Operational Premise Taxonomy: describe the computational mechanisms a system actually uses, then examine the assumptions and failure modes that follow.</p><p>It adds a question to the governance discussion: what evidence links the stated policy to the implemented system?</p><p class=\"takeaway\">This is a public, inspectable proposal. Its usefulness as an assurance method remains something to evaluate.</p>",
       "visual": "<p class=\"eyebrow\">A question for any AI workflow</p><dl class=\"pairs\"><dt>Intended behavior</dt><dd>What do we say it does?</dd><dt>Implemented mechanism</dt><dd>What actually produces the result?</dd><dt>Failure evidence</dt><dd>What breaks, under which conditions?</dd><dt>Control</dt><dd>What detects, contains, or corrects that failure?</dd></dl>",
@@ -459,14 +438,15 @@
     {
       "id": "limits",
       "group": "discussion",
-      "kicker": "19 · Keep the limits visible",
+      "kicker": "18 · Keep the limits visible",
       "title": "The controls create work, too.",
-      "body": "<p>A source can be wrong. A citation can match the wrong work. A graph can preserve a mistaken interpretation. A policy can be bypassed by an uncovered path.</p><p>Review takes time, and repeated model agreement can reproduce a shared error. Local processing alone does not establish privacy or correctness.</p><p class=\"takeaway\">Track error rates, review effort, corrections, and boundary failures alongside the number of artifacts produced.</p>",
+      "body": "<p>A source can be wrong. A citation can match the wrong work. A graph can preserve a mistaken interpretation. A policy can be bypassed by an uncovered path.</p><p>Review takes time, and repeated model agreement can reproduce a shared error. Local processing alone does not establish privacy or correctness.</p><p class=\"takeaway\">Track error rates, review effort, corrections, and boundary failures alongside the number of artifacts produced.</p><p><a href=\"comparison/\">Read the repository capability review and alternatives feature analysis →</a></p>",
       "visual": "<p class=\"eyebrow\">What to measure next</p><ul class=\"measure-list\"><li>Citation identity accuracy</li><li>Claim–source fit</li><li>Time to find supporting evidence</li><li>Stale-claim detection</li><li>Release-boundary failures</li><li>Human review workload</li></ul>",
       "refs": [
         "CiteGeist",
         "Epistemap",
-        "policy"
+        "policy",
+        "repository-comparison"
       ],
       "notes": "These are proposed evaluation dimensions, not a reported benchmark result for this stack. State the gap openly: much of the demonstrated progress is integration and artifact production.",
       "deep_dives": [
@@ -477,7 +457,7 @@
     {
       "id": "lab-experiment",
       "group": "discussion",
-      "kicker": "20 · A BEACON-sized experiment",
+      "kicker": "19 · A BEACON-sized experiment",
       "title": "Try a bounded, falsifiable comparison.",
       "body": "<p>Choose one literature question. Compare a baseline workflow with a provenance-preserving workflow on the same task and time budget.</p><p>Have reviewers evaluate citation identity, source fit, uncertainty, and time needed to audit each result. Record rejected candidates and corrections.</p><p class=\"takeaway\">For teaching, add an unaided transfer task. For agents, test whether a prohibited action is actually blocked.</p>",
       "visual": "<p class=\"eyebrow\">Suggested pilot, not a completed study</p><div class=\"experiment\"><div><b>Baseline</b><span>Existing practice</span></div><span aria-hidden=\"true\">↔</span><div><b>Governed workflow</b><span>Explicit evidence + review</span></div></div><p class=\"visual-caption\">Same task. Comparable resources. Independent review. Predeclared success and failure criteria.</p>",
@@ -488,9 +468,9 @@
     {
       "id": "conversation",
       "group": "discussion",
-      "kicker": "21 · Discussion",
+      "kicker": "20 · Discussion",
       "title": "What would earn your trust?",
-      "body": "<p>Which tasks are worth delegating now?</p><p>Which decisions should require an explicit human release?</p><p>What evidence would show that the system helps us do better science—and makes our mistakes easier to find?</p><p class=\"closing\">The output is an artifact.<br><em>The responsibility stays with us.</em></p>",
+      "body": "<p>Which tasks are worth delegating now?</p><p>Which decisions should require an explicit human release?</p><p>What evidence would show that the system helps us do better science—and makes our mistakes easier to find?</p><p><a href=\"comparison/\">Explore the eight-repository comparison, alternatives, and adoption tradeoffs.</a></p><p class=\"closing\">The output is an artifact.<br><em>The responsibility stays with us.</em></p>",
       "visual": "<p class=\"eyebrow\">Take this back to your lab</p><div class=\"big-word\">One task.<br>One boundary.<br><em>One test.</em></div><p class=\"visual-caption\">Start with something useful, reviewable, and small enough to learn from.</p>",
       "refs": [],
       "notes": "Return to the task named at the beginning. Invite disagreement and specific failure cases. Leave the source appendix available for questions.",
@@ -507,7 +487,7 @@
         {
           "id": "dive-policy",
           "title": "Write down what “responsible” requires.",
-          "body": "<p>ClaimWright’s memorandum, policy files, and role cards make a collaboration agreement inspectable. They describe claim states, evidence expectations, review responsibilities, and release boundaries.</p><p>The same claim can be useful in private exploration and unready for public release. A review record should retain its scope, source access, unresolved objections, and the reason for the release decision.</p><p class=\"takeaway\">The agreement supplies a standard against which to review work. Its current Rust checker checks that required policy files exist.</p>",
+          "body": "<p>ClaimWright’s memorandum, policy files, and role cards make a collaboration agreement inspectable. They describe claim states, evidence expectations, review responsibilities, and release boundaries.</p><p>The same claim can be useful in private exploration and unready for public release. A review record should retain its scope, source access, unresolved objections, and the reason for the release decision.</p><p class=\"takeaway\">The agreement supplies a standard against which to review work. The publication CLI now validates review records, binds them to artifacts and policy, and retains unresolved findings. Human release approval remains separate.</p>",
           "visual": "<p class=\"eyebrow\">What a review should preserve</p><dl class=\"pairs\"><dt>Claim</dt><dd>What is being asserted, and within what scope?</dd><dt>Evidence</dt><dd>Which source was actually inspected?</dd><dt>Decision</dt><dd>What remains unresolved; who approved release?</dd></dl>",
           "refs": [
             "ClaimWright"
@@ -740,10 +720,11 @@
         {
           "id": "dive-geniehive-controls",
           "title": "Make the routing policy inspectable.",
-          "body": "<p>The optional Foundation gateway profile adds revocable client keys, model and operation scopes, metadata-only request auditing, and opt-in token or cost budgets.</p><p>Those controls depend on configuration; the casual example leaves them disabled. Local placement alone also does not establish privacy, model quality, or complete control of an application’s actions.</p><p class=\"takeaway\">For a lab deployment, specify who may call which service, what is recorded, and what happens when a limit or service failure is reached.</p>",
+          "body": "<p>The optional Foundation gateway profile adds revocable client keys, model and operation scopes, metadata-only request auditing, and opt-in token or cost budgets.</p><p>Those controls depend on configuration; the casual example leaves them disabled. Local placement alone also does not establish privacy, model quality, or complete control of an application’s actions.</p><p class=\"takeaway\">For a lab deployment, specify who may call which service, what is recorded, and what happens when a limit or service failure is reached.</p><p>Versioned evaluation contracts now retain case results, dataset and evaluator identity, pass thresholds, and declared hard failures. The public starter cases test output contracts; they do not establish model quality or automatically promote a route.</p><p><a href=\"comparison/#geniehive\">Compare GenieHive with LiteLLM and GPUStack →</a></p>",
           "visual": "<p class=\"eyebrow\">Questions for a local service</p><dl class=\"pairs\"><dt>Access</dt><dd>Which client may use which operation?</dd><dt>Budget</dt><dd>What happens when a configured limit is reached?</dd><dt>Evidence</dt><dd>Can the request decision be inspected?</dd></dl>",
           "refs": [
-            "GenieHive"
+            "GenieHive",
+            "repository-comparison"
           ],
           "notes": "Describe these as implemented optional capabilities in the pinned public README, not proof that every local translation worker uses the gateway profile. Connect the proposed deployment questions to the constructive adoption preface.",
           "kicker": "D6.3 · GenieHive & local LLMs"
@@ -785,8 +766,8 @@
   ],
   "acknowledgements": {
     "credit": "Wesley R. Elsberry defined the scope, supplied the personal experience, and directed revisions. OpenAI Codex assisted with source research and synthesis, drafting and editing, the HTML/CSS/JavaScript implementation, and browser-based checks. The social-preview artwork was generated with AI.",
-    "notice": "AI assistance can introduce factual, citation, interpretation, and software errors. Source links and verification notes support independent checking; they do not guarantee accuracy. The author retains responsibility for the presentation’s claims, editorial decisions, and final release. This version remains a speaker-review draft. No endorsement by OpenAI, Michigan State University, or the organizations discussed is implied.",
-    "timeline_note": "Repository milestones on 25 September 2026. Times are Eastern Daylight Time (UTC−04:00) and record commits, not continuous working time.",
+    "notice": "AI assistance can introduce factual, citation, interpretation, and software errors. Source links and verification notes support independent checking; they do not guarantee accuracy. The author retains responsibility for the presentation’s claims, editorial decisions, and final release. The author approved this revision for broader public release. No endorsement by OpenAI, Michigan State University, or the organizations discussed is implied.",
+    "timeline_note": "Initial repository milestones are from 25 September 2026; their times are Eastern Daylight Time (UTC−04:00), not continuous working time. The public revision is recorded by release date.",
     "milestones": [
       {
         "time": "05:00",
@@ -822,6 +803,12 @@
           "ae16bce",
           "4034d3f"
         ]
+      },
+      {
+        "time": "26 Sep 2026",
+        "title": "Revision for broader public release",
+        "detail": "Original preserved in a dated archive; company-specific material removed; personal experience retained anonymously; approved repository capabilities and alternatives report linked.",
+        "commits": []
       }
     ]
   }

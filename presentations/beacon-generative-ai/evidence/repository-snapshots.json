@@ -6,8 +6,9 @@
       "url": "https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/README.md"
     },
     "ClaimWright": {
-      "sha": "836cbe8924efc694bfe5e1d6cd6c11014b7297bc",
-      "url": "https://github.com/welsberr/ClaimWright/blob/836cbe8924efc694bfe5e1d6cd6c11014b7297bc/README.md"
+      "sha": "366d19e47cc9db8cc6f75b0c262cf84b6c0b4917",
+      "url": "https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md",
+      "checked_on": "2026-09-26"
     },
     "Epistemap": {
       "sha": "4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6",
@@ -30,8 +31,10 @@
       "url": "https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/README.md"
     },
     "GenieHive": {
-      "sha": "705e82a536e1d4ef638ce0fe4275fd755d9113e9",
-      "url": "https://github.com/welsberr/GenieHive/blob/705e82a536e1d4ef638ce0fe4275fd755d9113e9/README.md"
+      "sha": "a664348180501277d5ec793b7a548d9d4931b977",
+      "url": "https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md",
+      "checked_on": "2026-09-26"
     }
-  }
+  },
+  "updated_on": "2026-09-26"
 }

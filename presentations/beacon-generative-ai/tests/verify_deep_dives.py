@@ -31,10 +31,11 @@ with sync_playwright() as p:
         page.locator('#scene-select').select_option(scene_id)
         selected(scene_id)
 
-    assert page.locator('.step:not(.dive-step)').count() == 21
+    assert page.locator('.step:not(.dive-step)').count() == 20
     assert page.locator('[data-dive]').count() == 7
     assert page.locator('.dive-step').count() == 19
-    assert page.locator('.source-record').count() == 26
+    assert page.locator('.source-record').count() == 25
+    assert page.locator('a[href="comparison/"]').count() >= 3
     ids = page.locator('[id]').evaluate_all('(els)=>els.map(e=>e.id)')
     assert len(ids) == len(set(ids))
     fragments = page.locator('a[href^="#"]').evaluate_all('(els)=>els.map(e=>e.getAttribute("href").slice(1))')
@@ -127,4 +128,4 @@ with sync_playwright() as p:
         assert nojs.url.endswith('#' + caller)
     assert not errors, errors
     browser.close()
-print(json.dumps({'main_scenes': 21, 'dives': 7, 'dive_scenes': 19, 'caller_round_trips': len(CALLS), 'keyboard_reload_history': 'pass', 'directory_return': 'pass', 'storage_disabled': 'pass', 'native_no_js_links': 'pass', 'widths': widths, 'page_errors': errors}, indent=2))
+print(json.dumps({'main_scenes': 20, 'dives': 7, 'dive_scenes': 19, 'caller_round_trips': len(CALLS), 'keyboard_reload_history': 'pass', 'directory_return': 'pass', 'storage_disabled': 'pass', 'native_no_js_links': 'pass', 'widths': widths, 'page_errors': errors}, indent=2))

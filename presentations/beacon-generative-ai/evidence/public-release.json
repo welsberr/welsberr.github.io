@@ -1,0 +1,87 @@
+{
+  "schema_version": "beacon.public_release.v1",
+  "approved_on": "2026-09-26",
+  "recorded_at": "2026-09-26T05:55:22Z",
+  "steward": "Wesley R. Elsberry",
+  "status": "author_approved_public_revision",
+  "archive": {
+    "source_commit": "3ef36fb3890cfe7b0978f9bd827c13fe63a0e522",
+    "archive_tag": "beacon-generative-ai-original-2026-09-26",
+    "archive_file": "beacon-original-2026-09-26.tar.gz",
+    "sha256": "9e6353b59912445f0ebeecfa082f5f72a58e5bfcbd62bf18cdfb0687647664e5",
+    "scope": "Tracked presentation files, assets, notes and source data from the pre-revision commit; excludes untracked companion drafts."
+  },
+  "archive_url": "https://github.com/welsberr/welsberr.github.io/tree/beacon-generative-ai-original-2026-09-26/presentations/beacon-generative-ai",
+  "changes": [
+    "Removed company-specific section and direct company references from current presentation, source data and notes.",
+    "Retained anonymized personal experience.",
+    "Promoted and linked the repository capability review and alternatives analysis.",
+    "Updated ClaimWright and GenieHive capability descriptions and snapshot links."
+  ],
+  "presentation_url": "https://welsberr.github.io/presentations/beacon-generative-ai/",
+  "comparison_url": "https://welsberr.github.io/presentations/beacon-generative-ai/comparison/",
+  "publication_checks": {
+    "presentation": "pass",
+    "comparison": "pass",
+    "checker_revision": "366d19e47cc9db8cc6f75b0c262cf84b6c0b4917"
+  },
+  "main_scenes": 20,
+  "deep_dives": 7,
+  "deep_dive_scenes": 19,
+  "source_records": 25,
+  "integrity_review": "publication-integrity-review.json",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "7b5a45658bcd9367594092c0e8d41f809ec796fd6c0a95e8e00ba6db5a92284b"
+    },
+    {
+      "path": "content.json",
+      "sha256": "b9c893ac3e5ddf37f3fff19cdc465551f5bc0d9423ea8744b7414ba9bd75a318"
+    },
+    {
+      "path": "speaker-notes.md",
+      "sha256": "e789a6ed104953b2c25ff7e66c22a9a9cd87c28934074cbfee2faebfa64b3df4"
+    },
+    {
+      "path": "speaker-notes.html",
+      "sha256": "5b4e78e0b232068c33158b6614ea8a1f35f16cdda1f3a83dd14c60230f645db9"
+    },
+    {
+      "path": "style.css",
+      "sha256": "bdf955781a3fddc71db2adc3dad4684ed523afa0d92ff2dafeb845be853e2fd4"
+    },
+    {
+      "path": "presentation.js",
+      "sha256": "96d4a3f372a4760ca2c9dac7ae73ace345dbcb1a78cec875361434b1e99b320d"
+    },
+    {
+      "path": "evidence/repository-snapshots.json",
+      "sha256": "fa81c947d911e38b51aaa77ab03609566da1342fb39a9f00f93b4bf1b44c5597"
+    },
+    {
+      "path": "evidence/publication-integrity-review.json",
+      "sha256": "6e09c5721d3a6cdaa2a3a57ca54385cd6b9b3528e4905755f4caf9006d0f6877"
+    },
+    {
+      "path": "comparison/index.html",
+      "sha256": "b1baf747ed446e960b95005ad617c5964cc63846ade8247c84e3d8ec676d4634"
+    },
+    {
+      "path": "comparison/report.md",
+      "sha256": "421f334da1ae5a21f87c3f4e6972d346f4f88e11ec8c25477498ce27e9461a7c"
+    },
+    {
+      "path": "comparison/provenance.json",
+      "sha256": "e698e8f109d4906cf419e8663a0fc94c6a00c0b86e42f1a3ec9fb8ffe79594c4"
+    },
+    {
+      "path": "comparison/publication-integrity-review.json",
+      "sha256": "f43ee1eb296d16484017b241b92bf21f460e41a7f282f73553d4cab24e8423f6"
+    },
+    {
+      "path": "comparison/artifact-manifest.json",
+      "sha256": "bd1b89eb0f6afe1dd9661a334cf2a2a060dc143906ff5f83d47db1136e27c14d"
+    }
+  ]
+}

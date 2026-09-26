@@ -1,0 +1,164 @@
+{
+  "schema_version": "claimwright.publication_integrity_review.v1",
+  "artifact_id": "beacon-public-presentation-2026-09-26",
+  "artifact_sha256": "7b5a45658bcd9367594092c0e8d41f809ec796fd6c0a95e8e00ba6db5a92284b",
+  "artifact_text_sha256": "7b5a45658bcd9367594092c0e8d41f809ec796fd6c0a95e8e00ba6db5a92284b",
+  "release_scope": "Revised public scrollytell, speaker notes, source data, static assets and release evidence.",
+  "policy_id": "claimwright.academic_publication_integrity.v1",
+  "policy_sha256": "36608ac81051015b2cb6205e24c2e8cb7df472ec29eaaeea80cec3301dfb9fd1",
+  "tool_version": "OpenAI Codex assisted documentary review; local Python Markdown and Playwright Chromium",
+  "destination": "https://welsberr.github.io/presentations/beacon-generative-ai/",
+  "checks": [
+    {
+      "id": "plagiarism_and_attribution",
+      "status": "pass",
+      "evidence": [
+        "Authorized revision of the author\u2019s existing presentation with source ledger and AI assistance notice preserved."
+      ],
+      "limitations": [
+        "AI-assisted editorial check; not independent human review."
+      ]
+    },
+    {
+      "id": "similarity_and_text_recycling",
+      "status": "pass",
+      "evidence": [
+        "The author explicitly requested a revision of the existing talk; the original is archived at its Git commit/tag and its reuse is disclosed in the revision record.",
+        "New prose is limited to anonymized framing, capability updates and links to the approved report. No new substantial source quotation or documentary figure added."
+      ],
+      "limitations": [
+        "Editorial derivative-work review, not a web-wide similarity search."
+      ]
+    },
+    {
+      "id": "fabrication_falsification_and_manipulation",
+      "status": "pass",
+      "evidence": [
+        "Existing bounded evidence claims retained; company-specific section and its deployment claims removed.",
+        "ClaimWright and GenieHive descriptions updated to the verified public revisions; regression results are not presented as scientific efficacy or model-quality measurements."
+      ]
+    },
+    {
+      "id": "citation_and_source_integrity",
+      "status": "pass",
+      "evidence": [
+        "Source records for the removed section deleted; remaining scene references validated by the builder.",
+        "Updated repository snapshots and approved comparison are linked from relevant scenes and the source ledger."
+      ],
+      "limitations": [
+        "Alternatives not installed or evaluated head to head; moving documentation can change."
+      ]
+    },
+    {
+      "id": "authorship_contribution_and_ai_disclosure",
+      "status": "pass",
+      "evidence": [
+        "Wesley R. Elsberry reviewed the report and approved its public release.",
+        "OpenAI Codex assistance and the author\u2019s developer/steward relationship are disclosed."
+      ]
+    },
+    {
+      "id": "copyright_license_and_permissions",
+      "status": "pass",
+      "evidence": [
+        "Original prose and tables; no source image or substantial quotation reproduced. Existing presentation fonts and styles reused."
+      ]
+    },
+    {
+      "id": "ethics_consent_conflicts_and_funding",
+      "status": "pass",
+      "evidence": [
+        "No new human or animal study or private participant dataset is reported.",
+        "Developer relationship disclosed; author approved the report with that disclosure. Proposed classroom work is labeled as a proposed evaluation."
+      ],
+      "limitations": [
+        "No independent review of institutional disclosures is claimed; this is a personal commentary and software comparison."
+      ]
+    },
+    {
+      "id": "confidentiality_and_private_material",
+      "status": "pass",
+      "evidence": [
+        "Direct company mentions removed from presentation, notes and source data; firsthand experience remains anonymous.",
+        "Only allowlisted presentation and comparison artifacts are being published. Private archives and research logs remain outside the site."
+      ]
+    },
+    {
+      "id": "harmful_or_unprofessional_content",
+      "status": "pass",
+      "evidence": [
+        "Fair task-specific comparisons; no employer criticism or personal allegations."
+      ]
+    },
+    {
+      "id": "venue_and_release_policy",
+      "status": "pass",
+      "evidence": [
+        "Explicit author instruction authorizes promotion of this report and replacement of the public presentation.",
+        "Personal GitHub Pages publication; archive and revision provenance preserved."
+      ]
+    },
+    {
+      "id": "extension.rendering_and_navigation",
+      "status": "pass",
+      "evidence": [
+        "20 main scenes, seven dives, 19 dive scenes, 25 sources and 16 caller round trips passed browser checks.",
+        "Keyboard, reload, history, directory return, disabled storage and no-JavaScript links passed; widths 320\u20131440 checked without page overflow."
+      ],
+      "limitations": [
+        "Not a full WCAG audit or exhaustive external link availability check."
+      ]
+    }
+  ],
+  "similarity_review": {
+    "method": "Editorial comparison of the revised presentation with the author-owned original; author-directed self-reuse disclosed by archive and revision record. New capability prose checked against linked repositories and report.",
+    "corpus_limitations": [
+      "No web-wide similarity search.",
+      "The revised presentation substantially reuses its acknowledged original; this is intentional and author-authorized."
+    ],
+    "material_matches": []
+  },
+  "decision": "pass",
+  "decision_rationale": "Author authorized archiving the original and publishing this revision with company-specific material removed, anonymous firsthand experience retained and the approved capability comparison linked. Requested changes, source consistency, browser navigation and publication checks completed.",
+  "human_reviewer": "Wesley R. Elsberry",
+  "reviewed_at": "2026-09-26T05:55:22Z",
+  "ai_use": {
+    "used": true,
+    "disclosure": "OpenAI Codex assisted research, source/history inspection, drafting, comparison and rendering."
+  },
+  "prior_publication": {
+    "has_prior_work": true,
+    "disclosure": "Author-requested revision of the existing BEACON presentation; original preserved at a dated Git tag.",
+    "references": [
+      "https://github.com/welsberr/welsberr.github.io/tree/beacon-generative-ai-original-2026-09-26/presentations/beacon-generative-ai"
+    ]
+  },
+  "source_references": [
+    "https://www.census.gov/library/stories/2026/05/ai-use-businesses.html",
+    "#internal-adoption",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5236068/",
+    "https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/README.md",
+    "https://github.com/welsberr/ClaimWright/blob/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917/README.md",
+    "https://github.com/welsberr/Epistemap/blob/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6/README.md",
+    "https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/README.md",
+    "https://github.com/welsberr/doclift/blob/85ccadc30d0ae405846efc7d2fd4b70cdbbdd545/README.md",
+    "https://github.com/welsberr/Didactopus/blob/f0b0e8ac55459e05bdf16604ec971ea266278b84/README.md",
+    "https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/README.md",
+    "https://github.com/welsberr/GroundRecall/blob/68ef5744306f247ddbf9cc3a114d7a520331f4c2/docs/policy-plugin-spec.md",
+    "evidence/bibliography-build.json",
+    "https://talkorigins.org/origins/biblio/abiogenesis.html",
+    "https://evo-edu.org/notebook/",
+    "https://github.com/welsberr/Didactopus/blob/f0b0e8ac55459e05bdf16604ec971ea266278b84/examples/ocw-information-entropy-skill-demo/skill_demo.md",
+    "https://welsberr.github.io/preprints/operational-premise-taxonomy/mechanism-aware-ai-assurance-opt-preprint-20260702.pdf",
+    "https://github.com/welsberr/CiteGeist/commit/4f3ac4d",
+    "https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/README.md",
+    "https://github.com/welsberr/GenieHive/blob/a664348180501277d5ec793b7a548d9d4931b977/docs/translation_support.md",
+    "https://github.com/welsberr/SciSiteForge/blob/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7/docs/GENIEHIVE_TRANSLATION.md",
+    "https://github.com/welsberr/CiteGeist/blob/8d4b7996fab39be384be6f1acfbbdd55f6fc9756/examples/talkorigins/README.md",
+    "https://talkoriginsarchive.github.io/translation-status/",
+    "https://talkoriginsarchive.github.io/foundation/2026-update/",
+    "evidence/talkorigins-workflow.json",
+    "comparison/"
+  ],
+  "notes": "Author acceptance and publication direction recorded on 26 September 2026. This is an editorial release approval, not an independent scientific or security audit. UTF-8 HTML is the gate-bound artifact; other payload hashes are in artifact-manifest.json."
+}

@@ -1,0 +1,224 @@
+{
+  "schema_version": "beacon.repository-comparison.v1",
+  "assessed_at": "2026-09-26T05:14:12+00:00",
+  "steward": "Wesley R. Elsberry",
+  "research_assistance": "OpenAI Codex",
+  "human_review": "approved for public release by Wesley R. Elsberry on 2026-09-26",
+  "release_status": "approved_for_publication",
+  "method": "Bounded primary-document and source-code review, with repository and clean-checkout regression tests for ClaimWright and GenieHive; no common competitor benchmark or security audit",
+  "repositories": [
+    {
+      "name": "ClaimWright",
+      "first_commit": "2bb267c7a06ff3db13017c66f12331d38ef1d68d",
+      "first_commit_at": "2026-07-12T06:01:50-04:00",
+      "public_main": "366d19e47cc9db8cc6f75b0c262cf84b6c0b4917",
+      "local_head": "366d19e47cc9db8cc6f75b0c262cf84b6c0b4917",
+      "public_readme_sha256": "2c9c1465ef40c26d4361dfa9430a961d463a392020e19acc144d6dffe18b0ef7",
+      "uncommitted_changes_excluded": false,
+      "source": "https://github.com/welsberr/ClaimWright/tree/366d19e47cc9db8cc6f75b0c262cf84b6c0b4917",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for public revision and test outcomes; moderate for comparative fit; superiority unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T05:14:12+00:00",
+      "previous_public_main": "a040a64bd76596aaa2f6b5c1b7b145e99ac520f1",
+      "previous_local_head": "836cbe8924efc694bfe5e1d6cd6c11014b7297bc",
+      "validation": {
+        "passing_tests": 23,
+        "working_repository": "passed",
+        "clean_checkout": "passed",
+        "github_ci": "success",
+        "ci_url": "https://github.com/welsberr/ClaimWright/actions/runs/36220079481",
+        "validated_at": "2026-09-26T05:14:12+00:00",
+        "scope": "Synthetic software regression tests; no live model or security evaluation"
+      },
+      "availability": "Published on GitHub main; earlier main-branch gap closed"
+    },
+    {
+      "name": "Epistemap",
+      "first_commit": "9c9f4b3d13a4c573ff805393826c330d89055f16",
+      "first_commit_at": "2026-07-02T18:29:57-04:00",
+      "public_main": "4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6",
+      "local_head": "4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6",
+      "public_readme_sha256": "7b592e7541a484756ee170aa584e12d504f179aeb953f2eebb77076e52e3580f",
+      "uncommitted_changes_excluded": true,
+      "source": "https://github.com/welsberr/Epistemap/tree/4f5a7cd10c8aa2bc4cf4999fd9d483882c5640a6",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for snapshot identity and documented features; moderate for comparative fit; effectiveness unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T04:50:32+00:00"
+    },
+    {
+      "name": "GroundRecall",
+      "first_commit": "bf5c1a0e4a5619a29303e46d1c481f3de611eda6",
+      "first_commit_at": "2026-04-17T05:08:37-04:00",
+      "public_main": "68ef5744306f247ddbf9cc3a114d7a520331f4c2",
+      "local_head": "68ef5744306f247ddbf9cc3a114d7a520331f4c2",
+      "public_readme_sha256": "753eb84fa84dfd33be36898a0c49080b514ae76da081c95fed5e3122645ac2d9",
+      "uncommitted_changes_excluded": true,
+      "source": "https://github.com/welsberr/GroundRecall/tree/68ef5744306f247ddbf9cc3a114d7a520331f4c2",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for snapshot identity and documented features; moderate for comparative fit; effectiveness unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T04:50:32+00:00"
+    },
+    {
+      "name": "doclift",
+      "first_commit": "aa0951ebf155ab96f5cd4df01867f6a221925b15",
+      "first_commit_at": "2026-04-22T16:42:49-04:00",
+      "public_main": "85ccadc30d0ae405846efc7d2fd4b70cdbbdd545",
+      "local_head": "85ccadc30d0ae405846efc7d2fd4b70cdbbdd545",
+      "public_readme_sha256": "2eb5dfc916351d03225877a2d2559574bb50d0551beff4acf55e3cf85ca001ca",
+      "uncommitted_changes_excluded": false,
+      "source": "https://github.com/welsberr/doclift/tree/85ccadc30d0ae405846efc7d2fd4b70cdbbdd545",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for snapshot identity and documented features; moderate for comparative fit; effectiveness unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T04:50:32+00:00"
+    },
+    {
+      "name": "Didactopus",
+      "first_commit": "50ee843b328f37af2ce016c288663a72eae167d5",
+      "first_commit_at": "2026-03-12T15:25:34-04:00",
+      "public_main": "f0b0e8ac55459e05bdf16604ec971ea266278b84",
+      "local_head": "f0b0e8ac55459e05bdf16604ec971ea266278b84",
+      "public_readme_sha256": "e9d0c4c40b003ec2643e58a89af33fce96359a64a456c6a38b443e0836804441",
+      "uncommitted_changes_excluded": true,
+      "source": "https://github.com/welsberr/Didactopus/tree/f0b0e8ac55459e05bdf16604ec971ea266278b84",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for snapshot identity and documented features; moderate for comparative fit; effectiveness unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T04:50:32+00:00"
+    },
+    {
+      "name": "CiteGeist",
+      "first_commit": "4f3ac4decb17dd81b1356bf9f566c0ae8d393cbe",
+      "first_commit_at": "2026-03-19T20:13:31-04:00",
+      "public_main": "8d4b7996fab39be384be6f1acfbbdd55f6fc9756",
+      "local_head": "8d4b7996fab39be384be6f1acfbbdd55f6fc9756",
+      "public_readme_sha256": "c2087a8d2207001633a084d48591a97facd9ba55e9eb40a51eb19c1cc2c9839e",
+      "uncommitted_changes_excluded": true,
+      "source": "https://github.com/welsberr/CiteGeist/tree/8d4b7996fab39be384be6f1acfbbdd55f6fc9756",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for snapshot identity and documented features; moderate for comparative fit; effectiveness unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T04:50:32+00:00"
+    },
+    {
+      "name": "GenieHive",
+      "first_commit": "dabbebd3ba2805adaca3f7adad0fd7cf81bb3b68",
+      "first_commit_at": "2026-04-07T13:10:24-04:00",
+      "public_main": "a664348180501277d5ec793b7a548d9d4931b977",
+      "local_head": "a664348180501277d5ec793b7a548d9d4931b977",
+      "public_readme_sha256": "3ef0d1d5f41269adb3c5cb187474c7231f7353814fc50d128320b12f051eff8a",
+      "uncommitted_changes_excluded": false,
+      "source": "https://github.com/welsberr/GenieHive/tree/a664348180501277d5ec793b7a548d9d4931b977",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for public revision and test outcomes; moderate for comparative fit; superiority unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T05:14:12+00:00",
+      "previous_public_main": "705e82a536e1d4ef638ce0fe4275fd755d9113e9",
+      "previous_local_head": "3d509098771d437b6189a00df9beade1d81a535e",
+      "validation": {
+        "passing_tests": 119,
+        "working_repository": "passed",
+        "clean_checkout": "passed",
+        "github_ci": "success",
+        "ci_url": "https://github.com/welsberr/GenieHive/actions/runs/36220017827",
+        "validated_at": "2026-09-26T05:14:12+00:00",
+        "scope": "Synthetic software regression tests; no live model or security evaluation"
+      },
+      "availability": "Published on GitHub main; earlier main-branch gap closed"
+    },
+    {
+      "name": "SciSiteForge",
+      "first_commit": "d1b3d78b7906ca40ac71e049c5d29f71d71e5dc9",
+      "first_commit_at": "2025-10-14T20:21:40-04:00",
+      "public_main": "b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7",
+      "local_head": "b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7",
+      "public_readme_sha256": "f10927a222993fca8fd5ce90520c2f4f66c900cd48481af01ed14d6505627650",
+      "uncommitted_changes_excluded": false,
+      "source": "https://github.com/welsberr/SciSiteForge/tree/b61a4cb8b2e3e028f922ebc9d6a2b388c063f2e7",
+      "evidence_type": "Local committed source/history plus public-main API observation",
+      "confidence": "high for snapshot identity and documented features; moderate for comparative fit; effectiveness unestablished",
+      "steward": "Wesley R. Elsberry",
+      "assessed_at": "2026-09-26T04:50:32+00:00"
+    }
+  ],
+  "claims": [
+    {
+      "id": "P1",
+      "scope": "Didactopus precedes Karpathy gist; date arithmetic",
+      "confidence": "high for recorded dates; no priority inference",
+      "calculation": "2026-04-04 minus 2026-03-16 = 19 calendar days",
+      "assessed_at": "2026-09-26T04:50:32+00:00",
+      "steward": "Wesley R. Elsberry",
+      "human_review": "approved for publication, 2026-09-26",
+      "evidence": "report.md#p1-chronology-and-the-19-day-figure"
+    },
+    {
+      "id": "P2",
+      "scope": "Governance relevance and memory alternatives",
+      "confidence": "high for documented overlap; moderate for comparative fit",
+      "assessed_at": "2026-09-26T04:50:32+00:00",
+      "steward": "Wesley R. Elsberry",
+      "human_review": "approved for publication, 2026-09-26",
+      "evidence": "report.md#p2-governance-is-relevant-and-overlaps-alternatives"
+    },
+    {
+      "id": "P3",
+      "scope": "Graph and learning comparison",
+      "confidence": "high for documented structures; learning superiority unestablished",
+      "assessed_at": "2026-09-26T04:50:32+00:00",
+      "steward": "Wesley R. Elsberry",
+      "human_review": "approved for publication, 2026-09-26",
+      "evidence": "report.md#p3-graph-representation-and-learning"
+    },
+    {
+      "id": "P4",
+      "scope": "Bibliography, documents, gateway and publishing choices",
+      "confidence": "high for recorded publication/test outcomes; moderate for comparative fit; authorship apportionment unestablished",
+      "assessed_at": "2026-09-26T05:14:12+00:00",
+      "steward": "Wesley R. Elsberry",
+      "human_review": "approved for publication, 2026-09-26",
+      "evidence": "report.md#p4-bibliography-conversion-serving-and-publishing"
+    },
+    {
+      "id": "P5",
+      "scope": "Public/local availability and contribution",
+      "confidence": "high for recorded publication/test outcomes; moderate for comparative fit; authorship apportionment unestablished",
+      "assessed_at": "2026-09-26T05:14:12+00:00",
+      "steward": "Wesley R. Elsberry",
+      "human_review": "approved for publication, 2026-09-26",
+      "evidence": "report.md#p5-availability-and-contribution-claims"
+    }
+  ],
+  "limits": [
+    "Current alternatives are not a reconstruction of their historical feature sets.",
+    "Repository dates do not prove first public availability or intellectual priority.",
+    "Third-party features were not all independently executed.",
+    "No measured superiority, educational benefit or security certification is claimed.",
+    "Human stewardship and the developer relationship are disclosed; this is not an independent external review."
+  ],
+  "initial_assessed_at": "2026-09-26T04:50:32+00:00",
+  "updates": [
+    {
+      "at": "2026-09-26T05:14:12+00:00",
+      "summary": "Published tested ClaimWright and GenieHive updates on GitHub main. Corrected initial ClaimWright availability description: code was already on public feature branch, not exclusively local.",
+      "steward": "Wesley R. Elsberry",
+      "execution": "OpenAI Codex under explicit test/commit/push instruction",
+      "presentation_release": "Review draft remains local."
+    },
+    {
+      "at": "2026-09-26T05:51:53+00:00",
+      "summary": "Author approved public promotion with the revised presentation.",
+      "steward": "Wesley R. Elsberry",
+      "presentation_release": "Public revision authorized."
+    }
+  ],
+  "release_approval": {
+    "steward": "Wesley R. Elsberry",
+    "recorded_at": "2026-09-26T05:51:53+00:00",
+    "basis": "Explicit author acceptance of the report and request to promote it with the revised public presentation.",
+    "scope": "Repository capability review and alternatives analysis; public presentation revision."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-09-26T05:55:22Z",
+  "status": "author_approved_public_release",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "b1baf747ed446e960b95005ad617c5964cc63846ade8247c84e3d8ec676d4634"
+    },
+    {
+      "path": "report.md",
+      "sha256": "421f334da1ae5a21f87c3f4e6972d346f4f88e11ec8c25477498ce27e9461a7c"
+    },
+    {
+      "path": "source.md",
+      "sha256": "8ebe2afeeebca5695acaa5e74e685f89f5db683e6bfbb03848d0e7455a619795"
+    },
+    {
+      "path": "style.css",
+      "sha256": "dd2462920a5779d53e67ee62c5c157a44fb3e6aeb46cc98bd72942d19ef75223"
+    },
+    {
+      "path": "build.py",
+      "sha256": "65aa7d836d2c5ceee080b30f59e15961d04069a3e267f7c7c22a6892dc45f0b2"
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "e698e8f109d4906cf419e8663a0fc94c6a00c0b86e42f1a3ec9fb8ffe79594c4"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "14f762143240359132d4f699c904b1ff6b8ebdccff9ff46f5c37d2f951c333a4"
+    },
+    {
+      "path": "publication-integrity-review.json",
+      "sha256": "f43ee1eb296d16484017b241b92bf21f460e41a7f282f73553d4cab24e8423f6"
+    }
+  ],
+  "render_checks": {
+    "checked_at": "2026-09-26T05:52:38+00:00",
+    "http_status": 200,
+    "widths_without_page_overflow": [
+      1280,
+      768,
+      390,
+      320
+    ],
+    "duplicate_ids": 0,
+    "broken_fragment_links": 0,
+    "javascript_errors": [],
+    "print_pdf": "report-review.pdf",
+    "scope": "Local Chromium render and navigation; not a full accessibility or external link audit"
+  },
+  "publication_gate_check": {
+    "decision": "pass",
+    "claimwright_public_revision": "366d19e47cc9db8cc6f75b0c262cf84b6c0b4917",
+    "evaluated_at": "2026-09-26T05:55:22Z",
+    "review_sha256": "f43ee1eb296d16484017b241b92bf21f460e41a7f282f73553d4cab24e8423f6"
+  }
+}
