@@ -37,10 +37,10 @@
   ];
   const byId = new Map(), docs = [], units = [], concepts = [], assertions = [];
   const adj = new Map();
+  const $ = s => document.querySelector(s);
   const materialsByCode = new Map();
   const coverageByDoc = new Map();
   const mapEl = $('#corpus-map'), mapStatus = $('#map-status'), mapChoices = $('#map-source-choices');
-  const $ = s => document.querySelector(s);
   const searchInput = $('#graph-search'), versionFilter = $('#version-filter'), gradeFilter = $('#grade-filter'), statusFilter = $('#status-filter');
   const resultsEl = $('#result-list'), countEl = $('#result-count'), moreBtn = $('#more-results'), detailEl = $('#item-detail');
   let results = [], shown = 0, selectedId = null;
