@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="graph-viewer.css">
   <script src="graph-viewer.js" defer></script>
 </head>
-<body class="document">
+<body class="document"><aside class="site-move" role="status">The current version of this standards review is moving to the <a href="https://florida-citizens-for-science.github.io/research/florida-science-standards-review/">Florida Citizens for Science Research site</a>. The source and comparison materials here remain available as an archive.</aside>
   <header class="docbar"><a href="../index.html">← Florida Science Standards Draft Review</a><span>Interactive research tool · source-linked graph</span></header>
   <main class="prose graph-page">
     <h1 class="doc-title">Explore the standards and source graph</h1>
@@ -28,6 +28,7 @@
         <button id="view-benchmarks" type="button" aria-pressed="false">Benchmark network</button>
         <button id="map-reset" type="button">Reset map</button>
         <label for="map-zoom">Zoom</label><input id="map-zoom" type="range" min="70" max="180" value="100"><span id="zoom-value">100%</span>
+        <label for="focus-depth">Connection depth</label><select id="focus-depth" aria-label="Selected node connection depth"><option value="0">Selected item only</option><option value="1" selected>1 connection</option><option value="2">2 connections</option><option value="3">3 connections</option></select>
       </div>
       <div id="map-source-choices" class="map-source-choices" hidden></div>
       <div class="map-scroll" tabindex="0" aria-label="Scrollable graph visualization">
@@ -35,7 +36,7 @@
       </div>
       <div id="map-legend" class="map-legend"><span><i class="legend-dot draft"></i>2026 draft</span><span><i class="legend-dot florida"></i>Florida predecessors</span><span><i class="legend-dot external"></i>External comparison sources</span><span><i class="legend-line"></i>Recorded comparison links</span></div>
       <p id="map-status" class="map-status" aria-live="polite">Loading graph map…</p>
-      <p class="map-access-note">The map complements the searchable item list below. Use that list and the relationship details for keyboard navigation and the full evidence notes. In benchmark view, all represented items remain visible while links are revealed for the selected benchmark to keep dense regions readable.</p>
+      <p class="map-access-note">Select a node in either the map or search results to center the network on that item. Choose a connection depth to expand or narrow its recorded neighborhood. “Connection” follows the graph’s undirected recorded assertions; source-document bookkeeping links are excluded. Use the relationship details for direction, evidence notes, and confidence values.</p>
       <p class="map-access-note"><strong>Design basis:</strong> graph-exploration research recommends meaningful grouping, filtering, and linked overview/detail views to manage visual complexity; recent network-design work frames exploration as map-like wayfinding with search, filters, and selectable neighborhoods. The source map, benchmark view, filters, edge selection, and item detail apply those ideas. Interactive SVG keyboard semantics follow the <a href="https://w3c.github.io/svg-aam/">W3C SVG Accessibility API Mappings</a>. See <a href="https://www.cs.umd.edu/~ben/Shneiderman2013Interactive.pdf">Shneiderman &amp; Dunne on interactive network exploration</a> and <a href="https://doi.org/10.1177/14738716241270341">Cerioli et al. on network wayfinding</a>.</p>
     </section>
 

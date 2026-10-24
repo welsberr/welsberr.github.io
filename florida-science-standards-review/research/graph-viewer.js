@@ -108,6 +108,7 @@
     mapChoices.querySelectorAll('input').forEach(x=>x.addEventListener('change',renderBenchmarkMap));
   }
   function renderBenchmarkMap() {
+    if(selectedId && byId.has(selectedId)) return renderFocusMap(selectedId);
     const active=[...mapChoices.querySelectorAll('input:checked')].map(x=>x.value);
     const selectedUnits=units.filter(u=>active.includes(u.sourceDocument)&&(!versionFilter.value||u.sourceDocument===versionFilter.value)&&(!gradeFilter.value||u.gradeSpan===gradeFilter.value)&&(!statusFilter.value||u.status===statusFilter.value));
     const width=Math.max(1200,active.length*330),height=850,colW=width/Math.max(1,active.length),positions=new Map();
@@ -129,6 +130,42 @@
     mapEl.setAttribute('viewBox',`0 0 ${width*(100/mapZoom)} ${height*(100/mapZoom)}`);mapEl.innerHTML=`<g class="map-world">${guides}${heading}${labels}${edges}${dots}</g>`;
     mapEl.querySelectorAll('[data-node]').forEach(c=>c.addEventListener('click',()=>showNode(c.dataset.node)));
     mapStatus.textContent=`${selectedUnits.length.toLocaleString()} benchmark/source items shown across ${active.length} selected versions. ${selectedId?`${selectedNeighbors.size} linked neighbor(s) highlighted; select a dot or use the searchable list.`:'Select an item from search to reveal its recorded cross-version connections.'} Grade labels group items for navigation only; they do not indicate a within-year teaching sequence.`;
+  }
+  function focusNeighborhood(root, depthLimit) {
+    const depthById=new Map([[root,0]]), keptEdges=new Map(), frontier=[root];
+    const maxNodes=250;
+    for(let depth=0;depth<depthLimit && frontier.length;depth++){
+      const next=[];
+      for(const id of frontier){
+        const outgoing=(adj.get(id)||[]).filter(e=>e.assertion?.relation!=='sourceDocumentOf' && [e.a,e.b].every(x=>['TextUnit','Concept'].includes(byId.get(x)?.type)));
+        outgoing.sort((a,b)=>title(a.a===id?a.b:a.a).localeCompare(title(b.a===id?b.b:b.a)));
+        for(const e of outgoing){
+          const other=e.a===id?e.b:e.a, key=[e.a,e.b].sort().join('|');
+          if(!keptEdges.has(key))keptEdges.set(key,e);
+          if(!depthById.has(other)&&depthById.size<maxNodes){depthById.set(other,depth+1);next.push(other);}
+        }
+      }
+      frontier.splice(0,frontier.length,...next);
+    }
+    const truncated=[...frontier].some(id=>(adj.get(id)||[]).some(e=>e.assertion?.relation!=='sourceDocumentOf' && [e.a,e.b].every(x=>['TextUnit','Concept'].includes(byId.get(x)?.type)) && !depthById.has(e.a===id?e.b:e.a)));
+    return {depthById,edges:[...keptEdges.values()],truncated};
+  }
+  function renderFocusMap(root) {
+    const depthLimit=Number($('#focus-depth').value)||0;
+    const {depthById,edges,truncated}=focusNeighborhood(root,depthLimit);
+    const levels=new Map();depthById.forEach((d,id)=>{if(!levels.has(d))levels.set(d,[]);levels.get(d).push(id);});
+    const width=1120, ringGap=210, maxDepth=Math.max(0,...depthById.values()), height=Math.max(760,2*(maxDepth*ringGap+120)),cx=width/2,cy=height/2,positions=new Map([[root,[cx,cy]]]);
+    for(let d=1;d<=maxDepth;d++){
+      const ids=(levels.get(d)||[]).sort((a,b)=>title(a).localeCompare(title(b))), radius=d*ringGap, start=-Math.PI/2;
+      ids.forEach((id,i)=>{const angle=start+2*Math.PI*i/Math.max(1,ids.length);positions.set(id,[cx+radius*Math.cos(angle),cy+radius*Math.sin(angle)]);});
+    }
+    const visibleEdges=edges.filter(e=>positions.has(e.a)&&positions.has(e.b));
+    const lines=visibleEdges.map(e=>{const p=positions.get(e.a),q=positions.get(e.b),relation=e.assertion?.relation||'related';return `<line class="focus-edge" x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}"><title>${esc(relation)} · ${esc(e.assertion?.evidence||'No evidence note recorded.')}</title></line>`;}).join('');
+    const circles=[...positions].map(([id,p])=>{const n=byId.get(id),d=depthById.get(id)||0,label=n.code||n.conceptId||title(id),selected=id===root;return `<g class="focus-node depth-${d}${selected?' selected':''}" data-node="${esc(id)}" tabindex="0" role="button" aria-label="Focus on ${esc(label)}; ${d===0?'selected item':`${d} connection${d===1?'':'s'} away`}"><circle cx="${p[0]}" cy="${p[1]}" r="${selected?19:12}"/><text x="${p[0]}" y="${p[1]+(selected?36:29)}" text-anchor="middle">${esc(label.length>34?label.slice(0,31)+'…':label)}</text><title>${esc(label)} · ${esc(n.text||'')}</title></g>`;}).join('');
+    mapEl.setAttribute('viewBox',`${cx-width*(100/mapZoom)/2} ${cy-height*(100/mapZoom)/2} ${width*(100/mapZoom)} ${height*(100/mapZoom)}`);
+    mapEl.innerHTML=`<g class="map-world">${[...Array(maxDepth)].map((_,i)=>`<circle class="focus-ring" cx="${cx}" cy="${cy}" r="${(i+1)*ringGap}"/>`).join('')}${lines}${circles}</g>`;
+    mapEl.querySelectorAll('[data-node]').forEach(g=>{const go=()=>showNode(g.dataset.node,{scroll:false});g.addEventListener('click',go);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});});
+    mapStatus.textContent=`Focused on ${title(root)} · ${depthById.size.toLocaleString()} item(s) through ${depthLimit} connection(s) · ${visibleEdges.length.toLocaleString()} recorded links${truncated?' · display capped at 250 nodes; increase depth only when needed':''}. Select any node to refocus.`;
   }
   function setView(mode) {
     viewMode=mode;$('#view-sources').setAttribute('aria-pressed',String(mode==='sources'));$('#view-benchmarks').setAttribute('aria-pressed',String(mode==='benchmarks'));
@@ -203,12 +240,13 @@
     detailEl.innerHTML=`<p class="item-kicker">Source version · ${esc(coverage?.coverage||'coverage not assessed')}</p><h2 id="detail-title">${esc(title(id))}</h2><p>${esc(d.status||'')}</p><p><strong>${nodeCount.toLocaleString()}</strong> text items are assigned to this source node in the graph.</p>${coverage?.note?`<p class="coverage-warning"><strong>Coverage note:</strong> ${esc(coverage.note)}</p>`:''}<h3>Open source or related review</h3>${showDocumentLinks(id)}<h3>Source files recorded in the graph</h3><ul>${files||'<li>No source file names recorded.</li>'}</ul><p>Source links open the original host. Text reproduced in this graph is the item-level content available in the published research data. Graph node counts are not source document size or evidence that unrepresented material is absent.</p>`;
     updateSelectionStyle();
   }
-  function showNode(id) {
+  function showNode(id,options={}) {
     const n=byId.get(id); if(!n)return;
     if(n.type==='StandardVersion')return showDoc(id);
     selectedId=id; history.replaceState(null,'',`#${encodeURIComponent(id)}`); updateSelectionStyle();
     if(n.sourceDocument){const choice=mapChoices.querySelector(`input[value="${CSS.escape(n.sourceDocument)}"]`);if(choice)choice.checked=true;}
     if(viewMode!=='benchmarks')setView('benchmarks');else renderBenchmarkMap();
+    if(options.scroll!==false)$('#map-heading').scrollIntoView({behavior:'smooth',block:'start'});
     const isUnit=n.type==='TextUnit', doc=byId.get(n.sourceDocument), rels=adj.get(id)||[], isDraftBenchmark=isUnit&&n.sourceDocument==='doc:fl-science-2026-draft'&&n.code&&!/[;,]/.test(n.code);
     const direct=rels.map(e=>({e,other:e.a===id?e.b:e.a})).filter(x=>byId.has(x.other)).slice(0,80);
     const materialRecord=materialsByCode.get(n.code), resources=materialRecord?.resources||[];
@@ -246,6 +284,7 @@
   $('#view-benchmarks').addEventListener('click',()=>setView('benchmarks'));
   $('#map-reset').addEventListener('click',()=>{mapZoom=100;selectedId=null;$('#map-zoom').value='100';$('#zoom-value').textContent='100%';updateMap();});
   $('#map-zoom').addEventListener('input',e=>{mapZoom=Number(e.target.value)||100;$('#zoom-value').textContent=`${mapZoom}%`;updateMap();});
+  $('#focus-depth').addEventListener('change',()=>updateMap());
   moreBtn.addEventListener('click',renderMore);
   init();
 })();
