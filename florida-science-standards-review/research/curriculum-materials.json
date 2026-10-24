@@ -1,0 +1,27 @@
+{
+  "title": "Prepared curriculum materials linked to 2026 draft benchmarks",
+  "schemaVersion": 1,
+  "statusDefinitions": {
+    "not_assessed": "No benchmark-level availability check has been recorded. This does not mean materials are unavailable.",
+    "located": "At least one potentially relevant resource was located; fit or accessibility may still need review.",
+    "verified": "A reviewer checked the resource for benchmark fit and recorded its access and redistribution status.",
+    "none_found_in_search": "A bounded search found no resource; the search scope and date must be recorded. This is not proof that none exists."
+  },
+  "records": [],
+  "recordFields": {
+    "benchmarkId": "Exact 2026 benchmark code, for example SC.8.SL.2.1",
+    "status": "One of the statusDefinitions above",
+    "checkedOn": "ISO date when a resource search or review was performed",
+    "searchScope": "Repositories, catalogs, or sites checked; required for none_found_in_search",
+    "resources": [{
+      "title": "Resource title",
+      "url": "Public source URL",
+      "viewUrl": "Optional locally viewable derivative URL, only where redistribution terms permit",
+      "format": "Lesson, unit, simulation, lab, reading, assessment, or other",
+      "gradeFit": "Grades/course the resource was designed for",
+      "benchmarkFit": "Brief explanation of the match",
+      "accessibility": "Accessibility features or known limitations",
+      "redistribution": "Rights/permission basis and any limits"
+    }]
+  }
+}

@@ -1,0 +1,45 @@
+.graph-page{max-width:1440px}
+.graph-intro{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,28rem),1fr));gap:.5rem 1.5rem;padding:.6rem 1rem;background:#eef4f3;border-left:4px solid #236b68;margin:1.5rem 0}
+.graph-controls,.item-detail,.source-browser,.graph-method{margin:1.5rem 0;padding:1.25rem;border:1px solid #cbd5d1;border-radius:.5rem;background:#fff}
+.graph-controls h2,.item-detail h2,.source-browser h2,.graph-method h2{margin-top:0}
+.graph-controls label,.filter-row label{display:block;font-weight:650;margin:.5rem 0 .25rem}
+#graph-search{box-sizing:border-box;width:100%;padding:.75rem;font:inherit;border:1px solid #66736f;border-radius:.3rem}
+.filter-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:.5rem 1rem}
+.filter-row select{width:100%;font:inherit;padding:.6rem;border:1px solid #66736f;border-radius:.3rem;background:white}
+.result-count{font-size:.9rem;color:#354844}
+.result-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,21rem),1fr));gap:.55rem;max-height:34rem;overflow:auto;padding:.15rem}
+.result-card{display:block;text-align:left;padding:.8rem;border:1px solid #cbd5d1;border-radius:.35rem;background:#fbfcfb;color:inherit;font:inherit;cursor:pointer}
+.result-card:hover,.result-card:focus{border-color:#236b68;outline:2px solid #236b68;outline-offset:1px}
+.result-card[aria-current="true"]{border-color:#153e3b;background:#e8f2ef}
+.result-card strong,.result-card span{display:block}
+.result-card .card-meta{font-size:.82rem;color:#4a5955;margin:.25rem 0}
+.result-card .card-text{font-size:.9rem}
+.more-button{margin-top:.8rem;padding:.65rem 1rem;font:inherit;border:1px solid #315d58;border-radius:.35rem;background:#f1f7f5;cursor:pointer}
+.item-detail{scroll-margin-top:1rem}
+.item-kicker{font-size:.86rem;text-transform:uppercase;letter-spacing:.04em;color:#52635e}
+.item-content{font-size:1.06rem;line-height:1.65;padding:1rem;background:#f7f8f6;border-left:4px solid #7b9b8b;white-space:pre-wrap}
+.detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:.5rem 1.5rem}
+.detail-grid p{margin:.4rem 0}
+.material-flag{padding:.8rem 1rem;background:#fff4da;border-left:4px solid #a56b00}
+.material-flag.available{background:#e8f5eb;border-color:#27834b}
+.relation-list{list-style:none;padding:0;display:grid;gap:.5rem}
+.relation-list li{padding:.65rem;border:1px solid #d6ddda;border-radius:.3rem}
+.relation-list button{font:inherit;color:#145c54;background:none;border:0;padding:0;text-align:left;text-decoration:underline;cursor:pointer}
+.relation-meta{font-size:.88rem;color:#485851}
+.neighborhood{width:100%;min-height:260px;margin:.5rem 0 1rem;background:#f7f9f8;border:1px solid #d6ddda;border-radius:.3rem}
+.neighborhood text{font:12px system-ui,sans-serif;fill:#263d39}
+.neighborhood .edge{stroke:#80938d;stroke-width:1.3}
+.neighborhood .node{stroke:#355e57;stroke-width:1.4;fill:#e1efeb;cursor:pointer}
+.neighborhood .node.selected{fill:#194e47;stroke:#102f2b;stroke-width:2}
+.neighborhood .node-label.selected{fill:white}
+.neighborhood g:focus .node{stroke:#111;stroke-width:3}
+.source-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.65rem}
+.source-card{padding:.8rem;border:1px solid #cbd5d1;border-radius:.35rem;background:#fbfcfb}
+.source-card h3{margin:.1rem 0 .45rem;font-size:1rem}
+.source-card p{font-size:.9rem;margin:.35rem 0}
+.source-card button{margin-top:.45rem;padding:.5rem .7rem;font:inherit;border:1px solid #315d58;border-radius:.3rem;background:white;color:#174f48;cursor:pointer}
+.detail-links{display:flex;flex-wrap:wrap;gap:.5rem 1rem}
+.detail-links a{overflow-wrap:anywhere}
+.text-link{padding:0;border:0;background:transparent;color:#145c54;text-decoration:underline;font:inherit;cursor:pointer}
+.loading-error{padding:1rem;background:#fff0ed;border-left:4px solid #9e2f1d}
+@media(max-width:600px){.graph-controls,.item-detail,.source-browser,.graph-method{padding:.8rem}.result-list{max-height:28rem}.neighborhood{min-height:220px}}
