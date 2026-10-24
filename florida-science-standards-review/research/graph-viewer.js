@@ -120,6 +120,7 @@
   function showDoc(id) {
     const d=byId.get(id); if(!d)return;
     selectedId=id;
+    history.replaceState(null,'',`#${encodeURIComponent(id)}`);
     const nodeCount=units.filter(u=>u.sourceDocument===id).length;
     const files=(d.sourceFiles||[]).map(f=>`<li><code>${esc(f.file)}</code>${f.sha256?` · SHA-256 <code>${esc(f.sha256)}</code>`:''}</li>`).join('');
     detailEl.innerHTML=`<p class="item-kicker">Source version</p><h2 id="detail-title">${esc(title(id))}</h2><p>${esc(d.status||'')}</p><p><strong>${nodeCount.toLocaleString()}</strong> text items from this source are represented in the graph.</p><h3>Open source or related review</h3>${showDocumentLinks(id)}<h3>Source files recorded in the graph</h3><ul>${files||'<li>No source file names recorded.</li>'}</ul><p>Source links open the original host. Text reproduced in this graph is the item-level content available in the published research data.</p>`;
@@ -128,7 +129,7 @@
   function showNode(id) {
     const n=byId.get(id); if(!n)return;
     if(n.type==='StandardVersion')return showDoc(id);
-    selectedId=id; updateSelectionStyle();
+    selectedId=id; history.replaceState(null,'',`#${encodeURIComponent(id)}`); updateSelectionStyle();
     const isUnit=n.type==='TextUnit', doc=byId.get(n.sourceDocument), rels=adj.get(id)||[];
     const direct=rels.map(e=>({e,other:e.a===id?e.b:e.a})).filter(x=>byId.has(x.other)).slice(0,80);
     const materialRecord=materialsByCode.get(n.code), resources=materialRecord?.resources||[];
