@@ -1,0 +1,159 @@
+{
+  "schema_version": "claimwright.publication_integrity_review.v1",
+  "artifact_id": "beacon-offloading-essay-2026-09-25",
+  "artifact_sha256": "d82daba74298206467e057adc895e7fe5a5f311d104bf20a699a9d993784c5bf",
+  "artifact_text_sha256": "e5a3627875d25270d5247bd712b747d0eaa340f2ce88b5ffeb2efb43cdfcfb8d",
+  "release_scope": "Human-reviewed public release of HTML, Markdown, BibTeX and provenance on the personal GitHub Pages site.",
+  "policy_id": "claimwright.academic_publication_integrity.v1",
+  "policy_sha256": "36608ac81051015b2cb6205e24c2e8cb7df472ec29eaaeea80cec3301dfb9fd1",
+  "tool_version": "OpenAI Codex assisted review; CiteGeist bibliography parser; local Chromium via Playwright",
+  "destination": "https://welsberr.github.io/presentations/beacon-generative-ai/offloading/",
+  "checks": [
+    {
+      "id": "plagiarism_and_attribution",
+      "status": "pass",
+      "evidence": [
+        "Main essay claims have linked provenance and primary references; paraphrases are identified as original summaries; source figures are not reproduced."
+      ],
+      "limitations": [
+        "AI-assisted editorial check; human approval does not constitute independent peer review."
+      ]
+    },
+    {
+      "id": "similarity_and_text_recycling",
+      "status": "pass",
+      "evidence": [
+        "Bounded eight-word scan found 0 source/paragraph match groups.",
+        "Prior presentation notes/content and pinned Didactopus README included; derivation from the BEACON discussion is disclosed."
+      ],
+      "limitations": [
+        "Not a web-wide similarity service.",
+        "Exact matching cannot detect all paraphrase or idea appropriation.",
+        "Partial-access sources and uncached web text are absent from automated corpus.",
+        "AI editorial review is not independent; human approval does not constitute independent peer review."
+      ]
+    },
+    {
+      "id": "fabrication_falsification_and_manipulation",
+      "status": "pass",
+      "evidence": [
+        "N1 records denominator, units and arithmetic for the 17% figure.",
+        "F1 is expressly an original schematic, with no fabricated data.",
+        "Contrasting findings are included; unsupported longevity and causal prompt-style claims are excluded."
+      ]
+    },
+    {
+      "id": "citation_and_source_integrity",
+      "status": "pass",
+      "evidence": [
+        "Ten BibTeX entries parsed using CiteGeist.",
+        "Seven title/author verification candidates matched intended DOIs; ambiguous tool statuses resolved against primary pages.",
+        "Source records distinguish full-text inspection from abstract/partial access.",
+        "Bastani affiliation correction and arXiv version information recorded."
+      ],
+      "limitations": [
+        "Selective search, not an exhaustive retraction audit; primary-source metadata and selected passages were checked without reanalyzing raw study data."
+      ]
+    },
+    {
+      "id": "authorship_contribution_and_ai_disclosure",
+      "status": "pass",
+      "evidence": [
+        "OpenAI Codex contribution and AI limitations disclosed.",
+        "Wesley R. Elsberry reviewed and approved the complete essay for public release on 1 November 2026."
+      ]
+    },
+    {
+      "id": "copyright_license_and_permissions",
+      "status": "pass",
+      "evidence": [
+        "Original prose synthesis and HTML/CSS schematic; no reproduced source figure, abstract or substantial quotation.",
+        "Existing locally hosted presentation fonts reused under their accompanying license record."
+      ]
+    },
+    {
+      "id": "ethics_consent_conflicts_and_funding",
+      "status": "pass",
+      "evidence": [
+        "No new human or animal research; no meeting attendee is identified.",
+        "Didactopus involvement and related-tool connection disclosed; no efficacy validation implied.",
+        "Human steward confirmed that no external funding supported the essay and that there are no additional competing interests beyond the disclosed involvement."
+      ]
+    },
+    {
+      "id": "confidentiality_and_private_material",
+      "status": "pass",
+      "evidence": [
+        "Public studies and pinned public README are evidence sources.",
+        "Raw research cache, private memory and tool logs are outside the public directory.",
+        "No credentials, private correspondence or identifiable attendee anecdote included."
+      ]
+    },
+    {
+      "id": "harmful_or_unprofessional_content",
+      "status": "pass",
+      "evidence": [
+        "No employer criticism or personal allegations; personal experiences are treated as bounded observations.",
+        "Preliminary results, self-report limitations and conflicting findings are distinguished."
+      ]
+    },
+    {
+      "id": "venue_and_release_policy",
+      "status": "pass",
+      "evidence": [
+        "Human steward explicitly approved public release on the personal GitHub Pages site on 1 November 2026.",
+        "The essay identifies itself as a personal synthesis and disclaims MSU, BEACON, employer and cited-researcher endorsement."
+      ]
+    },
+    {
+      "id": "rendering_and_navigation",
+      "status": "pass",
+      "evidence": [
+        "The earlier draft passed local Chromium checks at 1280, 768, 390 and 320 CSS pixels, with valid anchors and no JavaScript errors.",
+        "For the approved release, the regenerated page was served locally and returned HTTP 200; the release changes add disclosure text and update stewardship metadata."
+      ],
+      "limitations": [
+        "The approved release copy did not receive a second full viewport/browser sweep or complete WCAG conformance audit.",
+        "No remote link-availability sweep was performed; the private PDF was a rendering check, not a released deliverable."
+      ]
+    }
+  ],
+  "similarity_review": {
+    "method": "Normalized eight-word exact sequence comparison of main essay paragraphs, excluding citation markup, plus editorial review of claims/attribution and related-work disclosure.",
+    "corpus_limitations": [
+      "Not a web-wide similarity service.",
+      "Exact matching cannot detect all paraphrase or idea appropriation.",
+      "Partial-access sources and uncached web text are absent from automated corpus.",
+      "AI editorial review is not independent or human review."
+    ],
+    "material_matches": []
+  },
+  "decision": "pass",
+  "decision_rationale": "Human substantive review, funding and competing-interest confirmation, AI/contribution disclosure, rendering checks and explicit public-release approval are complete within the documented scope. The documented limitations remain; this is not independent peer review.",
+  "human_reviewer": "Wesley R. Elsberry",
+  "ai_use": {
+    "used": true,
+    "disclosure": "OpenAI Codex assisted with research, drafting, bibliography, source checks, figure/page construction and review. Wesley R. Elsberry reviewed and approved the complete essay for public release; AI assistance is not independent peer review."
+  },
+  "prior_publication": {
+    "has_prior_work": true,
+    "disclosure": "Companion to the BEACON presentation and ensuing discussion; fresh essay, not a claim of a new empirical study.",
+    "references": [
+      "https://welsberr.github.io/presentations/beacon-generative-ai/"
+    ]
+  },
+  "source_references": [
+    "https://doi.org/10.1016/j.tics.2016.07.002",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8358584/",
+    "https://journals.sagepub.com/doi/10.1177/0956797614559285",
+    "https://pubmed.ncbi.nlm.nih.gov/40560616/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12403119/",
+    "https://www.nature.com/articles/s41598-025-97652-6",
+    "https://learninglab.psych.purdue.edu/downloads/2006/2006_Roediger_Karpicke_PsychSci.pdf",
+    "https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/",
+    "https://arxiv.org/abs/2601.20245v2",
+    "https://github.com/welsberr/Didactopus/blob/f0b0e8ac55459e05bdf16604ec971ea266278b84/README.md"
+  ],
+  "reviewed_at": "2026-11-01T04:15:03+00:00",
+  "notes": "The original timestamp records completion of the AI-assisted review. Human substantive review and public-release approval were confirmed on 2026-11-01. Raw similarity results and cached sources remain private. Source-specific confidence is in provenance.json."
+}

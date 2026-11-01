@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-11-01T04:15:03+00:00",
+  "algorithm": "sha256",
+  "files": {
+    "content.json": "1392042b4f8df1f25a8257a6321a5350fbe0d457b83e8d7750dd41b2b8884d84",
+    "build.py": "4050dd78a8ea039678898649d5cd92c23b40cd199a7b2a4f3a1a2f9f7f534b6d",
+    "style.css": "bb8632a8768b46f83307b0afa3084facafe367474a2b0fbc59873e7b207bac1d",
+    "index.html": "d82daba74298206467e057adc895e7fe5a5f311d104bf20a699a9d993784c5bf",
+    "essay.md": "e5a3627875d25270d5247bd712b747d0eaa340f2ce88b5ffeb2efb43cdfcfb8d",
+    "bibliography.bib": "d175a1e0672f4650076cfdea927f70de16c85b946ebbb16264a64a45be07c66e",
+    "provenance.json": "b57b259c14fd1f61dca9a26a8f59f43e987374596aa765db1d4e3f6be1ae20ca"
+  }
+}
