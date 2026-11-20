@@ -1,0 +1,26 @@
+# Evidence-ledger review report
+
+Generated: 2099-07-02T12:00:00+00:00
+
+## Summary
+
+Claims: 3
+
+| Status | Count |
+|---|---:|
+| draft | 0 |
+| needs_review | 1 |
+| verified | 2 |
+| rejected | 0 |
+
+## Claims
+
+| Claim | Status | Evidence label | Sources |
+|---|---|---|---:|
+| claim-example-jurisdiction | verified | official_fact | 2 |
+| claim-example-position | needs_review | candidate_claim | 1 |
+| claim-example-polling | verified | documented_fact | 1 |
+
+## Required action
+
+- REVIEW: claim-example-position: needs human review

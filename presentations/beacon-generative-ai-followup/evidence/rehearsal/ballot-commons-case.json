@@ -1,0 +1,27 @@
+{
+  "case": "Presenter-authorized address-based Ballot Commons demonstration",
+  "presenter_provided_location": "1273 Divine Dr, Eaton Rapids, MI 48827",
+  "research_date": "2026-10-24",
+  "election_date": "2026-11-03",
+  "private_report_sha256": "1546217f0f91a484b4699107c5e828cf35055ac0a193790fd449a32feb963beb",
+  "recorded_chain": [
+    "Address-only Michigan voter-information search returned the Fire Department polling location.",
+    "County polling-location list identified that location as Eaton Rapids Township Precinct 1.",
+    "Public state precinct-ballot preview supplied the contest list."
+  ],
+  "limits": [
+    "This is a precinct-matched preview, not a voter-record sample ballot.",
+    "The preview contained two school-board sections; the address-only result did not determine which school district applied.",
+    "The material is a historical pre-election record, not current voting guidance.",
+    "The report did not document direct execution of ClaimWright, GroundRecall, or other named stack tools for this result."
+  ],
+  "example_checks": {
+    "data": "fictional redacted Ballot Commons fixture",
+    "reviewed_on": "2026-11-20",
+    "repository_revision": "d2d9fee1197605a18ef6811fd00646ae843e5c23",
+    "bundle": "passed: 3 sources, 5 sections, no address hazards detected",
+    "jurisdiction": "synthetic sources agreed; publishable flag true for fixture only",
+    "strict_ledger": "blocked: one candidate-position claim needs human review; two synthetic claims marked verified"
+  },
+  "source_notes": "The publicly shared address is the presenter’s own, explicitly authorized for this presentation. The detailed personal report and voter identifiers are not published."
+}
