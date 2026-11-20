@@ -1,0 +1,75 @@
+{
+  "artifact_sha256": "81848f0f5644b959df37d31b3e381c1e5790c47704edddf8e5d7e83b522236b5",
+  "policy_id": "claimwright.academic_publication_integrity.v1",
+  "policy_sha256": "36608ac81051015b2cb6205e24c2e8cb7df472ec29eaaeea80cec3301dfb9fd1",
+  "tool_version": "0.1.0",
+  "evaluation_timestamp": "2026-11-20T04:05:47Z",
+  "overall_decision": "hard_gate",
+  "checks_evaluated": [
+    "plagiarism_and_attribution",
+    "similarity_and_text_recycling",
+    "fabrication_falsification_and_manipulation",
+    "citation_and_source_integrity",
+    "authorship_contribution_and_ai_disclosure",
+    "copyright_license_and_permissions",
+    "ethics_consent_conflicts_and_funding",
+    "confidentiality_and_private_material",
+    "harmful_or_unprofessional_content",
+    "venue_and_release_policy"
+  ],
+  "approval_state": "pending",
+  "statement": "Policy findings are not permission grants or misconduct adjudications.",
+  "findings": [
+    {
+      "check_id": "authorship_contribution_and_ai_disclosure",
+      "decision": "hard_gate",
+      "message": "authorship_contribution_and_ai_disclosure review remains unresolved or failed"
+    },
+    {
+      "check_id": "citation_and_source_integrity",
+      "decision": "hard_gate",
+      "message": "citation_and_source_integrity review remains unresolved or failed"
+    },
+    {
+      "check_id": "confidentiality_and_private_material",
+      "decision": "hard_gate",
+      "message": "confidentiality_and_private_material review remains unresolved or failed"
+    },
+    {
+      "check_id": "copyright_license_and_permissions",
+      "decision": "hard_gate",
+      "message": "copyright_license_and_permissions review remains unresolved or failed"
+    },
+    {
+      "check_id": "ethics_consent_conflicts_and_funding",
+      "decision": "hard_gate",
+      "message": "ethics_consent_conflicts_and_funding review remains unresolved or failed"
+    },
+    {
+      "check_id": "fabrication_falsification_and_manipulation",
+      "decision": "hard_gate",
+      "message": "fabrication_falsification_and_manipulation review remains unresolved or failed"
+    },
+    {
+      "check_id": "harmful_or_unprofessional_content",
+      "decision": "hard_gate",
+      "message": "harmful_or_unprofessional_content review remains unresolved or failed"
+    },
+    {
+      "check_id": "plagiarism_and_attribution",
+      "decision": "hard_gate",
+      "message": "plagiarism_and_attribution review remains unresolved or failed"
+    },
+    {
+      "check_id": "similarity_and_text_recycling",
+      "decision": "hard_gate",
+      "message": "similarity_and_text_recycling review remains unresolved or failed"
+    },
+    {
+      "check_id": "venue_and_release_policy",
+      "decision": "hard_gate",
+      "message": "venue_and_release_policy review remains unresolved or failed"
+    }
+  ],
+  "supersedes": "claimwright-before-monte-carlo-plot.json"
+}

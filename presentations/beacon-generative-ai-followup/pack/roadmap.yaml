@@ -1,0 +1,7 @@
+stages:
+  - id: predict-and-run
+    title: Predict and investigate
+    concepts: [allele-frequency, drift, selection]
+    checkpoint:
+      - Predict outcomes before running the comparison.
+      - Compare repeated runs and explain the limits of one trajectory.

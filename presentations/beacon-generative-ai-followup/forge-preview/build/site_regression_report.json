@@ -1,0 +1,45 @@
+{
+  "schema": "scisiteforge.public_surface_status.v1",
+  "translation_queue": {
+    "schema": "scisiteforge.translation_queue.v1",
+    "default_language": "en",
+    "languages": [],
+    "summary": {
+      "total_pages": 1,
+      "missing_by_language": {}
+    },
+    "pages": [
+      {
+        "route": "/",
+        "source_path": "index.html",
+        "title": "Drift and selection investigation",
+        "statuses": {}
+      }
+    ]
+  },
+  "checks": [
+    {
+      "label": "site home",
+      "path": "index.html",
+      "status": "pass",
+      "failures": []
+    },
+    {
+      "label": "translation queue page",
+      "path": "translation-status/index.html",
+      "status": "pass",
+      "failures": []
+    },
+    {
+      "label": "translation queue json",
+      "path": "translation-status/queue.json",
+      "status": "pass",
+      "failures": []
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0
+  }
+}

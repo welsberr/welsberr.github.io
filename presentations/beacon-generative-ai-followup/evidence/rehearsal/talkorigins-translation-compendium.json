@@ -1,0 +1,168 @@
+{
+  "schema": "talkorigins.translation_compendium.v1",
+  "description": "Site-wide technical phrase translations for TalkOrigins localization. Entries are passed as glossary constraints to the translation backend.",
+  "terms": {
+    "TalkOrigins Archive": {
+      "es": "Archivo TalkOrigins",
+      "fr": "Archive TalkOrigins",
+      "de": "TalkOrigins-Archiv",
+      "pt": "Arquivo TalkOrigins"
+    },
+    "Index to Creationist Claims": {
+      "es": "Índice de afirmaciones creacionistas",
+      "fr": "Index des affirmations créationnistes",
+      "de": "Index creationistischer Behauptungen",
+      "pt": "Índice de alegações criacionistas"
+    },
+    "creationist claim": {
+      "es": "afirmación creacionista",
+      "fr": "affirmation créationniste",
+      "de": "creationistische Behauptung",
+      "pt": "alegação criacionista"
+    },
+    "evolution": {
+      "es": "evolución",
+      "fr": "évolution",
+      "de": "Evolution",
+      "pt": "evolução"
+    },
+    "natural selection": {
+      "es": "selección natural",
+      "fr": "sélection naturelle",
+      "de": "natürliche Selektion",
+      "pt": "seleção natural"
+    },
+    "common descent": {
+      "es": "descendencia común",
+      "fr": "descendance commune",
+      "de": "gemeinsame Abstammung",
+      "pt": "descendência comum"
+    },
+    "genetic drift": {
+      "es": "deriva genética",
+      "fr": "dérive génétique",
+      "de": "genetische Drift",
+      "pt": "deriva genética"
+    },
+    "allele": {
+      "es": "alelo",
+      "fr": "allèle",
+      "de": "Allel",
+      "pt": "alelo"
+    },
+    "allele frequency": {
+      "es": "frecuencia alélica",
+      "fr": "fréquence allélique",
+      "de": "Allelfrequenz",
+      "pt": "frequência alélica"
+    },
+    "population genetics": {
+      "es": "genética de poblaciones",
+      "fr": "génétique des populations",
+      "de": "Populationsgenetik",
+      "pt": "genética de populações"
+    },
+    "mutation": {
+      "es": "mutación",
+      "fr": "mutation",
+      "de": "Mutation",
+      "pt": "mutação"
+    },
+    "adaptation": {
+      "es": "adaptación",
+      "fr": "adaptation",
+      "de": "Anpassung",
+      "pt": "adaptação"
+    },
+    "speciation": {
+      "es": "especiación",
+      "fr": "spéciation",
+      "de": "Artbildung",
+      "pt": "especiação"
+    },
+    "phylogeny": {
+      "es": "filogenia",
+      "fr": "phylogénie",
+      "de": "Phylogenie",
+      "pt": "filogenia"
+    },
+    "homology": {
+      "es": "homología",
+      "fr": "homologie",
+      "de": "Homologie",
+      "pt": "homologia"
+    },
+    "fossil record": {
+      "es": "registro fósil",
+      "fr": "registre fossile",
+      "de": "Fossilbericht",
+      "pt": "registro fóssil"
+    },
+    "transitional fossil": {
+      "es": "fósil transicional",
+      "fr": "fossile transitionnel",
+      "de": "Übergangsfossil",
+      "pt": "fóssil transicional"
+    },
+    "radiometric dating": {
+      "es": "datación radiométrica",
+      "fr": "datation radiométrique",
+      "de": "radiometrische Datierung",
+      "pt": "datação radiométrica"
+    },
+    "young-earth creationism": {
+      "es": "creacionismo de la Tierra joven",
+      "fr": "créationnisme de la Terre jeune",
+      "de": "Junge-Erde-Kreationismus",
+      "pt": "criacionismo da Terra jovem"
+    },
+    "intelligent design": {
+      "es": "diseño inteligente",
+      "fr": "dessein intelligent",
+      "de": "Intelligent Design",
+      "pt": "design inteligente"
+    },
+    "irreducible complexity": {
+      "es": "complejidad irreducible",
+      "fr": "complexité irréductible",
+      "de": "irreduzible Komplexität",
+      "pt": "complexidade irredutível"
+    },
+    "origin of life": {
+      "es": "origen de la vida",
+      "fr": "origine de la vie",
+      "de": "Ursprung des Lebens",
+      "pt": "origem da vida"
+    },
+    "abiogenesis": {
+      "es": "abiogénesis",
+      "fr": "abiogenèse",
+      "de": "Abiogenese",
+      "pt": "abiogênese"
+    },
+    "Further Study": {
+      "es": "Estudio adicional",
+      "fr": "Pour approfondir",
+      "de": "Weiterführende Studien",
+      "pt": "Estudo adicional"
+    },
+    "Additional Citations": {
+      "es": "Citas adicionales",
+      "fr": "Citations supplémentaires",
+      "de": "Zusätzliche Quellenangaben",
+      "pt": "Citações adicionais"
+    },
+    "Related Reading": {
+      "es": "Lecturas relacionadas",
+      "fr": "Lectures connexes",
+      "de": "Verwandte Lektüre",
+      "pt": "Leituras relacionadas"
+    },
+    "Conceptual Connections": {
+      "es": "Conexiones conceptuales",
+      "fr": "Liens conceptuels",
+      "de": "Konzeptuelle Verbindungen",
+      "pt": "Conexões conceituais"
+    }
+  }
+}

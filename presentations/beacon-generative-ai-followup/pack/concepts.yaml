@@ -1,0 +1,19 @@
+concepts:
+  - id: allele-frequency
+    title: Allele frequency
+    description: Track an allele's proportion in a population over time.
+    prerequisites: []
+    mastery_signals: [Describe a change in allele frequency.]
+    mastery_profile: {}
+  - id: drift
+    title: Genetic drift
+    description: Recognize variation among stochastic population runs.
+    prerequisites: [allele-frequency]
+    mastery_signals: [Compare repeated runs under the same settings.]
+    mastery_profile: {}
+  - id: selection
+    title: Selection and comparison
+    description: Compare repeated runs with and without a fitness difference.
+    prerequisites: [drift]
+    mastery_signals: [Explain why individual trajectories can differ.]
+    mastery_profile: {}

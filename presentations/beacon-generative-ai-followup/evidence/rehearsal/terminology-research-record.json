@@ -1,0 +1,2530 @@
+{
+  "description": "Selected public-facing fields from the Foundation Notebook terminology compendium; statuses are historical, not a claim of expert review.",
+  "inspected_on": "2026-11-20",
+  "source_updated_on": "2026-05-11",
+  "language_targets": [
+    {
+      "code": "es",
+      "label": "Español"
+    },
+    {
+      "code": "fr",
+      "label": "Français"
+    },
+    {
+      "code": "pt",
+      "label": "Português"
+    },
+    {
+      "code": "de",
+      "label": "Deutsch"
+    },
+    {
+      "code": "it",
+      "label": "Italiano"
+    },
+    {
+      "code": "ru",
+      "label": "Русский"
+    },
+    {
+      "code": "zh",
+      "label": "中文"
+    },
+    {
+      "code": "ja",
+      "label": "日本語"
+    },
+    {
+      "code": "ar",
+      "label": "العربية"
+    },
+    {
+      "code": "hi",
+      "label": "हिन्दी"
+    }
+  ],
+  "multilingual_reference_policy": {
+    "primary_concept_backbone": "Use Wikidata items and Wikipedia sitelinks to align one English concept with corresponding foreign-language article titles.",
+    "term_translation_backbone": "Use Wiktionary as the main free multilingual dictionary source for term-level renderings, alternates, and translation checks.",
+    "approval_rule": "Do not promote a preferred rendering to approved status on Wikipedia alignment alone; use glossary, thesaurus, dictionary, terminology-database, or publication support where available.",
+    "catalog_rule": "Bookseller and publisher catalog evidence is useful for translated publication titles and market-facing naming, but should be treated as supporting evidence rather than primary authority for technical concept terms.",
+    "academic_usage_rule": "Foreign university syllabi, repositories, course books, and departmental teaching materials are useful as academic-usage evidence showing that a translated term maps cleanly onto the intended English concept in real instructional settings. Treat this as stronger than generic web hits but weaker than dedicated terminology databases when deciding approved status."
+  },
+  "entries": [
+    {
+      "source_term": "natural selection",
+      "wikidata_id": "Q43478",
+      "corpus_signal": {
+        "score": 330,
+        "document_count": 13,
+        "occurrence_count": 177,
+        "definition_hits": 25,
+        "distinction_hits": 3,
+        "qualification_hits": 49,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": {
+        "english_title": "Natural selection",
+        "english_url": "https://en.wikipedia.org/wiki/Natural_selection",
+        "language_titles": {
+          "es": {
+            "title": "Selección natural",
+            "url": "https://es.wikipedia.org/wiki/Selecci%C3%B3n_natural",
+            "title_matches_preferred": true
+          }
+        }
+      },
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "CONICET / Universidad Nacional de La Plata",
+          "document_type": "university-published article",
+          "title": "La genómica, la selección natural y la evolución",
+          "url": "https://ri.conicet.gov.ar/handle/11336/20870",
+          "notes": "Confirms the standard Spanish term in university-published evolutionary-biology discussion."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad de Cádiz",
+          "document_type": "teaching and learning research article",
+          "title": "Obstáculos para el aprendizaje del modelo de evolución por selección natural...",
+          "url": "https://rodin.uca.es/handle/10498/19506",
+          "notes": "Independent Spanish university usage reinforces the same preferred term."
+        },
+        {
+          "language": "Français",
+          "institution": "French-language academic and instructional usage",
+          "document_type": "reference article",
+          "title": "Sélection naturelle, biologie",
+          "url": "https://www.universalis.fr/encyclopedie/selection-naturelle-biologie/",
+          "notes": "Reinforces the standard French term in a high-quality reference context."
+        },
+        {
+          "language": "Deutsch",
+          "institution": "Spektrum Lexikon der Biologie / Pflanzenforschung.de",
+          "document_type": "reference and instructional usage",
+          "title": "Selektion / natürliche Selektion",
+          "url": "https://www.spektrum.de/lexikon/biologie/selektion/60907",
+          "notes": "German reference usage explicitly treats 'natürliche Selektion' as the standard term family."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "selección natural",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "academic-usage-supported",
+          "evidence_links": [
+            "https://ri.conicet.gov.ar/handle/11336/20870",
+            "https://rodin.uca.es/handle/10498/19506"
+          ],
+          "notes": "Preferred rendering is strongly reinforced by Spanish university-published evolutionary-biology usage."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "sélection naturelle",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "reference-and-academic-supported",
+          "evidence_links": [
+            "https://www.universalis.fr/encyclopedie/selection-naturelle-biologie/"
+          ],
+          "notes": "Preferred rendering is standard in French scientific reference usage."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "seleção natural",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "dictionary-and-glossary-supported",
+          "evidence_links": [
+            "https://dictionary.cambridge.org/us/dictionary/english-portuguese/natural-selection",
+            "https://en.wiktionary.org/wiki/sele%C3%A7%C3%A3o_natural"
+          ],
+          "notes": "Preferred rendering confirmed by bilingual dictionary and Portuguese term entry."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "natürliche Selektion",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "reference-supported",
+          "evidence_links": [
+            "https://www.spektrum.de/lexikon/biologie/selektion/60907",
+            "https://www.pflanzenforschung.de/de/pflanzenwissen/lexikon-a-z/selektion-309"
+          ],
+          "notes": "Preferred rendering is directly attested in German biological reference and instructional material."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "selezione naturale",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "естественный отбор",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "自然选择",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "自然選択",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الانتقاء الطبيعي",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "प्राकृतिक चयन",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "genetic drift",
+      "wikidata_id": "Q486420",
+      "corpus_signal": {
+        "score": 151,
+        "document_count": 9,
+        "occurrence_count": 76,
+        "definition_hits": 6,
+        "distinction_hits": 2,
+        "qualification_hits": 25,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": {
+        "english_title": "Genetic drift",
+        "english_url": "https://en.wikipedia.org/wiki/Genetic_drift",
+        "language_titles": {
+          "fr": {
+            "title": "Dérive génétique",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9rive_g%C3%A9n%C3%A9tique",
+            "title_matches_preferred": true
+          }
+        }
+      },
+      "academic_usage_evidence": [
+        {
+          "language": "Français",
+          "institution": "French-language academic and instructional usage",
+          "document_type": "glossary-style instructional resource",
+          "title": "Dérive génétique",
+          "url": "https://www.bonobosworld.org/en/glossary/ecology/derive-genetique",
+          "notes": "Reinforces that the preferred French term is used in instructional biology/ecology explanation, not only in terminology databases."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "deriva genética",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "glossary-supported",
+          "evidence_links": [
+            "https://www.institutoroche.es/recursos/glosario/Deriva%2Bgen%C3%A9tica"
+          ],
+          "notes": "Preferred rendering confirmed by Spanish genetics glossary evidence."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "dérive génétique",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "terminology-database-supported",
+          "evidence_links": [
+            "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8476870/derive-genetique",
+            "https://www.bonobosworld.org/en/glossary/ecology/derive-genetique"
+          ],
+          "notes": "Preferred rendering confirmed by French terminology and glossary sources."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "deriva genética",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Gendrift",
+          "alternates": [
+            "genetische Drift"
+          ],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "dictionary-supported",
+          "evidence_links": [
+            "https://en.langenscheidt.com/english-german/genetic-drift",
+            "https://de.wiktionary.org/wiki/Gendrift"
+          ],
+          "notes": "Preferred rendering shifted to the stronger dictionary headword; the earlier seeded form remains an acceptable alternate."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "deriva genetica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "генетический дрейф",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "遗传漂变",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "遺伝的浮動",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الانحراف الوراثي",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "आनुवंशिक बहाव",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "random genetic drift",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 107,
+        "document_count": 5,
+        "occurrence_count": 58,
+        "definition_hits": 4,
+        "distinction_hits": 2,
+        "qualification_hits": 18,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "deriva genética aleatoria",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "dérive génétique",
+          "alternates": [
+            "fluctuation génétique",
+            "dérive génétique aléatoire"
+          ],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "terminology-database-supported",
+          "evidence_links": [
+            "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17063401/derive-genetique"
+          ],
+          "notes": "French usage collapses strongly onto dérive génétique for this concept family; the more explicit seeded phrase is kept only as an alternate."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "deriva genética aleatória",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "zufällige genetische Drift",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "deriva genetica casuale",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "случайный генетический дрейф",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "随机遗传漂变",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "ランダムな遺伝的浮動",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الانحراف الوراثي العشوائي",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "यादृच्छिक आनुवंशिक बहाव",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "common descent",
+      "wikidata_id": "Q333018",
+      "corpus_signal": {
+        "score": 44,
+        "document_count": 2,
+        "occurrence_count": 23,
+        "definition_hits": 2,
+        "distinction_hits": 0,
+        "qualification_hits": 4,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": {
+        "english_title": "Common descent",
+        "english_url": "https://en.wikipedia.org/wiki/Common_descent",
+        "language_titles": {
+          "es": {
+            "title": "Antepasado común",
+            "url": "https://es.wikipedia.org/wiki/Antepasado_com%C3%BAn",
+            "title_matches_preferred": false,
+            "notes": "Spanish Wikipedia article title diverges from the currently seeded preferred term `descendencia común`, indicating that this concept should stay under review."
+          }
+        }
+      },
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional de La Plata / CONICET-linked academic publication",
+          "document_type": "university-published article",
+          "title": "La genómica, la selección natural y la evolución",
+          "url": "https://sedici.unlp.edu.ar/handle/10915/66462",
+          "notes": "University-published Spanish usage in evolutionary biology refers to 'ancestros comunes', which reinforces the concept family but also confirms that the current seeded preferred term 'descendencia común' should remain under review."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "descendencia común",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "descendance commune",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "descendência comum",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "gemeinsame Abstammung",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "discendenza comune",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "общее происхождение",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "共同祖先",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "共通祖先",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الأصل المشترك",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "साझा वंश",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "population genetics",
+      "wikidata_id": "Q31151",
+      "corpus_signal": {
+        "score": 32,
+        "document_count": 4,
+        "occurrence_count": 9,
+        "definition_hits": 1,
+        "distinction_hits": 2,
+        "qualification_hits": 0,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": {
+        "english_title": "Population genetics",
+        "english_url": "https://en.wikipedia.org/wiki/Population_genetics",
+        "language_titles": {
+          "fr": {
+            "title": "Génétique des populations",
+            "url": "https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9tique_des_populations",
+            "title_matches_preferred": true
+          }
+        }
+      },
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional de La Plata",
+          "document_type": "university press book chapter",
+          "title": "Núcleos temáticos en Antropología Biológica",
+          "url": "https://sedici.unlp.edu.ar/handle/10915/191591",
+          "notes": "Uses 'variación genética' inside university-published teaching material in an evolutionary-biology context."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "genética de poblaciones",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "terminology-database-supported",
+          "evidence_links": [
+            "https://www.termcat.cat/ca/diccionaris-en-linia/183/fitxa/NDg2NzM0MA%3D%3D",
+            "https://es.wikipedia.org/wiki/Gen%C3%A9tica_de_poblaciones"
+          ],
+          "notes": "Preferred rendering confirmed by multilingual terminology record and standard Spanish explanatory usage."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "génétique des populations",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "terminology-database-supported",
+          "evidence_links": [
+            "https://www.termcat.cat/ca/diccionaris-en-linia/183/fitxa/NDg2NzM0MA%3D%3D"
+          ],
+          "notes": "Preferred rendering confirmed by multilingual terminology record."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "genética de populações",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Populationsgenetik",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "genetica delle popolazioni",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "популяционная генетика",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "群体遗传学",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "集団遺伝学",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "علم الوراثة السكانية",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "जनसंख्या आनुवंशिकी",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "gene pool",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 58,
+        "document_count": 3,
+        "occurrence_count": 27,
+        "definition_hits": 8,
+        "distinction_hits": 0,
+        "qualification_hits": 6,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "acervo génico",
+          "alternates": [
+            "pool génico"
+          ],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "thesaurus-and-dictionary-supported",
+          "evidence_links": [
+            "https://lod.nal.usda.gov/nalt/en/page/224505?clang=es",
+            "https://www.wordreference.com/enes/gene%20pool"
+          ],
+          "notes": "Preferred rendering follows thesaurus evidence; pool génico remains a common alternate."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "pool génique",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "pool gênico",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Genpool",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "pool genico",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "генофонд",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "基因库",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "遺伝子プール",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "المخزون الجيني",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "जीन पूल",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "genetic variation",
+      "wikidata_id": "Q349856",
+      "corpus_signal": {
+        "score": 55,
+        "document_count": 5,
+        "occurrence_count": 27,
+        "definition_hits": 1,
+        "distinction_hits": 0,
+        "qualification_hits": 9,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": {
+        "english_title": "Genetic variation",
+        "english_url": "https://en.wikipedia.org/wiki/Genetic_variation",
+        "language_titles": {
+          "es": {
+            "title": "Variación genética",
+            "url": "https://es.wikipedia.org/wiki/Variaci%C3%B3n_gen%C3%A9tica",
+            "title_matches_preferred": true
+          }
+        }
+      },
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad de Chile",
+          "document_type": "thesis repository",
+          "title": "Determinación del nivel y extensión del desequilibrio de ligamiento...",
+          "url": "https://repositorio.uchile.cl/handle/2250/131954",
+          "notes": "Confirms the preferred Spanish term in technical academic usage."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad de Chile",
+          "document_type": "thesis repository",
+          "title": "Determinación del grado de desequilibrio de ligamiento...",
+          "url": "https://repositorio.uchile.cl/handle/2250/131511",
+          "notes": "Independent academic repetition of the same preferred Spanish term in genetics-related research."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "variación genética",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "thesaurus-supported",
+          "evidence_links": [
+            "https://lod.nal.usda.gov/nalt/en/page/10351?clang=es"
+          ],
+          "notes": "Preferred rendering confirmed by NAL cross-language concept record."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "variation génétique",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "variação genética",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "genetische Variation",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "variazione genetica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "генетическая изменчивость",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "遗传变异",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "遺伝的変異",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "التباين الوراثي",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "आनुवंशिक विविधता",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "allele frequencies",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 30,
+        "document_count": 5,
+        "occurrence_count": 9,
+        "definition_hits": 0,
+        "distinction_hits": 1,
+        "qualification_hits": 4,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "frecuencias alélicas",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "fréquences alléliques",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "glossary-supported",
+          "evidence_links": [
+            "https://fr.khanacademy.org/science/biologie-a-l-ecole/x5047ff3843d876a6%3Abio-6e-annee-sciences-de-base/x5047ff3843d876a6%3Abio-6-1h-mecanismes-de-l-evolution/a/allele-frequency-the-gene-pool",
+            "https://atlasgeneticsoncology.org/teaching/30028/glossary-of-medical-and-molecular-genetics"
+          ],
+          "notes": "Preferred rendering confirmed by French educational and glossary usage."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "frequências alélicas",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Allelfrequenzen",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "frequenze alleliche",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "частоты аллелей",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "等位基因频率",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "対立遺伝子頻度",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "تواترات الأليلات",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "एलील आवृत्तियाँ",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "linkage disequilibrium",
+      "wikidata_id": "Q2064311",
+      "corpus_signal": {
+        "score": 57,
+        "document_count": 2,
+        "occurrence_count": 28,
+        "definition_hits": 4,
+        "distinction_hits": 0,
+        "qualification_hits": 15,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": {
+        "english_title": "Linkage disequilibrium",
+        "english_url": "https://en.wikipedia.org/wiki/Linkage_disequilibrium",
+        "language_titles": {
+          "es": {
+            "title": "Desequilibrio de ligamiento",
+            "url": "https://es.wikipedia.org/wiki/Desequilibrio_de_ligamiento",
+            "title_matches_preferred": true
+          }
+        }
+      },
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "desequilibrio de ligamiento",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "thesaurus-supported",
+          "evidence_links": [
+            "https://lod.nal.usda.gov/nalt/50235"
+          ],
+          "notes": "Preferred rendering confirmed by NAL thesaurus cross-language concept mapping."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "déséquilibre de liaison",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "desequilíbrio de ligação",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Kopplungsungleichgewicht",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "disequilibrio di associazione",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "неравновесие по сцеплению",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "连锁不平衡",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "連鎖不平衡",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "اختلال توازن الارتباط",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "सहलग्नता असंतुलन",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "neutral evolution",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 42,
+        "document_count": 5,
+        "occurrence_count": 10,
+        "definition_hits": 4,
+        "distinction_hits": 1,
+        "qualification_hits": 2,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "evolución neutra",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "évolution neutre",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "evolução neutra",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "neutrale Evolution",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "lexicon-supported",
+          "evidence_links": [
+            "https://www.spektrum.de/lexikon/biologie/neutrale-evolution/46282"
+          ],
+          "notes": "Preferred rendering confirmed by German biology lexicon usage."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "evoluzione neutrale",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "нейтральная эволюция",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "中性演化",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "中立進化",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "التطور المحايد",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "तटस्थ विकास",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "adaptation",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": null,
+        "document_count": null,
+        "occurrence_count": null,
+        "definition_hits": null,
+        "distinction_hits": null,
+        "qualification_hits": null,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional de Colombia",
+          "document_type": "academic article",
+          "title": "Los significados de la adaptación biológica",
+          "url": "https://www.researchgate.net/publication/267928048_LOS_SIGNIFICADOS_DE_LA_ADAPTACION_BIOLOGICA_Evolucion",
+          "notes": "Reinforces 'adaptación' as the standard Spanish term in evolutionary-biology discussion."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad Autónoma del Estado de Hidalgo",
+          "document_type": "repository article",
+          "title": "Adaptaciones y adaptación biológica, revisadas",
+          "url": "https://repository.uaeh.edu.mx/bitstream/handle/123456789/7539",
+          "notes": "Independent academic usage confirms the same Spanish concept term in university-associated material."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "adaptación",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "academic-usage-supported",
+          "evidence_links": [
+            "https://www.researchgate.net/publication/267928048_LOS_SIGNIFICADOS_DE_LA_ADAPTACION_BIOLOGICA_Evolucion",
+            "https://repository.uaeh.edu.mx/bitstream/handle/123456789/7539"
+          ],
+          "notes": "Preferred rendering is reinforced by multiple university-associated evolutionary-biology discussions."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "adaptation",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "adaptação",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Anpassung",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "adattamento",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "адаптация",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "适应",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "適応",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "التكيف",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "अनुकूलन",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "speciation",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": null,
+        "document_count": null,
+        "occurrence_count": null,
+        "definition_hits": null,
+        "distinction_hits": null,
+        "qualification_hits": null,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional Autónoma de México",
+          "document_type": "book chapter / academic publication",
+          "title": "Modelos de especiación",
+          "url": "https://www.researchgate.net/publication/280684154_Modelos_de_especiacion",
+          "notes": "Confirms 'especiación' as the standard Spanish technical term in university-associated evolutionary-biology material."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad Central del Ecuador",
+          "document_type": "university journal article",
+          "title": "El origen de nuevas especies",
+          "url": "https://revistadigital.uce.edu.ec/index.php/anales/article/view/2551",
+          "notes": "Uses 'especiación' explicitly when defining the formation of new species."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "especiación",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "academic-usage-supported",
+          "evidence_links": [
+            "https://www.researchgate.net/publication/280684154_Modelos_de_especiacion",
+            "https://revistadigital.uce.edu.ec/index.php/anales/article/view/2551"
+          ],
+          "notes": "Preferred rendering is strongly supported by university-associated speciation literature and teaching-facing material."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "spéciation",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "especiação",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Artbildung",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "speciazione",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "видообразование",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "物种形成",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "種分化",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "تكوّن الأنواع",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "प्रजातिकरण",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "mutation",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": null,
+        "document_count": null,
+        "occurrence_count": null,
+        "definition_hits": null,
+        "distinction_hits": null,
+        "qualification_hits": null,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional de Colombia",
+          "document_type": "university journal article",
+          "title": "Hacia una comprensión de la acción de la recombinación genética y la mutación...",
+          "url": "https://revistas.unal.edu.co/index.php/actabiol/article/view/27347",
+          "notes": "Confirms 'mutación' in explicit evolutionary-theory usage."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional Autónoma de México",
+          "document_type": "doctoral thesis repository",
+          "title": "Mutacion genetica : Desarrollo de los conceptos y sus implicaciones evolutivas",
+          "url": "https://ru.dgb.unam.mx/items/9660f62d-2050-452e-bb59-f14db88d739b",
+          "notes": "Long-form academic treatment reinforces the standard Spanish term family around 'mutación genética'."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "mutación",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "academic-usage-supported",
+          "evidence_links": [
+            "https://revistas.unal.edu.co/index.php/actabiol/article/view/27347",
+            "https://ru.dgb.unam.mx/items/9660f62d-2050-452e-bb59-f14db88d739b"
+          ],
+          "notes": "Preferred rendering is reinforced by university research and thesis-level evolutionary-genetics usage."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "mutation",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "mutação",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Mutation",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "mutazione",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "мутация",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "突变",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "突然変異",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "طفرة",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "उत्परिवर्तन",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "inheritance",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": null,
+        "document_count": null,
+        "occurrence_count": null,
+        "definition_hits": null,
+        "distinction_hits": null,
+        "qualification_hits": null,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional de La Plata",
+          "document_type": "university-published article",
+          "title": "Herencia y evolución",
+          "url": "https://sedici.unlp.edu.ar/handle/10915/163997",
+          "notes": "Confirms 'herencia' as the standard Spanish term in evolutionary and genetics discussion."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad Nacional de La Plata",
+          "document_type": "university press book chapter",
+          "title": "Genes, cromosomas y herencia: la transmisión de la información genética",
+          "url": "https://sedici.unlp.edu.ar/handle/10915/131491",
+          "notes": "Provides clear teaching-facing academic usage of 'herencia' in a genetics context closely tied to evolution."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "herencia",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "academic-usage-supported",
+          "evidence_links": [
+            "https://sedici.unlp.edu.ar/handle/10915/163997",
+            "https://sedici.unlp.edu.ar/handle/10915/131491"
+          ],
+          "notes": "Preferred rendering is clearly supported in university-published genetics and evolution teaching material."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "hérédité",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "herança",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Vererbung",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "ereditarietà",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "наследственность",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "遗传",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "遺伝",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الوراثة",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "वंशागति",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "epigenetic inheritance",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": null,
+        "document_count": null,
+        "occurrence_count": null,
+        "definition_hits": null,
+        "distinction_hits": null,
+        "qualification_hits": null,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "herencia epigenética",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "hérédité épigénétique",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "herança epigenética",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "epigenetische Vererbung",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "publication-title-supported",
+          "evidence_links": [
+            "https://portal.fis.tum.de/en/publications/epigenetische-vererbung-ist-die-zukunft-diabetisch/"
+          ],
+          "notes": "Preferred rendering confirmed by German publication title paired with English translation."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "eredità epigenetica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "эпигенетическое наследование",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "表观遗传继承",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "エピジェネティック遺伝",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الوراثة اللاجينية",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "एपिजेनेटिक वंशागति",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "phenotypic plasticity",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": null,
+        "document_count": null,
+        "occurrence_count": null,
+        "definition_hits": null,
+        "distinction_hits": null,
+        "qualification_hits": null,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "plasticidad fenotípica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "plasticité phénotypique",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "publication-supported",
+          "evidence_links": [
+            "https://pubmed.ncbi.nlm.nih.gov/32773027/"
+          ],
+          "notes": "Preferred rendering confirmed by bilingual scientific publication title and abstract."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "plasticidade fenotípica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "publication-supported",
+          "evidence_links": [
+            "https://pt.wikipedia.org/wiki/Plasticidade_fenot%C3%ADpica",
+            "https://www.anpof.org/periodicos/revista-helius/leitura/1236/30964"
+          ],
+          "notes": "Preferred rendering confirmed by Portuguese explanatory sources using the same term consistently."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "phänotypische Plastizität",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "plasticità fenotipica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "фенотипическая пластичность",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "表型可塑性",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "表現型可塑性",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "اللدونة الظاهرية",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "रूपात्मक प्लास्टिसिटी",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "evolutionary biology",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 61,
+        "document_count": 8,
+        "occurrence_count": 19,
+        "definition_hits": 4,
+        "distinction_hits": 0,
+        "qualification_hits": 2,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [
+        {
+          "language": "Português",
+          "institution": "Universidade Estadual do Ceará / eduCAPES",
+          "document_type": "university-backed digital book",
+          "title": "Biologia Evolutiva",
+          "url": "https://educapes.capes.gov.br/handle/capes/431723",
+          "notes": "Confirms 'Biologia Evolutiva' as a real instructional title in Brazilian higher-education material."
+        },
+        {
+          "language": "Español",
+          "institution": "Universidad de Panamá",
+          "document_type": "university journal article",
+          "title": "BIOLOGÍA EVOLUTIVA. ¿CÓMO DEBEMOS ENSEÑARLA?",
+          "url": "https://revistas.up.ac.pa/index.php/tecnociencia/article/view/1172",
+          "notes": "Shows 'biología evolutiva' as the standard Spanish teaching-facing form in university-published material."
+        },
+        {
+          "language": "Deutsch",
+          "institution": "Universität Hamburg",
+          "document_type": "department research page",
+          "title": "Evolutionsbiologie",
+          "url": "https://www.biologie.uni-hamburg.de/forschung/evolutionsbiologie.html",
+          "notes": "University department usage confirms 'Evolutionsbiologie' as the standard German term."
+        },
+        {
+          "language": "Deutsch",
+          "institution": "Universität Zürich",
+          "document_type": "institute research page",
+          "title": "Evolutionsbiologie",
+          "url": "https://www.ieu.uzh.ch/de/research/evolbiol.html",
+          "notes": "Independent university usage reinforces the same German term."
+        }
+      ],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "biología evolutiva",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "biologie évolutive",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "biologia evolutiva",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "academic-usage-supported",
+          "evidence_links": [
+            "https://educapes.capes.gov.br/handle/capes/431723",
+            "https://repositorio.ufsc.br/handle/123456789/228865"
+          ],
+          "notes": "Preferred rendering is clearly established in Brazilian higher-education and academic usage."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Evolutionsbiologie",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "approved",
+          "authority": "reference-and-academic-supported",
+          "evidence_links": [
+            "https://www.spektrum.de/lexikon/biologie/evolutionsbiologie/23172",
+            "https://www.biologie.uni-hamburg.de/forschung/evolutionsbiologie.html",
+            "https://www.ieu.uzh.ch/de/research/evolbiol.html"
+          ],
+          "notes": "Preferred rendering is standard in German reference and university usage."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "biologia evoluzionistica",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "эволюционная биология",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "进化生物学",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "進化生物学",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "علم الأحياء التطوري",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "उद्विकासीय जीवविज्ञान",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "evolutionary theory",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 58,
+        "document_count": 8,
+        "occurrence_count": 23,
+        "definition_hits": 3,
+        "distinction_hits": 0,
+        "qualification_hits": 3,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "teoría evolutiva",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "théorie de l'évolution",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "teoria evolutiva",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Evolutionstheorie",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "teoria evolutiva",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "эволюционная теория",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "进化理论",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "進化理論",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "النظرية التطورية",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "उद्विकास सिद्धांत",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "modern synthesis",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 31,
+        "document_count": 4,
+        "occurrence_count": 9,
+        "definition_hits": 2,
+        "distinction_hits": 1,
+        "qualification_hits": 2,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "síntesis moderna",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "synthèse moderne",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "síntese moderna",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "Synthetische Evolutionstheorie",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "sintesi moderna",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "современный синтез",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "现代综合",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "現代的総合",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "التركيب الحديث",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "आधुनिक संश्लेषण",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    },
+    {
+      "source_term": "artificial selection",
+      "wikidata_id": null,
+      "corpus_signal": {
+        "score": 31,
+        "document_count": 2,
+        "occurrence_count": 16,
+        "definition_hits": 1,
+        "distinction_hits": 1,
+        "qualification_hits": 5,
+        "translation_priority": true
+      },
+      "wikipedia_alignment": null,
+      "academic_usage_evidence": [],
+      "translations": {
+        "es": {
+          "language": "Español",
+          "preferred": "selección artificial",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "fr": {
+          "language": "Français",
+          "preferred": "sélection artificielle",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "pt": {
+          "language": "Português",
+          "preferred": "seleção artificial",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "de": {
+          "language": "Deutsch",
+          "preferred": "künstliche Selektion",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "it": {
+          "language": "Italiano",
+          "preferred": "selezione artificiale",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ru": {
+          "language": "Русский",
+          "preferred": "искусственный отбор",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "zh": {
+          "language": "中文",
+          "preferred": "人工选择",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ja": {
+          "language": "日本語",
+          "preferred": "人為選択",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "ar": {
+          "language": "العربية",
+          "preferred": "الانتقاء الاصطناعي",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        },
+        "hi": {
+          "language": "हिन्दी",
+          "preferred": "कृत्रिम चयन",
+          "alternates": [],
+          "dispreferred": [],
+          "status": "provisional",
+          "authority": "seeded-from-internal-notebook-workflow",
+          "notes": "High-confidence seed rendering for future translation memory and glossary review; not yet externally vetted."
+        }
+      }
+    }
+  ]
+}

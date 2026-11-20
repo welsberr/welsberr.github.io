@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Drift and selection investigation</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="population-genetics.js" defer></script>
+  <script src="activity.js" defer></script>
+</head>
+<body>
+<main class="activity experiment">
+  <p class="eyebrow">Draft learning activity · local preview</p>
+  <h1>Drift and selection:<br>compare the outcomes.</h1>
+  <p class="lead">Run the two treatments together and watch the results accumulate.</p>
+  <p>Each run models five populations of 40 individuals for 30 generations, starting at an allele frequency of 0.5. Mutation and migration are zero. The tables show final frequencies.</p>
+  <section class="experiment-dashboard" aria-label="Run controls and live summary">
+    <div class="experiment-actions">
+      <button id="run" type="button">Add a run</button>
+      <button id="clear" class="secondary-button" type="button">Clear results</button>
+      <button id="download-json" class="secondary-button" type="button" disabled>Download JSON</button>
+      <button id="download-csv" class="secondary-button" type="button" disabled>Download CSV for Excel</button>
+      <span id="result" role="status" aria-live="polite">No runs yet. The first run uses seed 42.</span>
+    </div>
+    <div class="dashboard-metrics">
+      <div><strong>Runs per treatment</strong><span id="dashboard-runs">0</span></div>
+      <div><strong>Equal fitness</strong><span>Allele freq. <b id="dashboard-equal-frequency">—</b> · Model fitness <b id="dashboard-equal-fitness">—</b></span></div>
+      <div><strong>Fitness difference</strong><span>Allele freq. <b id="dashboard-different-frequency">—</b> · Model fitness <b id="dashboard-different-fitness">—</b></span></div>
+      <div><strong>Difference in allele frequency</strong><span id="dashboard-difference">—</span></div>
+    </div>
+  </section>
+  <p class="small">Each new run uses the next seed for both treatments. Results stay on this page until cleared or reloaded; download them before leaving. CSV opens in Excel and other spreadsheet apps.</p>
+
+  <section class="treatment plot-section" aria-labelledby="plot-title">
+    <h2 id="plot-title">How the pooled results change</h2>
+    <p>Each point uses all runs up to that point. The difference is fitness difference minus equal fitness. The vertical axis adjusts to the plotted values and always includes zero.</p>
+    <ul class="plot-legend" aria-label="Plot legend">
+      <li><span class="legend-dot plot-equal-marker" aria-hidden="true"></span>Equal fitness</li>
+      <li><span class="legend-dot plot-different-marker" aria-hidden="true"></span>Fitness difference</li>
+      <li><span class="legend-dot plot-delta-marker" aria-hidden="true"></span>Pooled difference</li>
+    </ul>
+    <svg class="running-plot" viewBox="0 0 800 320" role="img" aria-labelledby="plot-svg-title" aria-describedby="plot-status">
+      <title id="plot-svg-title">Running pooled means and their difference by number of runs</title>
+      <g class="plot-grid" aria-hidden="true">
+        <path d="M70 25H775 M70 85H775 M70 145H775 M70 205H775 M70 265H775"/>
+        <path class="plot-axis" d="M70 25V265H775"/>
+        <text id="plot-y0" x="60" y="30" text-anchor="end">1.000</text><text id="plot-y1" x="60" y="90" text-anchor="end">0.750</text>
+        <text id="plot-y2" x="60" y="150" text-anchor="end">0.500</text><text id="plot-y3" x="60" y="210" text-anchor="end">0.250</text><text id="plot-y4" x="60" y="270" text-anchor="end">0.000</text>
+        <text x="70" y="286" text-anchor="middle">1</text><text id="plot-last-run" x="775" y="286" text-anchor="middle"></text>
+        <text x="422" y="310" text-anchor="middle">Number of runs per treatment</text>
+        <text x="17" y="145" text-anchor="middle" transform="rotate(-90 17 145)">Allele frequency / difference</text>
+      </g>
+      <g id="plot-equal" class="plot-equal-marker"/>
+      <g id="plot-different" class="plot-different-marker"/>
+      <g id="plot-delta" class="plot-delta-marker"/>
+    </svg>
+    <p id="plot-status" class="small">No runs yet. Add a run to show the pooled results.</p>
+    <details class="monte-carlo"><summary>How does this illustrate Monte Carlo simulation?</summary>
+      <p>Monte Carlo methods use repeated random samples or simulations to explore a model's range of outcomes and estimate quantities of interest. Here, random sampling can produce different final allele frequencies even when the settings are unchanged.</p>
+      <p>Each run adds five simulated populations per treatment. The dots show the cumulative treatment means and their difference as results accumulate. More runs can make these summaries less sensitive to individual outcomes, but the dots need not move steadily or settle in a small sample.</p>
+      <p>The two treatments use the same seed for each run. The plot describes this model and its assumptions; it is not a significance test or a measurement of a real population.</p>
+    </details>
+  </section>
+
+  <section class="comparison" aria-labelledby="comparison-title">
+    <h2 id="comparison-title">Pooled comparison</h2>
+    <p class="comparison-value" id="pooled-difference">—</p>
+    <p><strong>Difference = fitness difference minus equal fitness.</strong> Each treatment mean pools all final population frequencies across all runs. A positive value means the frequency was higher on average in the fitness-difference treatment.</p>
+    <p class="small" id="difference-summary">Add a run to calculate differences.</p>
+    <p class="small">These are descriptive simulation results, not a significance test. Differences are paired by seed and population position; those labels do not establish independent observations.</p>
+    <p class="small">The live summary also shows model mean fitness at the final allele frequencies, averaged across populations. It uses the simulation's genotype-frequency formula p²w<sub>AA</sub> + 2p(1−p)w<sub>Aa</sub> + (1−p)²w<sub>aa</sub>; it is a model-derived value, not a measurement of observed genotypes.</p>
+  </section>
+
+  <div class="treatment-grid">
+    <section class="treatment" aria-labelledby="equal-title">
+      <h2 id="equal-title">Equal fitness</h2>
+      <p>AA = 1 · Aa = 1 · aa = 1</p>
+      <div class="table-scroll"><table><caption>Final allele frequencies: equal fitness</caption><thead><tr><th scope="col">Run</th><th scope="col">Seed</th><th scope="col">Pop 1</th><th scope="col">Pop 2</th><th scope="col">Pop 3</th><th scope="col">Pop 4</th><th scope="col">Pop 5</th><th scope="col">Mean</th></tr></thead><tbody id="equal-rows"><tr><td colspan="8">No runs yet.</td></tr></tbody></table></div>
+      <p class="summary" id="equal-summary">No pooled results yet.</p>
+    </section>
+    <section class="treatment" aria-labelledby="different-title">
+      <h2 id="different-title">Fitness difference</h2>
+      <p>AA = 1 · Aa = 0.95 · aa = 0.9</p>
+      <div class="table-scroll"><table><caption>Final allele frequencies: fitness difference</caption><thead><tr><th scope="col">Run</th><th scope="col">Seed</th><th scope="col">Pop 1</th><th scope="col">Pop 2</th><th scope="col">Pop 3</th><th scope="col">Pop 4</th><th scope="col">Pop 5</th><th scope="col">Mean</th></tr></thead><tbody id="different-rows"><tr><td colspan="8">No runs yet.</td></tr></tbody></table></div>
+      <p class="summary" id="different-summary">No pooled results yet.</p>
+    </section>
+  </div>
+  <section class="treatment" aria-labelledby="difference-title">
+    <h2 id="difference-title">Differences by run</h2>
+    <p>For each population position: fitness difference minus equal fitness, using the same seed. The row mean is the difference between that run’s treatment means.</p>
+    <div class="table-scroll"><table><caption>Paired differences in final allele frequency</caption><thead><tr><th scope="col">Run</th><th scope="col">Seed</th><th scope="col">Pop 1</th><th scope="col">Pop 2</th><th scope="col">Pop 3</th><th scope="col">Pop 4</th><th scope="col">Pop 5</th><th scope="col">Mean Δ</th></tr></thead><tbody id="difference-rows"><tr><td colspan="8">No runs yet.</td></tr></tbody></table></div>
+  </section>
+  <section aria-labelledby="interpret-title">
+    <h2 id="interpret-title">Interpret the comparison</h2>
+    <p>Compare the spread within and between treatments. What varies across runs, and what additional settings might change the pattern? A simulation alone cannot establish which force caused a change in a real population.</p>
+    <p>This is a draft teaching aid, not evidence that students learn more. It has not yet received instructor or scientific review.</p>
+  </section>
+  <p><a href="https://evo-edu.org/apps/allele-tracker/app/" target="beacon_sources">Open the full Allele Tracker</a> · <a href="../index.html#build" target="beacon_talk">Return to the talk</a></p>
+</main>
+</body>
+</html>

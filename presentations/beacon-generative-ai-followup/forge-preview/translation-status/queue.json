@@ -1,0 +1,17 @@
+{
+  "schema": "scisiteforge.translation_queue.v1",
+  "default_language": "en",
+  "languages": [],
+  "summary": {
+    "total_pages": 1,
+    "missing_by_language": {}
+  },
+  "pages": [
+    {
+      "route": "/",
+      "source_path": "index.html",
+      "title": "Drift and selection investigation",
+      "statuses": {}
+    }
+  ]
+}

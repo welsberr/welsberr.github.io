@@ -1,0 +1,23 @@
+{
+  "captured_utc": "2026-11-20T07:03:45+00:00",
+  "query": "10.1038/216029a0",
+  "status": "exact",
+  "source_label": "crossref:doi:10.1038/216029a0",
+  "entry": {
+    "citation_key": "hodgson1967porphyrin",
+    "entry_type": "article",
+    "fields": {
+      "author": "HODGSON, G. W. and BAKER, B. L.",
+      "title": "Porphyrin Abiogenesis from Pyrrole and Formaldehyde under Simulated Geochemical Conditions",
+      "year": "1967",
+      "doi": "10.1038/216029a0",
+      "url": "https://doi.org/10.1038/216029a0",
+      "journal": "Nature",
+      "volume": "216",
+      "number": "5110",
+      "pages": "29-32"
+    }
+  },
+  "assessment_rationale": "Bibliographic match score; not source reliability or claim support.",
+  "limitation": "DOI identity match does not establish that the paper supports any particular claim."
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drift and selection investigation — Evolution Education</title>
+  <meta name="description" content="Draft prediction, experiment, and explanation activity for population genetics." />
+
+  <link rel="stylesheet" href="theme/style.css">
+  <script id="scisiteforge-shell-i18n" type="application/json">{"en": {"theme": "Theme", "language": "Language", "sources": "Sources", "llm": "LLM", "overview": "Overview", "what_theme_supports": "What this theme supports", "notebook_and_apps": "Notebook and apps", "structured_sources": "Structured sources and learning artifacts", "theme_catalog": "Theme catalog", "github": "GitHub", "contact": "Contact", "feature_cards": "Feature cards", "notebook_app_content": "Notebook and app content", "bibliography": "Bibliography", "translation_preview_title": "Translation preview:", "translation_preview_body": "this language is in the translation queue for the current page set.", "translation_preview_link": "Open translation queue", "still_viewing_default": "You are still viewing the default language.", "language_selector_label": "Language", "automated_translation_label": "Automated translation notice", "automated_translation_body": "This page was translated automatically. It may contain errors or awkward wording. If you are a native speaker and find a problem, please send feedback so we can correct it.", "automated_translation_feedback": "Send feedback"}, "es": {"theme": "Tema", "language": "Idioma", "sources": "Fuentes", "llm": "LLM", "overview": "Resumen", "what_theme_supports": "Lo que admite este tema", "notebook_and_apps": "Cuaderno y aplicaciones", "structured_sources": "Fuentes estructuradas y materiales de aprendizaje", "theme_catalog": "Catálogo de temas", "github": "GitHub", "contact": "Contacto", "feature_cards": "Tarjetas destacadas", "notebook_app_content": "Contenido del cuaderno y las aplicaciones", "bibliography": "Bibliografía", "translation_preview_title": "Vista previa de traducción:", "translation_preview_body": "este idioma está en la cola de traducción para el conjunto actual de páginas.", "translation_preview_link": "Abrir cola de traducción", "still_viewing_default": "Todavía está viendo el idioma predeterminado.", "language_selector_label": "Idioma", "automated_translation_label": "Aviso de traducción automática", "automated_translation_body": "Esta página fue traducida automáticamente. Puede contener errores o redacciones incómodas. Si eres hablante nativo y encuentras un problema, por favor envía tus comentarios para que podamos corregirlo.", "automated_translation_feedback": "Enviar comentarios"}, "fr": {"theme": "Thème", "language": "Langue", "sources": "Sources", "llm": "LLM", "overview": "Aperçu", "what_theme_supports": "Ce que ce thème prend en charge", "notebook_and_apps": "Carnet et applications", "structured_sources": "Sources structurées et ressources d'apprentissage", "theme_catalog": "Catalogue des thèmes", "github": "GitHub", "contact": "Contact", "feature_cards": "Cartes mises en avant", "notebook_app_content": "Contenu du carnet et des applications", "bibliography": "Bibliographie", "translation_preview_title": "Aperçu de traduction :", "translation_preview_body": "cette langue est dans la file de traduction pour l'ensemble actuel de pages.", "translation_preview_link": "Ouvrir la file de traduction", "still_viewing_default": "Vous consultez toujours la langue par défaut.", "language_selector_label": "Langue", "automated_translation_label": "Avertissement de traduction automatique", "automated_translation_body": "Cette page a été traduite automatiquement. Elle peut contenir des erreurs ou des formulations maladroites. Si vous êtes locuteur natif et repérez un problème, veuillez envoyer vos remarques pour que nous puissions le corriger.", "automated_translation_feedback": "Envoyer un commentaire"}, "de": {"theme": "Thema", "language": "Sprache", "sources": "Quellen", "llm": "LLM", "overview": "Überblick", "what_theme_supports": "Was dieses Thema unterstützt", "notebook_and_apps": "Notebook und Anwendungen", "structured_sources": "Strukturierte Quellen und Lernmaterialien", "theme_catalog": "Themenkatalog", "github": "GitHub", "contact": "Kontakt", "feature_cards": "Merkmale", "notebook_app_content": "Notebook- und Anwendungsinhalte", "bibliography": "Bibliografie", "translation_preview_title": "Übersetzungsvorschau:", "translation_preview_body": "diese Sprache steht für den aktuellen Seitensatz in der Übersetzungswarteschlange.", "translation_preview_link": "Übersetzungswarteschlange öffnen", "still_viewing_default": "Sie sehen weiterhin die Standardsprache.", "language_selector_label": "Sprache", "automated_translation_label": "Hinweis auf automatische Übersetzung", "automated_translation_body": "Diese Seite wurde automatisch übersetzt. Sie kann Fehler oder unbeholfene Formulierungen enthalten. Wenn du Muttersprachler*in bist und ein Problem feststellst, sende bitte ein Feedback, damit wir es korrigieren können.", "automated_translation_feedback": "Feedback senden"}, "pt": {"theme": "Tema", "language": "Idioma", "sources": "Fontes", "llm": "LLM", "overview": "Visão geral", "what_theme_supports": "O que este tema oferece", "notebook_and_apps": "Caderno e aplicativos", "structured_sources": "Fontes estruturadas e materiais de aprendizagem", "theme_catalog": "Catálogo de temas", "github": "GitHub", "contact": "Contato", "feature_cards": "Cartões em destaque", "notebook_app_content": "Conteúdo do caderno e dos aplicativos", "bibliography": "Bibliografia", "translation_preview_title": "Prévia da tradução:", "translation_preview_body": "este idioma está na fila de tradução para o conjunto atual de páginas.", "translation_preview_link": "Abrir fila de tradução", "still_viewing_default": "Você ainda está vendo o idioma padrão.", "language_selector_label": "Idioma", "automated_translation_label": "Aviso de tradução automática", "automated_translation_body": "Esta página foi traduzida automaticamente. Pode conter erros ou frases estranhas. Se você é falante nativo e encontrar algum problema, envie seu feedback para que possamos corrigi-lo.", "automated_translation_feedback": "Enviar feedback"}}</script>
+  <script src="theme/main.js" defer></script>
+</head>
+<body class="theme-evo-edu">
+  <div class="site-shell">
+    <header class="site-topbar">
+      <div class="brand-block">
+        <span class="brand-mark">Evo-Edu</span>
+        <a href="./">Evolution Education</a>
+        <p class="brand-summary">Warm learning-focused theme derived from the evo-edu.org home page.</p>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../preview/" target="beacon_activity" data-i18n-nav="{&quot;en&quot;: &quot;Activity&quot;}">Activity</a>
+        <select id="lang-switch" aria-label="Language" onchange="switchLanguage(this.value)">
+
+        </select>
+
+      </nav>
+    </header>
+
+
+
+    <section class="hero-card">
+      <p class="eyebrow">Draft teaching activity</p>
+      <div class="hero-grid">
+        <div>
+          <h1>Drift and selection: compare repeated runs</h1>
+          <p class="lede">Predict, run a model, compare final frequencies, and explain the limitations of your inference.</p>
+          <div class="hero-actions">
+            <a class="button-link" href="../preview/" target="beacon_activity">Open the local activity</a>
+          </div>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <strong data-i18n="theme">Theme</strong>
+            <span>Evo-Edu</span>
+          </div>
+          <div class="stat-card">
+            <strong data-i18n="language">Language</strong>
+            <span>en</span>
+          </div>
+          <div class="stat-card">
+            <strong data-i18n="sources">Sources</strong>
+            <span>doclift, GroundRecall, Didactopus, CiteGeist</span>
+          </div>
+          <div class="stat-card">
+            <strong data-i18n="llm">LLM</strong>
+            <span>GenieHive-backed translation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-card" id="overview">
+      <p class="section-kicker" data-i18n="overview">Overview</p>
+      <h2 class="section-heading" data-i18n="what_theme_supports">What this theme supports</h2>
+      <div class="feature-grid">
+        <article class="card feature-card">
+  <h3>Predict</h3>
+  <p>What will happen when genotypes have equal fitness? How might a fitness difference alter the pattern?</p>
+  <a href="../preview/" target="beacon_activity" class="btn button-link">Open the activity</a>
+</article>
+
+      </div>
+    </section>
+
+    <section class="content-card">
+      <p class="section-kicker" data-i18n="notebook_and_apps">Notebook and apps</p>
+      <h2 class="section-heading" data-i18n="structured_sources">Structured sources and learning artifacts</h2>
+
+      <div class="path-grid">
+        <div class="section-card card">
+  <h3>Compare and explain</h3>
+  <p class="meta">After running</p>
+  <p class="excerpt">Repeat the simulation, compare results, and describe what further evidence would be needed.</p>
+  <a href="../preview/" target="beacon_activity" class="btn button-link">Run the comparison</a>
+  <div class="content"></div>
+</div>
+
+
+      </div>
+    </section>
+
+    <section class="note-band" id="themes">
+      <h2 class="section-heading" data-i18n="theme_catalog">Theme catalog</h2>
+      <p>
+        SciSiteForge ships multiple theme presets so different science sites can share the same
+        content pipeline while presenting different reading experiences.
+      </p>
+    </section>
+
+    <section class="footer-card">
+      <div>
+        <h3>Evolution Education</h3>
+        <p>Draft preview; reuse terms require review.</p>
+      </div>
+      <small>
+        Draft local preview
+      </small>
+    </section>
+  </div>
+</body>
+</html>

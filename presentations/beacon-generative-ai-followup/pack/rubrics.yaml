@@ -1,0 +1,4 @@
+rubrics:
+  - id: draft-rubric
+    title: Draft discussion rubric
+    criteria: [Prediction, comparison, uncertainty, follow-up]

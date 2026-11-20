@@ -1,0 +1,34 @@
+{
+  "schema": "scisiteforge.public_surface_guardrails.v1",
+  "counts": {
+    "html_pages": 2,
+    "active_pages": 1,
+    "search_manifests": 0,
+    "search_records": 0
+  },
+  "summary": {
+    "errors": 0,
+    "warnings": 3,
+    "total": 3
+  },
+  "findings": [
+    {
+      "level": "warning",
+      "code": "missing_canonical",
+      "path": "index.html",
+      "message": "Public HTML page has no canonical link."
+    },
+    {
+      "level": "warning",
+      "code": "missing_json_ld",
+      "path": "index.html",
+      "message": "Public HTML page has no JSON-LD structured data."
+    },
+    {
+      "level": "warning",
+      "code": "missing_description",
+      "path": "translation-status/index.html",
+      "message": "HTML page has no meta description."
+    }
+  ]
+}

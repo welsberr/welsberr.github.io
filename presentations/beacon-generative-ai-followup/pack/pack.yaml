@@ -1,0 +1,13 @@
+name: drift-and-selection
+display_name: Drift and selection investigation
+version: 0.1.0-draft
+schema_version: "1"
+didactopus_min_version: 0.1.0
+didactopus_max_version: 0.9.99
+description: A draft comparison of stochastic drift and selection.
+author: Wesley R. Elsberry and OpenAI Codex
+license: REVIEW-REQUIRED
+dependencies: []
+overrides: []
+profile_templates: {}
+cross_pack_links: []

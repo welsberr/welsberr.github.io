@@ -1,0 +1,33 @@
+{
+  "schema": "beacon.opt_gate_walkthrough.v1",
+  "pdf_sha256": "12a29384a9b25337e83451009a6820e06d850af3acd2b86d3b55ca31d74be346",
+  "before": {
+    "date_utc": "2026-09-26T18:46:34+00:00",
+    "decision": "hard_gate",
+    "exit_code": 1,
+    "finding_codes": [
+      "publication.artifact.extracted_text_required"
+    ]
+  },
+  "after": {
+    "date_utc": "2026-09-26T18:59:04Z",
+    "decision": "pass",
+    "exit_code": 0,
+    "extraction_matches_reviewed_text": true,
+    "extractor": "pdftotext (Poppler)",
+    "extractor_version": "pdftotext version 22.02.0"
+  },
+  "fix": {
+    "commit": "229eae143c8b54c426d042b0a10ca954a91a30e0",
+    "description": "Fresh extraction of the same PDF bytes must match the reviewed text, and the review binds the text hash."
+  },
+  "publication_approval": {
+    "recorded_at": "2026-09-26T19:38:27+00:00",
+    "status": "approved",
+    "pdf_sha256": "12a29384a9b25337e83451009a6820e06d850af3acd2b86d3b55ca31d74be346"
+  },
+  "limitations": [
+    "Text extraction does not verify image content, OCR completeness, or visual layout.",
+    "Passing an integrity check does not establish scientific validity."
+  ]
+}

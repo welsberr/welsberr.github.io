@@ -1,0 +1,6 @@
+projects:
+  - id: compare-runs
+    title: Compare drift and selection
+    difficulty: review-required
+    prerequisites: [drift, selection]
+    deliverables: [Prediction, observed comparison, explanation and follow-up question]

@@ -1,0 +1,38 @@
+{
+  "report_version": "claimwright.publication_report.v1",
+  "artifact_sha256": "7b5a45658bcd9367594092c0e8d41f809ec796fd6c0a95e8e00ba6db5a92284b",
+  "artifact_text_sha256": "7b5a45658bcd9367594092c0e8d41f809ec796fd6c0a95e8e00ba6db5a92284b",
+  "policy_id": "claimwright.academic_publication_integrity.v1",
+  "policy_sha256": "36608ac81051015b2cb6205e24c2e8cb7df472ec29eaaeea80cec3301dfb9fd1",
+  "tool_version": "OpenAI Codex assisted documentary review; local Python Markdown and Playwright Chromium",
+  "evaluation_timestamp": "2026-11-20T06:23:43Z",
+  "overall_decision": "pass",
+  "findings": [],
+  "similarity_candidates": [],
+  "similarity_method": "Editorial comparison of the revised presentation with the author-owned original; author-directed self-reuse disclosed by archive and revision record. New capability prose checked against linked repositories and report.",
+  "corpus_limitations": [
+    "No web-wide similarity search.",
+    "The revised presentation substantially reuses its acknowledged original; this is intentional and author-authorized."
+  ],
+  "checks_evaluated": [
+    "plagiarism_and_attribution",
+    "similarity_and_text_recycling",
+    "fabrication_falsification_and_manipulation",
+    "citation_and_source_integrity",
+    "authorship_contribution_and_ai_disclosure",
+    "copyright_license_and_permissions",
+    "ethics_consent_conflicts_and_funding",
+    "confidentiality_and_private_material",
+    "harmful_or_unprofessional_content",
+    "venue_and_release_policy",
+    "extension.rendering_and_navigation"
+  ],
+  "checks_not_applicable": [],
+  "required_actions": [],
+  "human_reviewer": "Wesley R. Elsberry",
+  "approval_state": "approved",
+  "statement": "Policy findings are not permission grants or misconduct adjudications.",
+  "artifact_description": "Original BEACON presentation, author-approved public revision",
+  "review_record_url": "https://welsberr.github.io/presentations/beacon-generative-ai/evidence/publication-integrity-review.json",
+  "scope_note": "Passing this review applies to the original presentation artifact, not the followup activity. The checker evaluates the review record; it does not certify source truth or grant publication permission."
+}

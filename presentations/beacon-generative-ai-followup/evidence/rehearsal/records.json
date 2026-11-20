@@ -1,0 +1,78 @@
+{
+  "captured": "2026-11-15",
+  "status": "recorded development run; human review pending",
+  "groundrecall": {
+    "query": "Avida-ED curriculum exercises selection",
+    "finding": "A prior teaching item recommends requesting additional evidence before attributing a pattern to selection.",
+    "limitation": "Retrieved context is a lead; current artifacts require separate verification."
+  },
+  "doclift": {
+    "source_title": "Avida-ED User Manual v2.0",
+    "role": "separate conversion example; not the source of the activity",
+    "extractor": "catdoc_doc",
+    "quality_flags": [],
+    "chunks": 181,
+    "review": "Figure fidelity and rights have not been assessed."
+  },
+  "citegeist": {
+    "claim": "A single simulation run is sufficient to distinguish genetic drift from natural selection.",
+    "status": "unresolved",
+    "candidates": [
+      {
+        "title": "Interaction Between Genetic Drift and Natural Selection",
+        "doi": "10.2307/2405863"
+      },
+      {
+        "title": "Exploring Genetic Drift & Natural Selection through a Simulation Activity",
+        "doi": "10.2307/4450580"
+      },
+      {
+        "title": "Biological Evolution Through Mutation, Selection, and Drift: An Introductory Review",
+        "doi": "10.1142/9789812813329_0007"
+      }
+    ],
+    "limitation": "Candidate identities resolved; relevance and support unassessed. None accepted."
+  },
+  "didactopus": {
+    "pack": "drift-and-selection",
+    "validation_ok": true,
+    "concepts": 3,
+    "stages": 1,
+    "projects": 1,
+    "rubrics": 1,
+    "limitation": "Structural validation does not establish learning or scientific accuracy."
+  },
+  "api": {
+    "repository_commit": "fc409036",
+    "sha256": "ecc6af4b5b4e7d2823d39788dcb11d04c13c3475fe8e6b844ec52991c21f68f2",
+    "tests": "passed on 2026-11-15",
+    "limitation": "Tests do not establish learning outcomes."
+  },
+  "claimwright": {
+    "status": "hard_gate",
+    "artifact_sha256": "dde5cd84ba917bd9f49872d71ae4f8858e59b6a686fa5833072ed1ed149104a4",
+    "detail": "Reinitialized after adding data downloads; human review remains unresolved. The check covers the HTML file, not its JavaScript. See claimwright.json.",
+    "captured": "2026-11-20"
+  },
+  "scisiteforge": {
+    "status": "built local draft",
+    "revision": "b61a4cb",
+    "detail": "The evo-edu theme generated a local landing page linking to the activity. Three root-relative asset/home links were adjusted for this nested preview; it has not been deployed."
+  },
+  "groundrecall_followup": {
+    "captured": "2026-11-19",
+    "query": "allele tracker drift selection repeated runs",
+    "candidate_id": "clm_obs_ia_3e5d70973823_13_13",
+    "finding": "A prior note identifies CiteGeist or Literature Explorer as potential support for reviewed bibliography trails on drift and selection.",
+    "status": "lexical candidate; requires review",
+    "separate_current_source": "https://evo-edu.org/apps/allele-tracker/study-guide.html"
+  },
+  "citegeist_identity": {
+    "captured_utc": "2026-11-20T06:12:18+00:00",
+    "query": "10.2307/4450580",
+    "status": "exact",
+    "source": "Crossref DOI lookup",
+    "limitation": "Bibliographic identity resolution is not source reliability, full-text review, or support for a claim.",
+    "record": "citegeist-identity.json"
+  }
+}

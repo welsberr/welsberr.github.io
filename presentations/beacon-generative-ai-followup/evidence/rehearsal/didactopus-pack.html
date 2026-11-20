@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Didactopus draft pack viewer</title><link rel="stylesheet" href="../../style.css"></head>
+<body><main class="activity pack-viewer"><p class="eyebrow">Didactopus · draft pack</p><h1>Drift and selection investigation</h1>
+<p class="lead">A draft comparison of stochastic drift and selection.</p>
+<p class="pack-status"><strong>Structural validation passed.</strong> The displayed files match the recorded validation.<br><span>Recorded 2026-11-20 UTC · 3 concepts · 1 learning stage · 1 project · 1 rubric</span></p>
+<p>Structural validation checks the pack’s format. Scientific accuracy, instructional effectiveness, and reuse terms still require review.</p>
+<nav class="pack-nav" aria-label="Pack sections"><a href="#concepts">Concepts</a><a href="#sequence">Learning sequence</a><a href="#project">Project</a><a href="#rubric">Rubric</a><a href="#source">Source files</a></nav>
+<section id="concepts"><p class="eyebrow">1 · Concepts</p><h2>What the learner should understand</h2><div class="pack-grid">
+<article class="pack-card"><p class="pack-number">01</p><h3>Allele frequency</h3><p>Track an allele&#x27;s proportion in a population over time.</p><p><strong>Prerequisite:</strong> None listed</p><p><strong>Evidence of understanding:</strong></p><ul><li>Describe a change in allele frequency.</li></ul></article>
+<article class="pack-card"><p class="pack-number">02</p><h3>Genetic drift</h3><p>Recognize variation among stochastic population runs.</p><p><strong>Prerequisite:</strong> Allele frequency</p><p><strong>Evidence of understanding:</strong></p><ul><li>Compare repeated runs under the same settings.</li></ul></article>
+<article class="pack-card"><p class="pack-number">03</p><h3>Selection and comparison</h3><p>Compare repeated runs with and without a fitness difference.</p><p><strong>Prerequisite:</strong> Genetic drift</p><p><strong>Evidence of understanding:</strong></p><ul><li>Explain why individual trajectories can differ.</li></ul></article>
+</div></section><section id="sequence"><p class="eyebrow">2 · Learning sequence</p><h2>How the activity is organized</h2>
+<article class="pack-card"><h3>Predict and investigate</h3><p><strong>Concepts:</strong> Allele frequency, Genetic drift, Selection and comparison</p><p><strong>Checkpoint prompts:</strong></p><ul><li>Predict outcomes before running the comparison.</li><li>Compare repeated runs and explain the limits of one trajectory.</li></ul></article>
+</section><section id="project"><p class="eyebrow">3 · Project</p><h2>What the learner produces</h2>
+<article class="pack-card"><h3>Compare drift and selection</h3><p><strong>Prerequisites:</strong> Genetic drift, Selection and comparison</p><p><strong>Difficulty:</strong> review-required</p><p><strong>Deliverables:</strong></p><ul><li>Prediction</li><li>observed comparison</li><li>explanation and follow-up question</li></ul></article>
+</section><section id="rubric"><p class="eyebrow">4 · Draft rubric</p><h2>What to consider in review</h2>
+<article class="pack-card"><h3>Draft discussion rubric</h3><ul><li>Prediction</li><li>comparison</li><li>uncertainty</li><li>follow-up</li></ul><p>This pack lists criteria only; it does not yet define scoring levels.</p></article>
+</section><section id="source"><p class="eyebrow">5 · Inspect the sources</p><h2>The YAML behind the viewer</h2>
+<p>Version 0.1.0-draft · Author: Wesley R. Elsberry and OpenAI Codex · License: REVIEW-REQUIRED. This is a rendered snapshot. Rebuild it after editing a source file.</p>
+<p><a href="didactopus-validation.json" target="beacon_pack_file">Open the recorded validation and file hashes</a></p>
+<details class="pack-source"><summary>pack.yaml</summary><p><a href="../../pack/pack.yaml" target="beacon_pack_file">Open pack.yaml separately</a></p><pre><code>name: drift-and-selection
+display_name: Drift and selection investigation
+version: 0.1.0-draft
+schema_version: &quot;1&quot;
+didactopus_min_version: 0.1.0
+didactopus_max_version: 0.9.99
+description: A draft comparison of stochastic drift and selection.
+author: Wesley R. Elsberry and OpenAI Codex
+license: REVIEW-REQUIRED
+dependencies: []
+overrides: []
+profile_templates: {}
+cross_pack_links: []
+</code></pre></details>
+<details class="pack-source"><summary>concepts.yaml</summary><p><a href="../../pack/concepts.yaml" target="beacon_pack_file">Open concepts.yaml separately</a></p><pre><code>concepts:
+  - id: allele-frequency
+    title: Allele frequency
+    description: Track an allele&#x27;s proportion in a population over time.
+    prerequisites: []
+    mastery_signals: [Describe a change in allele frequency.]
+    mastery_profile: {}
+  - id: drift
+    title: Genetic drift
+    description: Recognize variation among stochastic population runs.
+    prerequisites: [allele-frequency]
+    mastery_signals: [Compare repeated runs under the same settings.]
+    mastery_profile: {}
+  - id: selection
+    title: Selection and comparison
+    description: Compare repeated runs with and without a fitness difference.
+    prerequisites: [drift]
+    mastery_signals: [Explain why individual trajectories can differ.]
+    mastery_profile: {}
+</code></pre></details>
+<details class="pack-source"><summary>roadmap.yaml</summary><p><a href="../../pack/roadmap.yaml" target="beacon_pack_file">Open roadmap.yaml separately</a></p><pre><code>stages:
+  - id: predict-and-run
+    title: Predict and investigate
+    concepts: [allele-frequency, drift, selection]
+    checkpoint:
+      - Predict outcomes before running the comparison.
+      - Compare repeated runs and explain the limits of one trajectory.
+</code></pre></details>
+<details class="pack-source"><summary>projects.yaml</summary><p><a href="../../pack/projects.yaml" target="beacon_pack_file">Open projects.yaml separately</a></p><pre><code>projects:
+  - id: compare-runs
+    title: Compare drift and selection
+    difficulty: review-required
+    prerequisites: [drift, selection]
+    deliverables: [Prediction, observed comparison, explanation and follow-up question]
+</code></pre></details>
+<details class="pack-source"><summary>rubrics.yaml</summary><p><a href="../../pack/rubrics.yaml" target="beacon_pack_file">Open rubrics.yaml separately</a></p><pre><code>rubrics:
+  - id: draft-rubric
+    title: Draft discussion rubric
+    criteria: [Prediction, comparison, uncertainty, follow-up]
+</code></pre></details>
+</section><p><a href="../../index.html#build" target="beacon_talk">Return to section 04</a> · <a href="../../preview/" target="beacon_activity">Open the activity</a></p></main></body></html>

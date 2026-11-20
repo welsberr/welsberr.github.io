@@ -1,0 +1,19 @@
+{
+  "lang": "en",
+  "title": "Drift and selection investigation",
+  "site_title": "Evolution Education",
+  "description": "Draft prediction, experiment, and explanation activity for population genetics.",
+  "theme": "evo-edu",
+  "languages": [{"code": "en", "name": "English", "coverage": true}],
+  "navigation": [{"label": "Activity", "href": "../preview/"}],
+  "hero": {
+    "kicker": "Draft teaching activity",
+    "title": "Drift and selection: compare repeated runs",
+    "lede": "Predict, run a model, compare final frequencies, and explain the limitations of your inference.",
+    "actions": [{"label": "Open the local activity", "href": "../preview/", "primary": true}]
+  },
+  "content": {
+    "feature_cards": [{"title": "Predict", "body": "What will happen when genotypes have equal fitness? How might a fitness difference alter the pattern?", "href": "../preview/", "meta": "Before running", "link_label": "Open the activity"}],
+    "section_cards": [{"title": "Compare and explain", "body": "Repeat the simulation, compare results, and describe what further evidence would be needed.", "href": "../preview/", "meta": "After running", "link_label": "Run the comparison"}]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source": "Didactopus validate_pack",
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "pack_name": "drift-and-selection",
+    "display_name": "Drift and selection investigation",
+    "version": "0.1.0-draft",
+    "concept_count": 3,
+    "roadmap_stage_count": 1,
+    "project_count": 1,
+    "rubric_count": 1,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "file_sha256": {
+    "concepts.yaml": "4a56c6afc5e85dece6514a84f944ee022ff799c3839e1aa5afaec7ee73b6d732",
+    "pack.yaml": "034c5f2ffd32445ad53165113a2018dfc041d2fd6825a4fe08164fb768cbdb31",
+    "projects.yaml": "6e22bf416af059df100bf7c09eb6f0fbdcb052e8f69a6543224ef80ddf545659",
+    "roadmap.yaml": "3cc6e4e06b0e7a86942e831c17118246287efd2796a6e7aa048b430d60dc8f1f",
+    "rubrics.yaml": "268f1d7f33491c8376b7035280628cf0d7494c5d76d4f2d84b20c4e5522c7505"
+  },
+  "recorded_date_utc": "2026-11-20"
+}

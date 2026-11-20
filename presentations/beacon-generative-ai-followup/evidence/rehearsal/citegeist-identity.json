@@ -1,0 +1,49 @@
+{
+  "schema": "beacon.citegeist_identity_verification.v1",
+  "captured_utc": "2026-11-20T06:12:18+00:00",
+  "free_text_search": {
+    "query": "Maret and Rissing 1998 exploring genetic drift natural selection simulation activity",
+    "status": "ambiguous",
+    "match_score": 0.4,
+    "source_label": "crossref:search:Maret and Rissing 1998 exploring genetic drift natural selection simulation activity",
+    "top_candidate": {
+      "citation_key": "maret1998exploring",
+      "entry_type": "article",
+      "fields": {
+        "author": "Maret, Timothy J. and Rissing, Steven W.",
+        "title": "Exploring Genetic Drift & Natural Selection through a Simulation Activity",
+        "year": "1998",
+        "doi": "10.2307/4450580",
+        "url": "https://doi.org/10.2307/4450580",
+        "journal": "The American Biology Teacher",
+        "volume": "60",
+        "number": "9",
+        "pages": "681-683"
+      }
+    },
+    "alternate_count": 3
+  },
+  "doi_verification": {
+    "query": "10.2307/4450580",
+    "status": "exact",
+    "match_score": 1.0,
+    "source_label": "crossref:doi:10.2307/4450580",
+    "entry": {
+      "citation_key": "maret1998exploring",
+      "entry_type": "article",
+      "fields": {
+        "author": "Maret, Timothy J. and Rissing, Steven W.",
+        "title": "Exploring Genetic Drift & Natural Selection through a Simulation Activity",
+        "year": "1998",
+        "doi": "10.2307/4450580",
+        "url": "https://doi.org/10.2307/4450580",
+        "journal": "The American Biology Teacher",
+        "volume": "60",
+        "number": "9",
+        "pages": "681-683"
+      }
+    },
+    "assessment_rationale": "Bibliographic match score; not source reliability or claim support."
+  },
+  "limitation": "Bibliographic identity resolution is not source reliability, full-text review, or support for a claim."
+}
